@@ -220,7 +220,150 @@ also **prints only one** of the two columns.
 
 ### Outer Join
 
-WIP
+The **outer join** keeps the columns of the rows in the left (left outer join), the right (right outer join), or in
+both (full outer join) tables that **do not match** anything in the other table according to the join condition.
+The remaining values are **padded** with `NULL` values.
+
+> [!warning] It is better to avoid outer joins
+> They introduce `NULL` values. They can
+> sometimes be justified for efficiency reasons.
+
+#### Left Outer Join Example
+
+```sql
+SELECT c.customerid, c.email, d.customerid, d.name, d.version
+FROM customers c LEFT OUTER JOIN downloads d ON c.customerid = d.customerid;
+```
+
+This query will show all customers (from the left table), including those who never downloaded a game. For customers with no downloads, the columns from the downloads table (right table) will be filled with `NULL`.
+
+Example output:
+
+```
+c.customerid    c.email                    d.customerid    d.name      d.version
+"Willie90"      "wlongjj@moonfruit.com"   "Willie90"      "Ronstring" "1.1"
+"Willie90"      "wlongjj@moonfruit.com"   "Willie90"      "Veribet"   "2.1"
+"Al8"           "ahansenp3@webnode.com"   null            null        null
+"Johnny1997"    "jstevensb0@un.org"       null            null        null
+```
+
+#### Right Outer Join Example
+
+```sql
+SELECT *
+FROM downloads d RIGHT OUTER JOIN games g
+ON g.name = d.name AND g.version = d.version;
+```
+
+This query will show all games (from the right table), including those that have never been downloaded. For games with no downloads, the columns from the downloads table will be filled with `NULL`.
+
+#### Full Outer Join
+
+A full outer join combines both left and right outer joins, padding missing values with `NULL` for both tables.
+
+#### Anti Join Example
+
+To find customers who never downloaded a game:
+
+```sql
+SELECT c.customerid
+FROM customers c
+LEFT OUTER JOIN downloads d
+    ON c.customerid = d.customerid
+WHERE d.customerid IS NULL;
+```
+
+> [!warning]
+>
+> - Outer joins are not easy to write as conditions in the `ON` clause are not equivalent to conditions in the `WHERE` clause (unlike with `INNER JOIN`).
+> - Conditions in the `ON` clause determine which rows are dangling.
+> - It's better to avoid outer joins when possible as they introduce `NULL` values, though they can be justified for efficiency reasons.
+
+> [!note]
+>
+> - `LEFT JOIN` is a synonym for `LEFT OUTER JOIN`
+> - `RIGHT JOIN` is a synonym for `RIGHT OUTER JOIN`
+> - `FULL JOIN` is a synonym for `FULL OUTER JOIN`
+
+> [!note] There are also the natural variant of outer joins.
+> For instance, `NATURAL LEFT OUTER JOIN` is a
+> natural version of left join.
+> The meaning is the combination of natural join
+> (i.e., automatic equality) and left join (i.e., keeps
+> unmatched column, padded with `NULL`)
+
+## Set Operations
+
+### Basic Set Operators
+
+SQL provides three main set operators:
+
+- `UNION`: Returns the union of two query results
+- `INTERSECT`: Returns the intersection of two query results
+- `EXCEPT`: Returns the non-symmetric difference of two query results
+
+> [!note]
+> These operators eliminate duplicates by default unless annotated with the keyword `ALL`.
+
+### Union Compatibility
+
+Two queries must be union-compatible to use `UNION`, `INTERSECT`, or `EXCEPT`:
+
+- Must return the same number of columns
+- Corresponding columns must have the same domain
+- Columns must be in the same order
+
+Example of compatible columns:
+
+- `student.name (VARCHAR(32))` ↔ `department.department (VARCHAR(32))`
+
+Example of incompatible columns:
+
+- `student.year (DATE)` ↔ `department.department (VARCHAR(32))`
+
+### Examples
+
+#### Union Example
+
+Find customers who downloaded version 1.0 or 2.0 of Aerified:
+
+```sql
+SELECT d.customerid
+FROM downloads d
+WHERE d.name = 'Aerified' AND d.version = '1.0'
+UNION
+SELECT d.customerid
+FROM downloads d
+WHERE d.name = 'Aerified' AND d.version = '2.0';
+```
+
+#### Intersection Example
+
+Find customers who downloaded both version 1.0 and 2.0 of Aerified:
+
+```sql
+SELECT d.customerid
+FROM downloads d
+WHERE d.name = 'Aerified' AND d.version = '1.0'
+INTERSECT
+SELECT d.customerid
+FROM downloads d
+WHERE d.name = 'Aerified' AND d.version = '2.0';
+```
+
+#### Difference Example
+
+Find customers who downloaded version 1.0 but not version 2.0 of Aerified:
+
+```sql
+SELECT d.customerid
+FROM downloads d
+WHERE d.name = 'Aerified' AND d.version = '1.0'
+EXCEPT
+SELECT d.customerid
+FROM downloads d
+WHERE d.name = 'Aerified' AND d.version = '2.0';
+```
 
 ## Good Practices
 
