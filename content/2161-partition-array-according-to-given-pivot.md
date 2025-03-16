@@ -6,7 +6,7 @@ tags:
   - array
   - two-pointers
   - simulation
-date: 2022-02-05
+date: 2025-03-03
 ---
 
 [Problem Link](https://leetcode.com/problems/partition-array-according-to-given-pivot/)

@@ -7,7 +7,7 @@ tags:
   - hash-table
   - math
   - counting
-date: 2022-08-08
+date: 2025-02-09
 ---
 
 [Problem Link](https://leetcode.com/problems/count-number-of-bad-pairs/)
@@ -57,18 +57,19 @@ There are a total of 5 bad pairs, so we return 5.
 ``` py title='count-number-of-bad-pairs'
 class Solution:
     def countBadPairs(self, nums: List[int]) -> int:
-        n = len(nums)
-        total = n * (n - 1) // 2
+        N = len(nums)
         good = 0
-        
+        total = N * (N - 1) // 2
         mp = defaultdict(int)
-        # j - i != nums[j] - nums[i]
-        # Bad = j - nums[j] != i - nums[i]
-        
+
+        # Find good pairs
+        # j - i == nums[j] - nums[i]
+        # j - nums[j] = i - nums[i]
+
         for i, x in enumerate(nums):
-            good += mp[x - i]
-            mp[x - i] += 1
-        
+            good += mp[i - x]
+            mp[i - x] += 1
+
         return total - good
 ```
 

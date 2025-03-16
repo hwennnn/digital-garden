@@ -8,7 +8,7 @@ tags:
   - depth-first-search
   - breadth-first-search
   - binary-tree
-date: 2024-10-26
+date: 2025-02-26
 ---
 
 [Problem Link](https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/)
@@ -96,7 +96,7 @@ class Solution:
             return height
         
         go(root, 0)
-        
+
         levels = defaultdict(list)
         for node, depth in D.items():
             if len(levels[depth]) == 2:

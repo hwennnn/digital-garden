@@ -6,7 +6,7 @@ tags:
   - array
   - hash-table
   - counting
-date: 2021-01-18
+date: 2025-02-06
 ---
 
 [Problem Link](https://leetcode.com/problems/tuple-with-same-product/)
@@ -56,19 +56,16 @@ date: 2021-01-18
 ``` py title='tuple-with-same-product'
 class Solution:
     def tupleSameProduct(self, nums: List[int]) -> int:
-        res = 0
+        N = len(nums)
         mp = Counter()
-        n = len(nums)
-        
-        for i in range(n):
-            for j in range(i+1, n):
-                product = nums[i] * nums[j]
-                
-                res += mp[product]
-                
-                mp[product] += 1
-            
-        
+        res = 0
+
+        for i in range(N):
+            for j in range(i + 1, N):
+                p = nums[i] * nums[j]
+                res += mp[p]
+                mp[p] += 1
+
         return res * 8
 ```
 

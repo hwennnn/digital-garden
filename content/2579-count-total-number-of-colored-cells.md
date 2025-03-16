@@ -4,7 +4,7 @@ draft: false
 tags: 
   - leetcode-medium
   - math
-date: 2023-03-05
+date: 2025-03-05
 ---
 
 [Problem Link](https://leetcode.com/problems/count-total-number-of-colored-cells/)
@@ -55,13 +55,15 @@ date: 2023-03-05
 ``` py title='count-total-number-of-colored-cells'
 class Solution:
     def coloredCells(self, n: int) -> int:
-        res = 1
-        x = 4
-        
+        # 4, 8, 12
+        # 1, 5, 13, 25
+
+        m = 4
+        curr = 1
         for _ in range(n - 1):
-            res += x
-            x += 4
-        
-        return res
+            curr += m
+            m += 4
+
+        return curr
 ```
 

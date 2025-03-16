@@ -6,7 +6,7 @@ tags:
   - array
   - hash-table
   - two-pointers
-date: 2023-02-26
+date: 2025-03-02
 ---
 
 [Problem Link](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/)
@@ -72,16 +72,28 @@ date: 2023-02-26
 ``` py title='merge-two-2d-arrays-by-summing-values'
 class Solution:
     def mergeArrays(self, nums1: List[List[int]], nums2: List[List[int]]) -> List[List[int]]:
-        mp = defaultdict(int)
-        
-        for i, x in nums1 + nums2:
-            mp[i] += x
-        
-        keys = sorted(mp.keys())
+        N, M = len(nums1), len(nums2)
         res = []
-        
-        for key in keys:
-            res.append([key, mp[key]])
+        i = j = 0
+
+        while i < N or j < M:
+            if i < N and j < M:
+                if nums1[i][0] == nums2[j][0]:
+                    res.append([nums1[i][0], nums1[i][1] + nums2[j][1]])
+                    i += 1
+                    j += 1
+                elif nums1[i][0] < nums2[j][0]:
+                    res.append(nums1[i])
+                    i += 1
+                else:
+                    res.append(nums2[j])
+                    j += 1
+            elif i < N:
+                res.append(nums1[i])
+                i += 1
+            else:
+                res.append(nums2[j])
+                j += 1
         
         return res
 ```

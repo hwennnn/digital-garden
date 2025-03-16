@@ -8,7 +8,7 @@ tags:
   - design
   - queue
   - data-stream
-date: 2020-10-21
+date: 2025-02-14
 ---
 
 [Problem Link](https://leetcode.com/problems/product-of-the-last-k-numbers/)
@@ -70,22 +70,21 @@ productOfNumbers.getProduct(2); // return 32. The product of the last 2 numbers 
 ### Python3
 ``` py title='product-of-the-last-k-numbers'
 class ProductOfNumbers:
-    
+
     def __init__(self):
-        self.A = [1]
-        
+        self.curr = [1]
 
     def add(self, num: int) -> None:
         if num == 0:
-            self.A = [1]
+            self.curr = [1]
         else:
-            self.A.append(self.A[-1] * num)
+            self.curr.append(self.curr[-1] * num)
 
     def getProduct(self, k: int) -> int:
-        n = len(self.A)
-        if k >= n : return 0
+        N = len(self.curr)
+        if k >= N: return 0
         
-        return self.A[-1] // self.A[-k-1]
+        return self.curr[-1] // self.curr[N - k - 1]
 
 
 # Your ProductOfNumbers object will be instantiated and called as such:

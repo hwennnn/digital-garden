@@ -7,7 +7,7 @@ tags:
   - design
   - heap-priority-queue
   - ordered-set
-date: 2022-07-24
+date: 2025-02-08
 ---
 
 [Problem Link](https://leetcode.com/problems/design-a-number-container-system/)
@@ -66,29 +66,31 @@ nc.find(10); // Number 10 is at the indices 2, 3, and 5. The smallest index that
 ---
 ### Python3
 ``` py title='design-a-number-container-system'
-from sortedcontainers import SortedList
-
 class NumberContainers:
 
     def __init__(self):
-        self.A = {}
-        self.sl = defaultdict(SortedList)
+        self.container = defaultdict(list) # (number) -> [index,...]
+        self.mp = {} # (index) -> number
 
     def change(self, index: int, number: int) -> None:
-        if index in self.A:
-            prevNumber = self.A[index]
-            self.sl[prevNumber].remove(index)
-            
-        self.A[index] = number
-        self.sl[number].add(index)
-        
+        if index in self.mp:
+            prev = self.mp[index]
+            if self.container[prev][0] == index:
+                heappop(self.container[prev])
+
+        self.mp[index] = number
+        heappush(self.container[number], index)
 
     def find(self, number: int) -> int:
-        s = self.sl[number]
+        while self.container[number] and self.mp[self.container[number][0]] != number:
+            heappop(self.container[number])
         
-        if not s: return -1
+        if len(self.container[number]) == 0:
+            return -1
+
+        return self.container[number][0]
         
-        return s[0]
+
 
 # Your NumberContainers object will be instantiated and called as such:
 # obj = NumberContainers()

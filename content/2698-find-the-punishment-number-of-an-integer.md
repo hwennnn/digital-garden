@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - math
   - backtracking
-date: 2023-05-21
+date: 2025-02-15
 ---
 
 [Problem Link](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/)
@@ -61,43 +61,35 @@ Hence, the punishment number of 37 is 1 + 81 + 100 + 1296 = 1478
 ---
 ### Python3
 ``` py title='find-the-punishment-number-of-an-integer'
-ans = [False] * (1001)
-
-def helper(k, target):
-    k = list(str(k))
-    N = len(k)
-
-    bfs = deque([(0, 0, 0)])
-
-    while bfs:
-        index, currSum, totalSum = bfs.popleft()
-        
-        if currSum + totalSum > target: continue
-
-        if index == N:
-            if currSum + totalSum == target:
-                return True
-
-            continue
-
-        x = int(k[index])
-        bfs.append((index + 1, currSum * 10 + x, totalSum))
-        bfs.append((index + 1, x, currSum + totalSum))
-
-    return False
-
-for x in range(1, 1001):
-    k = x * x
-    if helper(k, x):
-        ans[x] = True
-
 class Solution:
     def punishmentNumber(self, n: int) -> int:
         res = 0
-        
-        for x in range(1, n + 1):
-            if ans[x]:
-                res += x * x
+
+        for i in range(1, n + 1):
+            p = i * i
+            digits = list(map(int, str(p)))
+
+            @cache
+            def go(index, curr):
+                if index == len(digits):
+                    return curr == i
+
+                if digits[index] == 0:
+                    return go(index + 1, curr)
+                
+                if go(index + 1, curr + digits[index]):
+                    return True
+                
+                d = digits[index]
+                for j in range(index + 1, len(digits)):
+                    d = d * 10 + digits[j]
+                    if go(j + 1, curr + d):
+                        return True
+                
+                return False
+
+            if go(0, 0):
+                res += p
         
         return res
 ```

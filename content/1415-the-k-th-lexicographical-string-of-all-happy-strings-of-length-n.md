@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - string
   - backtracking
-date: 2020-10-20
+date: 2025-02-19
 ---
 
 [Problem Link](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/)
@@ -67,16 +67,15 @@ date: 2020-10-20
 ``` py title='the-k-th-lexicographical-string-of-all-happy-strings-of-length-n'
 class Solution:
     def getHappyString(self, n: int, k: int) -> str:
+        mp = {"a": "bc", "b": "ac", "c": "ab"}
+        queue = deque(["a", "b", "c"])
         
-        d = {"a":"bc", "b":"ac", "c":"ab"}
-        q = collections.deque(["a","b","c"])
-        
-        while len(q[0]) < n:
-            v = q.popleft()
+        while len(queue[0]) < n:
+            v = queue.popleft()
             
-            for u in d[v[-1]]:
-                q.append(v+u)
+            for u in mp[v[-1]]:
+                queue.append(v + u)
         
-        return q[k-1] if len(q) >= k else ""
+        return queue[k-1] if len(queue) >= k else ""
 ```
 

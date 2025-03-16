@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - array
   - dynamic-programming
-date: 2021-02-14
+date: 2025-02-26
 ---
 
 [Problem Link](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/)
@@ -57,13 +57,14 @@ date: 2021-02-14
 ``` py title='maximum-absolute-sum-of-any-subarray'
 class Solution:
     def maxAbsoluteSum(self, nums: List[int]) -> int:
-        mmax = mmin = s = 0
-        
-        for num in nums:
-            s += num
-            mmax = max(mmax, s)
-            mmin = min(mmin, s)
+        N = len(nums)
+        curr = mmax = mmin = 0
 
+        for x in nums:
+            curr += x
+            mmax = max(mmax, curr)
+            mmin = min(mmin, curr)
+            
         return mmax - mmin
 ```
 

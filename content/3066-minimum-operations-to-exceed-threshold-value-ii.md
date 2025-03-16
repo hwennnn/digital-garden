@@ -6,7 +6,7 @@ tags:
   - array
   - heap-priority-queue
   - simulation
-date: 2024-03-03
+date: 2025-02-13
 ---
 
 [Problem Link](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/)
@@ -71,15 +71,13 @@ It can be shown that 4 is the minimum number of operations needed so that all el
 class Solution:
     def minOperations(self, nums: List[int], k: int) -> int:
         N = len(nums)
-        pq = nums[:]
-        heapify(pq)
         res = 0
-        
+        pq = list(sorted(nums))
+
         while len(pq) >= 2 and pq[0] < k:
-            x, y = heappop(pq), heappop(pq)
-            
-            heappush(pq, min(x, y) * 2 + max(x, y))
-            
+            first, second = heappop(pq), heappop(pq)
+
+            heappush(pq, first * 2 + second)
             res += 1
         
         return res

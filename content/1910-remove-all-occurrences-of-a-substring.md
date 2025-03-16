@@ -6,7 +6,7 @@ tags:
   - string
   - stack
   - simulation
-date: 2021-06-29
+date: 2025-02-11
 ---
 
 [Problem Link](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/)

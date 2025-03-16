@@ -6,7 +6,7 @@ tags:
   - depth-first-search
   - graph
   - topological-sort
-date: 2022-01-02
+date: 2025-01-26
 ---
 
 [Problem Link](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/)

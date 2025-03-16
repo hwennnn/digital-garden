@@ -5,7 +5,7 @@ tags:
   - leetcode-hard
   - string
   - dynamic-programming
-date: 2021-05-29
+date: 2025-03-01
 ---
 
 [Problem Link](https://leetcode.com/problems/shortest-common-supersequence/)

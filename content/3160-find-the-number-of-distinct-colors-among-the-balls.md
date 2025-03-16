@@ -6,7 +6,7 @@ tags:
   - array
   - hash-table
   - simulation
-date: 2024-05-25
+date: 2025-02-08
 ---
 
 [Problem Link](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/)
@@ -81,24 +81,25 @@ date: 2024-05-25
 ``` py title='find-the-number-of-distinct-colors-among-the-balls'
 class Solution:
     def queryResults(self, limit: int, queries: List[List[int]]) -> List[int]:
-        res = []
         count = Counter()
-        colors = {}
-        colorCount = 0
-        
-        for x, y in queries:
-            if x in colors:
-                count[colors[x]] -= 1
-                if count[colors[x]] == 0:
-                    colorCount -= 1
+        unique = 0
+        prev = {}
+        res = []
+
+        for ball, color in queries:
+            if ball in prev:
+                count[prev[ball]] -= 1
+                if count[prev[ball]] == 0:
+                    unique -= 1
             
-            colors[x] = y
-            count[y] += 1
-            if count[y] == 1:
-                colorCount += 1
+            count[color] += 1
+            prev[ball] = color
             
-            res.append(colorCount)
-        
+            if count[color] == 1:
+                unique += 1
+            
+            res.append(unique)
+
         return res
 ```
 

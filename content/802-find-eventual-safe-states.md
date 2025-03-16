@@ -7,7 +7,7 @@ tags:
   - breadth-first-search
   - graph
   - topological-sort
-date: 2023-07-12
+date: 2025-01-24
 ---
 
 [Problem Link](https://leetcode.com/problems/find-eventual-safe-states/)
@@ -61,25 +61,30 @@ Only node 4 is a terminal node, and every path starting at node 4 leads to node 
 ``` py title='find-eventual-safe-states'
 class Solution:
     def eventualSafeNodes(self, graph: List[List[int]]) -> List[int]:
-        n = len(graph)
+        N = len(graph)
+        G = defaultdict(list) # reverse graph
+        outdegree = [len(edges) for edges in graph]
+        queue = deque()
         res = []
-        color = [0] * n
-        
-        def go(node):
-            if len(graph[node]) == 0: return True
+
+        for node in range(N):
+            for edge in graph[node]:
+                G[edge].append(node)
             
-            if color[node] != 0: return color[node] == 1
-            
-            for nei in graph[node]:
-                color[node] = 2
-                if not go(nei): 
-                    return False
-                color[node] = 1
-            
-            return True
-        
-        return [node for node in range(n) if go(node)]
-        
-        
+            if outdegree[node] == 0:
+                queue.append(node)
+                res.append(node)
+
+        while queue:
+            node = queue.popleft()
+
+            for adj in G[node]:
+                outdegree[adj] -= 1
+
+                if outdegree[adj] == 0:
+                    res.append(adj)
+                    queue.append(adj)
+
+        return sorted(res)
 ```
 

@@ -6,7 +6,7 @@ tags:
   - hash-table
   - string
   - counting
-date: 2022-03-03
+date: 2025-02-05
 ---
 
 [Problem Link](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/)
@@ -60,13 +60,25 @@ date: 2022-03-03
 ``` py title='check-if-one-string-swap-can-make-strings-equal'
 class Solution:
     def areAlmostEqual(self, s1: str, s2: str) -> bool:
-        if s1 == s2: return True
-        diff = 0
+        swapIndex = None
+        used = False
+        N = len(s1)
+
+        for i in range(N):
+            if s1[i] != s2[i]:
+                if used: return False
+
+                if swapIndex is None:
+                    swapIndex = i
+                else:
+                    if s1[i] == s2[swapIndex] and s1[swapIndex] == s2[i]:
+                        used = True
+                    else:
+                        return False
         
-        for a, b in zip(s1, s2):
-            if a != b:
-                diff += 1
+        if swapIndex is not None and not used:
+            return False
         
-        return diff == 2 and Counter(s1) == Counter(s2)
+        return True
 ```
 

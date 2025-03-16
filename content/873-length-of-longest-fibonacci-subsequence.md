@@ -76,4 +76,29 @@ public:
 
 
 ```
+### Python3
+``` py title='length-of-longest-fibonacci-subsequence'
+class Solution:
+    def lenLongestFibSubseq(self, arr: List[int]) -> int:
+        N = len(arr)
+        s = set(arr)
+        res = 0
+
+        for i in range(N):
+            for j in range(i + 1, N):
+                a, b = arr[i], arr[j]
+                count = 2
+
+                while a + b in s:
+                    a, b = b, a + b
+                    count += 1
+                
+                res = max(res, count)
+        
+        if res < 3: return 0
+
+        return res
+            
+
+```
 

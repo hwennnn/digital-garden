@@ -63,20 +63,19 @@ All sub-arrays have even sum and the answer is 0.
 ``` py title='number-of-sub-arrays-with-odd-sum'
 class Solution:
     def numOfSubarrays(self, arr: List[int]) -> int:
+        M = 10 ** 9 + 7
+        res = even = odd = 0
 
-        odd = even = res = 0
-        M = 1000000007
-        
-        for num in arr:
-            if num & 1:
-                odd, even = even+1, odd
+        for x in arr:
+            if x % 2 == 1:
+                odd, even = even + 1, odd
             else:
-                odd, even = odd, even+1
-                
+                even += 1
+            
             res += odd
-        
-        return res%M
-        
+            res %= M
+
+        return res
 ```
 ### C++
 ``` cpp title='number-of-sub-arrays-with-odd-sum'

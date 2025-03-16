@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - array
   - binary-search
-date: 2022-04-03
+date: 2025-03-14
 ---
 
 [Problem Link](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/)
@@ -52,20 +52,16 @@ date: 2022-04-03
 ``` py title='maximum-candies-allocated-to-k-children'
 class Solution:
     def maximumCandies(self, candies: List[int], k: int) -> int:
-        n = len(candies)
-        total = sum(candies)
-        
-        if total < k: return 0
-        
-        def good(b):
+        N = len(candies)
+        left, right = 0, max(candies) * N // k
+
+        def good(mid):
             count = 0
-            
+
             for x in candies:
-                count += x // b
+                count += x // mid
             
             return count >= k
-
-        left, right = 1, 10 ** 18
 
         while left < right:
             mid = left + (right - left + 1) // 2
@@ -74,9 +70,7 @@ class Solution:
                 left = mid
             else:
                 right = mid - 1
-        # print(left, right)
+        
         return left
-            
-            
 ```
 

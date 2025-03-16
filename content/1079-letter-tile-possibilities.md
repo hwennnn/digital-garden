@@ -58,19 +58,20 @@ date: 2019-10-09
 ``` py title='letter-tile-possibilities'
 class Solution:
     def numTilePossibilities(self, tiles: str) -> int:
-        res = set()
+        N = len(tiles)
+        seen = set()
 
-        def dfs(curr, word):
-            if curr not in res:
-                if curr:
-                    res.add(curr)
+        def go(curr, mask):
+            if curr != "":
+                seen.add(curr)
+            
+            for i in range(N):
+                if mask & (1 << i) == 0:
+                    go(curr + tiles[i], mask | (1 << i))
 
-                for i in range(len(word)):
-                    dfs(curr + word[i], word[:i] + word[i + 1:])
-        
-        dfs('', tiles)
-        
-        return len(res)
+        go("", 0)
+
+        return len(seen)
 ```
 ### Python
 ``` py title='letter-tile-possibilities'

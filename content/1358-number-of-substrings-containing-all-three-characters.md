@@ -6,7 +6,7 @@ tags:
   - hash-table
   - string
   - sliding-window
-date: 2020-10-17
+date: 2025-03-11
 ---
 
 [Problem Link](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/)
@@ -71,8 +71,5 @@ class Solution:
             res += i
         
         return res
-        
-        
-        
 ```
 

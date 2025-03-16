@@ -8,7 +8,7 @@ tags:
   - depth-first-search
   - breadth-first-search
   - graph
-date: 2022-11-12
+date: 2025-02-24
 ---
 
 [Problem Link](https://leetcode.com/problems/most-profitable-path-in-a-tree/)

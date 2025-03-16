@@ -7,7 +7,7 @@ tags:
   - breadth-first-search
   - union-find
   - graph
-date: 2021-06-25
+date: 2025-01-29
 ---
 
 [Problem Link](https://leetcode.com/problems/redundant-connection/)
@@ -55,30 +55,44 @@ date: 2021-06-25
 ---
 ### Python3
 ``` py title='redundant-connection'
+class DSU:
+    def __init__(self, n):
+        self.parent = [i for i in range(n)]
+        self.rank = [0 for _ in range(n)]
+ 
+    def find(self, x):
+        if self.parent[x] == x:
+            return self.parent[x]
+        self.parent[x] = self.find(self.parent[x])
+        return self.parent[x]
+ 
+    def union(self, u, v, pu, pv):
+        # pu = self.find(u)
+        # pv = self.find(v)
+ 
+        if (pu == pv): return
+ 
+        if self.rank[pu] < self.rank[pv]:
+            pu, pv = pv, pu
+ 
+        # ensure self.rank[pu] >= self.rank[pv]
+        self.parent[pv] = pu
+        if self.rank[pu] == self.rank[pv]:
+            self.rank[pu] += 1
+
 class Solution:
     def findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
-        n = len(edges)
-        
-        parent = [i for i in range(n)]
-        
-        def ufind(x):
-            if parent[x] != x:
-                parent[x] = ufind(parent[x])
-            
-            return parent[x]
-        
-        def uunion(x, y):
-            px = ufind(x)
-            py = ufind(y)
-            
-            parent[px] = py
-        
+        N = len(edges)
+        uf = DSU(N + 1)
+
         for a, b in edges:
-            a -= 1; b -= 1
-            
-            if ufind(a) == ufind(b):
-                return [a + 1, b + 1]
-            
-            uunion(a, b)
+            pa, pb = uf.find(a), uf.find(b)
+
+            if pa == pb:
+                return [a, b]
+            else:
+                uf.union(a, b, pa, pb)
+        
+        return []
 ```
 

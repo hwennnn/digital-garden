@@ -4,7 +4,7 @@ draft: false
 tags: 
   - leetcode-easy
   - array
-date: 2021-02-14
+date: 2025-02-02
 ---
 
 [Problem Link](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/)
@@ -61,17 +61,16 @@ You can rotate the array by x = 0 positions (i.e. no rotation) to make nums.
 ``` py title='check-if-array-is-sorted-and-rotated'
 class Solution:
     def check(self, nums: List[int]) -> bool:
-        n = len(nums)
-        k = 0
+        N = len(nums)
+        count = 0
+
+        for i in range(N):
+            if nums[i] > nums[(i + 1) % N]:
+                count += 1
+            
+                if count > 1:
+                    return False
         
-        for i in range(n):
-            if nums[i] > nums[(i+1)%n]:
-                k += 1
-            
-            if k > 1: return False
-                
-        return True
-            
-            
+        return count <= 1
 ```
 

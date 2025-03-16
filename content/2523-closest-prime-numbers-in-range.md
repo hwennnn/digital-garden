@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - math
   - number-theory
-date: 2023-01-01
+date: 2025-03-07
 ---
 
 [Problem Link](https://leetcode.com/problems/closest-prime-numbers-in-range/)

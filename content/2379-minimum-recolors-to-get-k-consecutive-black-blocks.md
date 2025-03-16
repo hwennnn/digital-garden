@@ -5,7 +5,7 @@ tags:
   - leetcode-easy
   - string
   - sliding-window
-date: 2022-08-27
+date: 2025-03-08
 ---
 
 [Problem Link](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/)
@@ -62,21 +62,18 @@ Therefore, we return 0.
 ``` py title='minimum-recolors-to-get-k-consecutive-black-blocks'
 class Solution:
     def minimumRecolors(self, blocks: str, k: int) -> int:
-        n = len(blocks)
-        b = 0
-        res = inf
-        
+        res = black = 0
+
         for i, x in enumerate(blocks):
-            if i >= k:
-                if blocks[i - k] == "B":
-                    b -= 1
-                    
-            if x == "B":
-                b += 1
+            if x == 'B':
+                black += 1
             
-            if i + 1 >= k:
-                res = min(res, k - b)
+            if i >= k - 1:
+                res = max(res, black)
+
+                if blocks[i - k + 1] == 'B':
+                    black -= 1
         
-        return res
+        return k - res
 ```
 

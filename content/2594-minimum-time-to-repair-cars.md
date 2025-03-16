@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - array
   - binary-search
-date: 2023-03-19
+date: 2025-03-16
 ---
 
 [Problem Link](https://leetcode.com/problems/minimum-time-to-repair-cars/)
@@ -64,27 +64,27 @@ It can be proved that the cars cannot be repaired in less than 16 minutes.​​
 ``` py title='minimum-time-to-repair-cars'
 class Solution:
     def repairCars(self, ranks: List[int], cars: int) -> int:
-        N = len(ranks)
-        
+        # r * (n ^ 2) = k
+
         def good(k):
             count = 0
-            
-            for rank in ranks:
-                count += int(math.sqrt(k // rank))
+
+            for r in ranks:
+                n2 = k // r
+                count += int(math.sqrt(n2))
             
             return count >= cars
-            
         
-        left, right = 1, min(ranks) * cars * cars
-        
+        left, right = 0, min(ranks) * cars * cars
         while left < right:
             mid = left + (right - left) // 2
-            
+
             if good(mid):
                 right = mid
             else:
                 left = mid + 1
         
         return left
+
 ```
 

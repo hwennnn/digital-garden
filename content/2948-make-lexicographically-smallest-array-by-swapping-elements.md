@@ -6,7 +6,7 @@ tags:
   - array
   - union-find
   - sorting
-date: 2023-11-28
+date: 2025-01-25
 ---
 
 [Problem Link](https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/)

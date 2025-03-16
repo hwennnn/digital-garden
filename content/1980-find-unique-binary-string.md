@@ -7,7 +7,7 @@ tags:
   - hash-table
   - string
   - backtracking
-date: 2023-11-17
+date: 2025-02-20
 ---
 
 [Problem Link](https://leetcode.com/problems/find-unique-binary-string/)
@@ -63,34 +63,13 @@ class Solution:
     def findDifferentBinaryString(self, nums: List[str]) -> str:
         N = len(nums)
         res = []
-        root = [None, None, 0]
-        COUNT = 2
 
-        def add(x):
-            curr = root
+        for i, x in enumerate(nums):
+            if x[i] == '0':
+                res.append('1')
+            else:
+                res.append('0')
 
-            for k in range(N):
-                bit = int(x[k])
-                
-                if curr[bit] is None:
-                    curr[bit] = [None, None, 0]
-                
-                curr = curr[bit]
-                curr[COUNT] += 1
-
-        for x in nums:
-            add(x)
-
-        curr = root
-        for k in range(N):
-            left, right = curr[0][COUNT] if curr[0] is not None else 0, curr[1][COUNT] if curr[1] is not None else 0
-            bit = 0 if left < right else 1
-            res.append(str(bit))
-            if curr[bit] is None:
-                curr[bit] = [None, None, 0]
-            
-            curr = curr[bit]
-        
         return "".join(res)
 ```
 

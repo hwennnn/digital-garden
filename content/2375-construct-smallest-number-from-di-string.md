@@ -7,7 +7,7 @@ tags:
   - backtracking
   - stack
   - greedy
-date: 2022-08-17
+date: 2025-02-18
 ---
 
 [Problem Link](https://leetcode.com/problems/construct-smallest-number-from-di-string/)
@@ -66,44 +66,35 @@ It can be proven that &quot;4321&quot; is the smallest possible num that meets t
 ``` py title='construct-smallest-number-from-di-string'
 class Solution:
     def smallestNumber(self, pattern: str) -> str:
-        n = len(pattern)
-        used = [False] * 10
-        ans = "987654321"
-        
-        def dfs(index, s, prev):
-            nonlocal ans
-            
-            if index == n:
-                ss = "".join(s)
-                if ss < ans:
-                    ans = ss
-                    
+        N = len(pattern)
+        ans = None
+
+        def backtrack(index, curr, prev, mask):
+            if index == N:
+                nonlocal ans
+
+                a = "".join(curr)
+                if ans is None or a < ans:
+                    ans = a
+                
                 return
             
             if pattern[index] == "I":
-                for i in range(prev + 1, 10):
-                    if used[i]: continue
-
-                    used[i] = True
-                    s.append(str(i))
-                    dfs(index + 1, s, i)
-                    used[i] = False
-                    s.pop()
+                for d in range(prev + 1, 10):
+                    if mask & (1 << d) == 0:
+                        curr.append(str(d))
+                        backtrack(index + 1, curr, d, mask | (1 << d))
+                        curr.pop()
             else:
-                for i in range(prev - 1, 0, -1):
-                    if used[i]: continue
+                for d in range(prev - 1, 0, -1):
+                    if mask & (1 << d) == 0:
+                        curr.append(str(d))
+                        backtrack(index + 1, curr, d, mask | (1 << d))
+                        curr.pop()
 
-                    used[i] = True
-                    s.append(str(i))
-                    dfs(index + 1, s, i)
-                    used[i] = False
-                    s.pop()
-        
-        for i in range(1, 10):
-            used[i] = True
-            dfs(0, [str(i)], i)
-            used[i] = False
-        
+        for d in range(1, 10):
+            backtrack(0, [str(d)], d, 1 << d)
+
         return ans
 
 ```

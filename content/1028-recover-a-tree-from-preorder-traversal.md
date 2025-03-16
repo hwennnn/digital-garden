@@ -7,7 +7,7 @@ tags:
   - tree
   - depth-first-search
   - binary-tree
-date: 2022-01-14
+date: 2025-02-22
 ---
 
 [Problem Link](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/)

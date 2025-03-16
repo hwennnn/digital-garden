@@ -8,7 +8,7 @@ tags:
   - breadth-first-search
   - union-find
   - matrix
-date: 2023-04-29
+date: 2025-01-28
 ---
 
 [Problem Link](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/)
@@ -70,31 +70,23 @@ date: 2023-04-29
 class Solution:
     def findMaxFish(self, grid: List[List[int]]) -> int:
         rows, cols = len(grid), len(grid[0])
-        
-        def dfs(start, end):
-            count = 0
-            dq = deque([(start, end)])
-            
-            while dq:
-                x, y = dq.popleft()
-                
-                count += grid[x][y]
-                
-                grid[x][y] = 0
-                
-                for dx, dy in [(x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)]:
-                    if 0 <= dx < rows and 0 <= dy < cols and grid[dx][dy] != 0:
-                        dq.append((dx, dy))
-            
-            return count
-        
         res = 0
+
+        def go(x, y):
+            total = grid[x][y]
+            grid[x][y] = 0
+
+            for dx, dy in [(x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)]:
+                if 0 <= dx < rows and 0 <= dy < cols and grid[dx][dy] != 0:
+                    total += go(dx, dy)
+
+            return total
         
         for x in range(rows):
             for y in range(cols):
                 if grid[x][y] != 0:
-                    res = max(res, dfs(x, y))
-        
+                    res = max(res, go(x, y))
+
         return res
 ```
 

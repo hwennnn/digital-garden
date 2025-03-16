@@ -6,7 +6,7 @@ tags:
   - breadth-first-search
   - union-find
   - graph
-date: 2022-12-09
+date: 2025-01-30
 ---
 
 [Problem Link](https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/)

@@ -7,7 +7,7 @@ tags:
   - hash-table
   - sorting
   - heap-priority-queue
-date: 2022-07-17
+date: 2025-02-12
 ---
 
 [Problem Link](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/)
@@ -55,20 +55,23 @@ So the maximum sum that we can obtain is 54.
 ``` py title='max-sum-of-a-pair-with-equal-sum-of-digits'
 class Solution:
     def maximumSum(self, nums: List[int]) -> int:
-        n = len(nums)
-        cnt = defaultdict(list)
-        
-        for x in nums:
-            cnt[sum(int(k) for k in str(x))].append(x)
-        
+        N = len(nums)
         res = -1
-        
-        for values in cnt.values():
-            if len(values) >= 2:
-                values.sort()
-                res = max(res, values[-1] + values[-2])
+        digits = {}
+
+        for x in nums:
+            d = 0
+            curr = x
+            while curr > 0:
+                d += curr % 10
+                curr //= 10
             
-        
+            if d in digits:
+                res = max(res, x + digits[d])
+                digits[d] = max(digits[d], x)
+            else:
+                digits[d] = x
+
         return res
 ```
 

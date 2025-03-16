@@ -6,7 +6,7 @@ tags:
   - array
   - binary-search
   - counting
-date: 2023-01-08
+date: 2025-03-12
 ---
 
 [Problem Link](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/)
@@ -70,11 +70,9 @@ class Solution:
         pos = neg = 0
         
         for x in nums:
-            if x == 0: continue
-            
             if x > 0:
                 pos += 1
-            else:
+            elif x < 0:
                 neg += 1
         
         return max(pos, neg)

@@ -6,7 +6,7 @@ tags:
   - array
   - two-pointers
   - simulation
-date: 2022-11-06
+date: 2025-03-01
 ---
 
 [Problem Link](https://leetcode.com/problems/apply-operations-to-an-array/)
@@ -72,19 +72,25 @@ After that, we shift the 0&#39;s to the end, which gives the array [1,4,2,0,0,0]
 class Solution:
     def applyOperations(self, nums: List[int]) -> List[int]:
         N = len(nums)
+
         for i in range(N - 1):
             if nums[i] == nums[i + 1]:
                 nums[i] *= 2
                 nums[i + 1] = 0
-      
-        i = 0
-        for x in nums:
-            if x != 0:
-                nums[i] = x
-                i += 1
+            
+        zeroIndex = 0
 
-        for k in range(i, N):
-            nums[k] = 0
+        while zeroIndex < N and nums[zeroIndex] != 0:
+            zeroIndex += 1
+        
+        if zeroIndex == N: return nums
+    
+        for j in range(zeroIndex + 1, N):
+            if nums[j] == 0: continue
+
+            nums[zeroIndex] = nums[j]
+            nums[j] = 0
+            zeroIndex += 1
         
         return nums
 ```

@@ -4,7 +4,7 @@ draft: false
 tags: 
   - leetcode-easy
   - array
-date: 2024-05-19
+date: 2025-02-01
 ---
 
 [Problem Link](https://leetcode.com/problems/special-array-i/)

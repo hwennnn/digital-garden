@@ -4,7 +4,7 @@ draft: false
 tags: 
   - leetcode-easy
   - array
-date: 2023-11-14
+date: 2025-02-04
 ---
 
 [Problem Link](https://leetcode.com/problems/maximum-ascending-subarray-sum/)
@@ -60,16 +60,17 @@ date: 2023-11-14
 class Solution:
     def maxAscendingSum(self, nums: List[int]) -> int:
         N = len(nums)
-        res = curr = nums[0]
-        
+        curr = res = last = nums[0]
+
         for i in range(1, N):
-            if nums[i] > nums[i - 1]:
+            if nums[i] > last:
                 curr += nums[i]
+                res = max(res, curr)
             else:
                 curr = nums[i]
-                
-            res = max(res, curr)
-        
+            
+            last = nums[i]
+
         return res
 ```
 

@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - array
   - backtracking
-date: 2021-07-29
+date: 2025-02-16
 ---
 
 [Problem Link](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/)
@@ -58,39 +58,42 @@ date: 2021-07-29
 ``` py title='construct-the-lexicographically-largest-valid-sequence'
 class Solution:
     def constructDistancedSequence(self, n: int) -> List[int]:
-        res = [0] * (n * 2 - 1)
-        used = [0] * (n + 1)
-        
-        def backtrack(i):
-            if i == len(res): return True
-            
-            if res[i]: return backtrack(i + 1)
-            
-            for k in range(n, 1, -1):
-                if used[k]: continue
-                
-                if i + k < len(res) and res[i] == res[i + k] == 0:
-                    res[i] = res[i + k] = k
-                    used[k] = 1
+        res = [-1] * (n * 2 - 1)
+        N = len(res)
+        used = [False] * (n + 1)
+
+        def backtrack(index, count):
+            if count == n: return True
+
+            if res[index] != -1:
+                return backtrack(index + 1, count)
+
+            for num in range(n, 0, -1):
+                if used[num]: continue
+
+                if num == 1:
+                    res[index] = num
+                    used[num] = True
+                    if backtrack(index + 1, count + 1):
+                        return True
                     
-                    if backtrack(i + 1): return True
-                    
-                    res[i] = res[i + k] = 0
-                    used[k] = 0
-            
-            if not used[1]:
-                res[i] = 1
-                used[1] = 1
-                
-                if backtrack(i + 1): return True
-                
-                res[i] = 0
-                used[1] = 0
+                    res[index] = -1
+                    used[num] = False
+                else:
+                    if index + num < N and res[index + num] == -1:
+                        res[index] = res[index + num] = num
+                        used[num] = True
+                        if backtrack(index + 1, count + 1):
+                            return True
+
+                        res[index] = res[index + num] = -1
+                        used[num] = False
             
             return False
         
-        backtrack(0)
-        
+        backtrack(0, 0)
         return res
+                
+                        
 ```
 

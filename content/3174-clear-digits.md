@@ -6,7 +6,7 @@ tags:
   - string
   - stack
   - simulation
-date: 2024-06-09
+date: 2025-02-10
 ---
 
 [Problem Link](https://leetcode.com/problems/clear-digits/)
@@ -72,7 +72,8 @@ class Solution:
 
         for x in s:
             if x.isdigit():
-                stack.pop()
+                if stack:
+                    stack.pop()
             else:
                 stack.append(x)
         

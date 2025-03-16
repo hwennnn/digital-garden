@@ -7,7 +7,7 @@ tags:
   - hash-table
   - math
   - matrix
-date: 2023-12-18
+date: 2025-03-08
 ---
 
 [Problem Link](https://leetcode.com/problems/find-missing-and-repeated-values/)

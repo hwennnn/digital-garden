@@ -4,7 +4,7 @@ draft: false
 tags: 
   - leetcode-medium
   - math
-date: 2021-04-10
+date: 2025-03-04
 ---
 
 [Problem Link](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/)
@@ -55,6 +55,9 @@ date: 2021-04-10
 ``` py title='check-if-number-is-a-sum-of-powers-of-three'
 class Solution:
     def checkPowersOfThree(self, n: int) -> bool:
+        # T(n) = T(n / 3) + O(1)
+        #      = O(log n)
+
         while n > 1:
             if n % 3 == 2: return False
             

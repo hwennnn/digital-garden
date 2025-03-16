@@ -4,7 +4,7 @@ draft: false
 tags: 
   - leetcode-easy
   - array
-date: 2024-04-07
+date: 2025-02-03
 ---
 
 [Problem Link](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/)

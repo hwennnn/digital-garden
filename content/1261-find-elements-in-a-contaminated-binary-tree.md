@@ -9,7 +9,7 @@ tags:
   - breadth-first-search
   - design
   - binary-tree
-date: 2021-01-02
+date: 2025-02-24
 ---
 
 [Problem Link](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/)
@@ -104,26 +104,20 @@ findElements.find(5); // return True
 class FindElements:
 
     def __init__(self, root: TreeNode):
-        root.val = 0
-        self.s = set()
-        self.build(root)
+        self.seen = set()
+        
+        def dfs(node: TreeNode, v: int) -> None:
+            if not node: return
+            
+            node.val = v    
+            self.seen.add(v)
+            dfs(node.left, 2 * v + 1)
+            dfs(node.right, 2 * v + 2)
+            
+        dfs(root, 0)
         
     def find(self, target: int) -> bool:
-        return target in self.s
-    
-    def build(self, root):
-        if not root: return
-        
-        if root.left:
-            root.left.val = root.val*2 + 1
-            self.s.add(root.left.val)
-            self.build(root.left)
-        
-        if root.right:
-            root.right.val = root.val*2 + 2
-            self.s.add(root.right.val)
-            self.build(root.right)
-        
+        return target in self.seen
 
 
 # Your FindElements object will be instantiated and called as such:
