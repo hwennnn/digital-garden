@@ -8,4 +8,4 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
-content/Templates
+content/private

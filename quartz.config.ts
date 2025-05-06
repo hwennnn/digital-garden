@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "https://github.com/hwennnn/digital-garden",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", ".obsidian"],
     defaultDateType: "created",
     generateSocialImages: false,
     theme: {
