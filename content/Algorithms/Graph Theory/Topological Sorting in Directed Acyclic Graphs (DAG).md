@@ -72,5 +72,5 @@ def topological_sort(N, graph):
 
 ## Complexity
 
-- Time complexity:
+- Time complexity: $O(V + E)$
 - Space complexity:

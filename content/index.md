@@ -9,7 +9,7 @@ This space is a growing collection of my Computer Science notes and LeetCode sol
 
 - Various CS concepts and learnings
 - A comprehensive collection of [LeetCode problem solutions](https://www.leetcode.hwendev.com/)
-- Regular updates with new content (I aim to contribute daily, if work permitting!)
+- Regular updates with new content (I aim to update frequently, if work permitting!)
 
 Feel free to explore and learn alongside me. Happy coding! 💻
 

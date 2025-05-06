@@ -33,5 +33,5 @@ To detect the negative cycle, we can run the algorithm for ${n}$ rounds instead.
 
 ## Complexity
 
-- Time complexity: ${O(nm)}$
-- Space complexity: ${O(n)}$
+- Time complexity: ${O(VE)}$
+- Space complexity: ${O(V)}$

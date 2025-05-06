@@ -31,5 +31,5 @@ def floydWarshall(N, adj):
 
 ## Complexity
 
-- Time complexity: $O(n^3)$
-- Space complexity: $O(n^2)$
+- Time complexity: $O(V^3)$
+- Space complexity: $O(V^2)$

@@ -41,5 +41,5 @@ def isBipartite(graph):
 
 ## Complexity
 
-- Time complexity:
+- Time complexity: $O(V + E)$
 - Space complexity:
