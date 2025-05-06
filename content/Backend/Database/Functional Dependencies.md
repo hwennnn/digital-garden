@@ -176,3 +176,9 @@ Thus, $A⁺$ = {$A, B, C, D$}, so $A$ is a candidate key.
 - In general, if an attribute that does not appear in the right hand side of any FD, then it must be in every key
 #### Prime Attributes
 If an attribute appears in a key, then it is a prime attribute. Otherwise, it is a non-prime attribute.
+
+#### More definition
+A functional dependency $X → Y$ is
+- Trivial if $Y ⊆ X$.
+- Non-trivial if $Y ⊈ X$.
+- Completely non-trivial if $Y ≠ ∅$ and $X ∩ Y = ∅$.
