@@ -4,6 +4,7 @@ tags:
   - backend
   - database
   - sql
+  - cs2102
 date: 2025-01-29
 ---
 
