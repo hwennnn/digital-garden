@@ -1,6 +1,19 @@
 .content-meta {
-  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   color: var(--gray);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+
+  .reading-stats {
+    color: var(--gray);
+  }
+
+  .last-updated {
+    color: var(--gray);
+    font-style: italic;
+  }
 
   &[show-comma="true"] {
     > *:not(:last-child) {
