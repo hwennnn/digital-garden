@@ -21,6 +21,8 @@ Feel free to explore and learn alongside me. Happy coding! 💻
 
 ## 🖥️ [[Backend]]
 
+## 💽 [[Database]]
+
 ## 🏗️ [[System Design]]
 
 ## ➗ Math
