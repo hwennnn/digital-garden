@@ -112,10 +112,10 @@ FOR EACH ROW
 EXECUTE FUNCTION give_bob_full_mark();
 ```
 
-Instead of checking the condition on each insertion, we can move simple logic like `IF NEW.name = 'BOB` to the `WHEN` clause.
+Instead of checking the condition on each insertion, we can move simple logic like `IF (NEW.name = 'BOB')` to the `WHEN` clause.
 
 ```sql
-CREATE OR REPLACE FUNCTION give_adi_full_mark() RETURNS TRIGGER AS $$
+CREATE OR REPLACE FUNCTION give_bob_full_mark() RETURNS TRIGGER AS $$
 BEGIN
 	NEW.Mark := 100;
 	RETURN NEW;
@@ -128,7 +128,7 @@ FOR EACH ROW WHEN (NEW.name = 'Bob')
 EXECUTE FUNCTION give_bob_full_mark();
 ```
 
-Restrictions:
+Restrictions when using `WHEN` clause:
 - No `SELECT` queries.
 - No `OLD` in `INSERT`.
 - No `NEW` in `DELETE`.
@@ -161,9 +161,10 @@ UPDATE Account SET Balance = Balance + Amount WHERE AID = Account2;
 COMMIT;
 ```
 
+ It will ensure a customer’s total account balance ≥ 150, only after all account updates in a transaction are done.
+
 Deferred triggers only works with:
 - `AFTER`
 - `FOR EACH ROW`
 - Must be defined as `CONSTRAINT` and `DEFERRABLE`
 
-**Example Use Case:** Ensure a customer’s total account balance ≥ 150, only after all account updates in a transaction are done.
