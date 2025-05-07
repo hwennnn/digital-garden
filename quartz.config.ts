@@ -13,12 +13,14 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "umami",
+      host: "https://us.umami.is",
+      websiteId: "dfc017b1-ce5d-4776-8800-e86bcf19627f",
     },
     locale: "en-US",
     baseUrl: "https://github.com/hwennnn/digital-garden",
     ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "created",
+    defaultDateType: "modified",
     generateSocialImages: false,
     theme: {
       fontOrigin: "googleFonts",
@@ -58,7 +60,7 @@ const config: QuartzConfig = {
     transformers: [
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
-        priority: ["frontmatter", "filesystem"],
+        priority: ["frontmatter", 'git', "filesystem"],
       }),
       Plugin.SyntaxHighlighting({
         theme: {

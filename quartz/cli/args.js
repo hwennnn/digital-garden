@@ -83,7 +83,7 @@ export const BuildArgv = {
   },
   port: {
     number: true,
-    default: 4000,
+    default: 5000,
     describe: "port to serve Quartz on",
   },
   wsPort: {
