@@ -57,7 +57,7 @@ dfs(0, -1, 0)
 # binary lifting
 for power in range(1, M):
     for node in range(N):
-        parent[node][power] = parent[[parent[node][power - 1]]][power - 1]
+	    parent[node][power] = parent[parent[node][power - 1]][power - 1]
 
 def lca(a, b):
     if d[a] > d[b]:
