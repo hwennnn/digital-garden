@@ -7,7 +7,7 @@ tags:
   - queue
   - sliding-window
   - monotonic-queue
-date: 2024-03-31
+date: 2025-04-26
 ---
 
 [Problem Link](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/)

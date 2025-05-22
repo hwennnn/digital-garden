@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - array
   - greedy
-date: 2022-03-20
+date: 2025-05-03
 ---
 
 [Problem Link](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/)
@@ -58,33 +58,32 @@ In this case, it is not possible to rotate the dominoes to make one row of value
 ``` py title='minimum-domino-rotations-for-equal-row'
 class Solution:
     def minDominoRotations(self, tops: List[int], bottoms: List[int]) -> int:
-        n = len(tops)
-        tPos = collections.defaultdict(list)
-        bPos = collections.defaultdict(list)
-        res = float('inf')
-        
+        N = len(tops)
+        tPos = defaultdict(list)
+        bPos = defaultdict(list)
+        res = inf
+
         for i, x in enumerate(tops):
             tPos[x].append(i)
         
         for i, x in enumerate(bottoms):
             bPos[x].append(i)
         
-        for k, v in tPos.items():
-            A = set(range(0, n))
+        for k in range(1, 7):
+            s = set()
+
+            for i in tPos[k]:
+                s.add(i)
             
-            for index in v:
-                if index in A:
-                    A.remove(index)
+            for i in bPos[k]:
+                s.add(i)
             
-            for index in bPos[k]:
-                if index in A:
-                    A.remove(index)
-            
-            if len(A) == 0:
-                res = min(res, n - max(len(v), len(bPos[k])))
-                
+            if len(s) == N:
+                res = min(res, N - max(len(tPos[k]), len(bPos[k])))
+
+        if res == inf:
+            return -1
         
-        return -1 if res == float('inf') else res
-            
+        return res
 ```
 

@@ -6,7 +6,7 @@ tags:
   - array
   - hash-table
   - sorting
-date: 2023-07-16
+date: 2025-03-27
 ---
 
 [Problem Link](https://leetcode.com/problems/minimum-index-of-a-valid-split/)

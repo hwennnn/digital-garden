@@ -6,7 +6,7 @@ tags:
   - math
   - string
   - dynamic-programming
-date: 2024-01-10
+date: 2025-04-10
 ---
 
 [Problem Link](https://leetcode.com/problems/count-the-number-of-powerful-integers/)

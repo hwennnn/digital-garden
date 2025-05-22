@@ -6,7 +6,7 @@ tags:
   - stack
   - design
   - queue
-date: 2024-01-29
+date: 2024-07-15
 ---
 
 [Problem Link](https://leetcode.com/problems/implement-queue-using-stacks/)
@@ -117,26 +117,27 @@ public:
 class MyQueue:
 
     def __init__(self):
-        self.stack1 = []
-        self.stack2 = []
+        self.first = []
+        self.second = []
 
     def push(self, x: int) -> None:
-        self.stack1.append(x)
+        self.first.append(x)
 
     def pop(self) -> int:
         self.peek()
-        return self.stack2.pop()
+        return self.second.pop()
 
     def peek(self) -> int:
-        if not self.stack2:
-            while self.stack1:
-                self.stack2.append(self.stack1.pop())
-        
-        return self.stack2[-1]
+        if self.second:
+            return self.second[-1]
 
+        while self.first:
+            self.second.append(self.first.pop())
+        
+        return self.second[-1]
 
     def empty(self) -> bool:
-        return len(self.stack1) + len(self.stack2) == 0
+        return len(self.first) == 0 and len(self.second) == 0
 
 
 # Your MyQueue object will be instantiated and called as such:

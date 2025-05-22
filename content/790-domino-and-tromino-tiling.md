@@ -4,7 +4,7 @@ draft: false
 tags: 
   - leetcode-medium
   - dynamic-programming
-date: 2022-12-24
+date: 2025-05-05
 ---
 
 [Problem Link](https://leetcode.com/problems/domino-and-tromino-tiling/)

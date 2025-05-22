@@ -8,7 +8,7 @@ tags:
   - depth-first-search
   - breadth-first-search
   - binary-tree
-date: 2021-05-23
+date: 2025-04-04
 ---
 
 [Problem Link](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/)

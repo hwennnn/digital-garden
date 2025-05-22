@@ -6,7 +6,7 @@ tags:
   - array
   - hash-table
   - sliding-window
-date: 2023-01-15
+date: 2025-04-16
 ---
 
 [Problem Link](https://leetcode.com/problems/count-the-number-of-good-subarrays/)

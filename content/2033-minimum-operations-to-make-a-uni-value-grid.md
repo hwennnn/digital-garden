@@ -7,7 +7,7 @@ tags:
   - math
   - sorting
   - matrix
-date: 2021-10-10
+date: 2025-03-26
 ---
 
 [Problem Link](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/)

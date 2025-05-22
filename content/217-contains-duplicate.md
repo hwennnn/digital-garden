@@ -6,7 +6,7 @@ tags:
   - array
   - hash-table
   - sorting
-date: 2022-03-10
+date: 2025-05-19
 ---
 
 [Problem Link](https://leetcode.com/problems/contains-duplicate/)
@@ -65,11 +65,12 @@ date: 2022-03-10
 ``` py title='contains-duplicate'
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        s = set()
-        
+        mp = set()
+
         for x in nums:
-            if x in s: return True
-            s.add(x)
+            if x in mp: return True
+
+            mp.add(x)
         
         return False
 ```

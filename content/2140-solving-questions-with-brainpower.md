@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - array
   - dynamic-programming
-date: 2023-05-12
+date: 2025-04-01
 ---
 
 [Problem Link](https://leetcode.com/problems/solving-questions-with-brainpower/)
@@ -73,19 +73,16 @@ Total points earned: 2 + 5 = 7. There is no other way to earn 7 or more points.
 class Solution:
     def mostPoints(self, questions: List[List[int]]) -> int:
         N = len(questions)
-
-        @cache
-        def go(index):
-            if index >= N: return 0
-
-            # skip
-            res = go(index + 1)
-
-            # take
-            res = max(res, questions[index][0] + go(index + questions[index][1] + 1))
-
-            return res
+        dp = [-inf] * (N + 1)
+        dp[N] = 0
+        res = 0
         
-        return go(0)
+        for i in range(N - 1, -1, -1):
+            p, b = questions[i]
+            dp[i] = max(dp[i + 1], dp[min(i + b + 1, N)] + p)
+            if dp[i] > res:
+                res = dp[i]
+            
+        return res
 ```
 

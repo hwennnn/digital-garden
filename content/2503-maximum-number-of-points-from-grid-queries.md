@@ -10,7 +10,7 @@ tags:
   - sorting
   - heap-priority-queue
   - matrix
-date: 2022-12-11
+date: 2025-03-28
 ---
 
 [Problem Link](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/)

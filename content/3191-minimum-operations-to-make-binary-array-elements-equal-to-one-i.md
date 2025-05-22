@@ -8,7 +8,7 @@ tags:
   - queue
   - sliding-window
   - prefix-sum
-date: 2024-06-23
+date: 2025-03-19
 ---
 
 [Problem Link](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/)
@@ -74,21 +74,17 @@ It is impossible to make all elements equal to 1.</p>
 class Solution:
     def minOperations(self, nums: List[int]) -> int:
         N = len(nums)
-        count = [0] * (N + 1)
-        res = 0
-        
-        for i in range(N):
-            if i - 1 >= 0:
-                count[i] += count[i - 1]
-                 
-            if i < N - 2 and (nums[i] + count[i]) % 2 == 0:
-                count[i] += 1
-                count[i + 3] -= 1
+        first = second = third = res = 0
+
+        for i, x in enumerate(nums):
+            if (x + first) % 2 == 0:
+                if i + 2 >= N: return -1
+
+                first, second, third = second + 1, third + 1, 0
                 res += 1
-                
-            if (nums[i] + count[i]) % 2 == 0:
-                return -1
-        
+            else:
+                first, second, third = second, third, 0
+
         return res
 ```
 

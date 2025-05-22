@@ -10,7 +10,7 @@ tags:
   - segment-tree
   - merge-sort
   - ordered-set
-date: 2022-02-20
+date: 2025-04-15
 ---
 
 [Problem Link](https://leetcode.com/problems/count-good-triplets-in-an-array/)

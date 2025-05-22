@@ -7,7 +7,7 @@ tags:
   - two-pointers
   - binary-search
   - sorting
-date: 2025-01-13
+date: 2025-04-19
 ---
 
 [Problem Link](https://leetcode.com/problems/count-the-number-of-fair-pairs/)

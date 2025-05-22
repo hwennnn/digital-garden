@@ -4,7 +4,7 @@ draft: false
 tags: 
   - leetcode-medium
   - string
-date: 2022-10-18
+date: 2025-04-18
 ---
 
 [Problem Link](https://leetcode.com/problems/count-and-say/)

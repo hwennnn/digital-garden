@@ -7,7 +7,7 @@ tags:
   - binary-search
   - sliding-window
   - prefix-sum
-date: 2022-06-12
+date: 2025-04-28
 ---
 
 [Problem Link](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/)

@@ -4,7 +4,7 @@ draft: false
 tags: 
   - leetcode-easy
   - array
-date: 2023-10-04
+date: 2025-04-02
 ---
 
 [Problem Link](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i/)

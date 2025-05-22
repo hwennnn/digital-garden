@@ -6,7 +6,7 @@ tags:
   - array
   - two-pointers
   - sorting
-date: 2024-06-12
+date: 2025-05-17
 ---
 
 [Problem Link](https://leetcode.com/problems/sort-colors/)

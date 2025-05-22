@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - array
   - prefix-sum
-date: 2022-01-23
+date: 2025-04-21
 ---
 
 [Problem Link](https://leetcode.com/problems/count-the-hidden-sequences/)

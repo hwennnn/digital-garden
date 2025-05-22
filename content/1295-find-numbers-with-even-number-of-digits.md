@@ -5,7 +5,7 @@ tags:
   - leetcode-easy
   - array
   - math
-date: 2020-12-27
+date: 2025-04-30
 ---
 
 [Problem Link](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)

@@ -6,7 +6,7 @@ tags:
   - array
   - hash-table
   - sliding-window
-date: 2023-07-30
+date: 2025-04-24
 ---
 
 [Problem Link](https://leetcode.com/problems/count-complete-subarrays-in-an-array/)

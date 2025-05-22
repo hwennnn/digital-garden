@@ -6,7 +6,7 @@ tags:
   - two-pointers
   - string
   - dynamic-programming
-date: 2022-09-27
+date: 2025-05-02
 ---
 
 [Problem Link](https://leetcode.com/problems/push-dominoes/)

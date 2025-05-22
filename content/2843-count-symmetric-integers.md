@@ -5,7 +5,7 @@ tags:
   - leetcode-easy
   - math
   - enumeration
-date: 2023-09-03
+date: 2025-04-11
 ---
 
 [Problem Link](https://leetcode.com/problems/count-symmetric-integers/)
@@ -52,17 +52,20 @@ date: 2023-09-03
 class Solution:
     def countSymmetricIntegers(self, low: int, high: int) -> int:
         res = 0
-        
-        for i in range(low, high + 1):
-            s = str(i)
-            N = len(s)
+
+        def good(x):
+            A = []
+
+            while x > 0:
+                A.append(x % 10)
+                x //= 10
             
-            if N >= 2 and N % 2 == 0:
-                first = sum(int(x) for x in s[:N // 2])
-                last = sum(int(x) for x in s[N // 2:])
-                
-                if first == last:
-                    res += 1
+            N = len(A)
+            return N % 2 == 0 and sum(A[:N//2]) == sum(A[N//2:])
+
+        for x in range(low, high + 1):
+            if good(x):
+                res += 1
         
         return res
 ```

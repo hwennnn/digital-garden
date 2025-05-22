@@ -5,7 +5,7 @@ tags:
   - leetcode-easy
   - array
   - dynamic-programming
-date: 2024-08-13
+date: 2025-05-19
 ---
 
 [Problem Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
@@ -53,14 +53,14 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 ``` py title='best-time-to-buy-and-sell-stock'
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        N = len(prices)
         buy = inf
         res = 0
 
-        for price in prices:
-            res = max(res, price - buy)
-            buy = min(buy, price)
-
+        for x in prices:
+            res = max(res, x - buy)
+            buy = min(buy, x)
+        
         return res
+            
 ```
 

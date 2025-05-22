@@ -4,7 +4,7 @@ draft: false
 tags: 
   - leetcode-easy
   - array
-date: 2024-07-01
+date: 2025-05-11
 ---
 
 [Problem Link](https://leetcode.com/problems/three-consecutive-odds/)
@@ -48,11 +48,10 @@ class Solution:
     def threeConsecutiveOdds(self, arr: List[int]) -> bool:
         N = len(arr)
 
-        for i in range(N - 2):
-            if arr[i] % 2 == arr[i + 1] % 2 == arr[i + 2] % 2 == 1:
+        for i in range(2, N):
+            if arr[i] % 2 == arr[i - 1] % 2 == arr[i - 2] % 2 == 1:
                 return True
         
         return False
-            
 ```
 

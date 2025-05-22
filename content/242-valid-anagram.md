@@ -6,7 +6,7 @@ tags:
   - hash-table
   - string
   - sorting
-date: 2023-12-16
+date: 2025-05-19
 ---
 
 [Problem Link](https://leetcode.com/problems/valid-anagram/)
@@ -52,14 +52,16 @@ date: 2023-12-16
 ``` py title='valid-anagram'
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        if len(s) != len(t): return False
+        count = [0] * 26
 
-        counter = Counter(s)
+        for x in s:
+            count[ord(x) - ord('a')] += 1
+        
         for x in t:
-            counter[x] -= 1
-            if counter[x] < 0:
+            count[ord(x) - ord('a')] -= 1
+            if count[ord(x) - ord('a')] < 0:
                 return False
         
-        return True
+        return all(x == 0 for x in count)
 ```
 

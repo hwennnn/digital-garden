@@ -6,7 +6,7 @@ tags:
   - array
   - string
   - dynamic-programming
-date: 2023-10-18
+date: 2025-05-16
 ---
 
 [Problem Link](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii/)
@@ -94,31 +94,35 @@ date: 2023-10-18
 ### Python3
 ``` py title='longest-unequal-adjacent-groups-subsequence-ii'
 class Solution:
-    def getWordsInLongestSubsequence(self, n: int, words: List[str], groups: List[int]) -> List[str]:
-        dp = [1] * n
-        prev = [-1] * n
-        maxLength = 1
-        
-        def hamming_distance(A, B):
-            return sum(1 for a, b in zip(A, B) if a != b)
-        
-        for i in range(1, n):
+    def getWordsInLongestSubsequence(self, words: List[str], groups: List[int]) -> List[str]:
+        N = len(words)
+        dp = [1] * N
+        prev = [-1] * N
+        maxRes = 1
+
+        def check(A, B):
+            return len(A) == len(B) and sum(a != b for a, b in zip(A, B)) == 1
+
+        for i in range(1, N):
             for j in range(i):
-                if groups[i] != groups[j] and len(words[i]) == len(words[j]) and hamming_distance(words[i], words[j]) == 1 and dp[j] + 1 > dp[i]:
+                if check(words[i], words[j]) and groups[i] != groups[j] and dp[j] + 1 > dp[i]:
                     dp[i] = dp[j] + 1
                     prev[i] = j
-                    maxLength = max(maxLength, dp[i])
-                    
+                    maxRes = max(maxRes, dp[i])
         
-        for i in range(n):
-            if dp[i] == maxLength:
+        for i in range(N):
+            if dp[i] == maxRes:
                 res = []
-                curr = i
-                
-                while curr != -1:
-                    res.append(words[curr])
-                    curr = prev[curr]
-                
+                start = i
+
+                while start != -1:
+                    res.append(words[start])
+                    start = prev[start]
+
                 return res[::-1]
+
+        return []
+
+
 ```
 

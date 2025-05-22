@@ -61,7 +61,6 @@ class Solution:
             curr *= nums[i]
 
         return res
-
 ```
 ### C++
 ``` cpp title='product-of-array-except-self'

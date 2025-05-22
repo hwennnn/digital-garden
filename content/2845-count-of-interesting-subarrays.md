@@ -6,7 +6,7 @@ tags:
   - array
   - hash-table
   - prefix-sum
-date: 2023-09-03
+date: 2025-04-25
 ---
 
 [Problem Link](https://leetcode.com/problems/count-of-interesting-subarrays/)

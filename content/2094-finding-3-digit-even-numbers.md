@@ -7,7 +7,7 @@ tags:
   - hash-table
   - sorting
   - enumeration
-date: 2021-12-05
+date: 2025-05-12
 ---
 
 [Problem Link](https://leetcode.com/problems/finding-3-digit-even-numbers/)
@@ -72,17 +72,25 @@ In this example, the digit 8 is used twice each time in 288, 828, and 882.
 ``` py title='finding-3-digit-even-numbers'
 class Solution:
     def findEvenNumbers(self, digits: List[int]) -> List[int]:
-        res = set()
-        n = len(digits)
+        N = len(digits)
+        visited = [False] * N
+        res = []
         
-        for i in range(n):
-            if digits[i] == 0: continue
-            for j in range(n):
-                if i == j: continue
-                for k in range(n):
-                    if i == k or j == k or digits[k] & 1: continue
-                    res.add(digits[i] * 100 + digits[j] * 10 + digits[k])
-        
-        return sorted(list(res))
+        def backtrack(index, s):
+            if index == 3:
+                nonlocal res
+                res.append(s)
+                return
+            
+            for j in range(N):
+                if visited[j] or (digits[j] == 0 and index == 0) or (index == 2 and digits[j] % 2 != 0): continue
+                visited[j] = True
+                backtrack(index + 1, s * 10 + digits[j])
+                visited[j] = False
+
+        backtrack(0, 0)
+        return sorted(set(res))
+
+
 ```
 

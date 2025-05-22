@@ -6,7 +6,7 @@ tags:
   - array
   - bit-manipulation
   - sliding-window
-date: 2022-09-04
+date: 2025-03-18
 ---
 
 [Problem Link](https://leetcode.com/problems/longest-nice-subarray/)

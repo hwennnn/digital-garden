@@ -7,7 +7,7 @@ tags:
   - string
   - dynamic-programming
   - greedy
-date: 2023-10-18
+date: 2025-05-16
 ---
 
 [Problem Link](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-i/)
@@ -94,19 +94,20 @@ date: 2023-10-18
 ### Python3
 ``` py title='longest-unequal-adjacent-groups-subsequence-i'
 class Solution:
-    def getWordsInLongestSubsequence(self, n: int, words: List[str], groups: List[int]) -> List[str]:
-        dp = [1] * n
-        prev = [-1] * n
+    def getLongestSubsequence(self, words: List[str], groups: List[int]) -> List[str]:
+        N = len(words)
+        dp = [1] * N
+        prev = [-1] * N
         maxLength = 1
         
-        for i in range(1, n):
+        for i in range(1, N):
             for j in range(i):
                 if groups[i] != groups[j] and dp[j] + 1 > dp[i]:
                     dp[i] = dp[j] + 1
                     prev[i] = j
                     maxLength = max(maxLength, dp[i])
         
-        for i in range(n):
+        for i in range(N):
             if dp[i] == maxLength:
                 curr = i
                 res = []

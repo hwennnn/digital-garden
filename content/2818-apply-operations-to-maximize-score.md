@@ -9,7 +9,7 @@ tags:
   - greedy
   - monotonic-stack
   - number-theory
-date: 2023-08-22
+date: 2025-03-29
 ---
 
 [Problem Link](https://leetcode.com/problems/apply-operations-to-maximize-score/)

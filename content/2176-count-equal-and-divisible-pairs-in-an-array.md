@@ -4,7 +4,7 @@ draft: false
 tags: 
   - leetcode-easy
   - array
-date: 2022-02-19
+date: 2025-04-17
 ---
 
 [Problem Link](https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/)

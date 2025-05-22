@@ -5,7 +5,7 @@ tags:
   - leetcode-easy
   - array
   - simulation
-date: 2021-07-04
+date: 2025-05-06
 ---
 
 [Problem Link](https://leetcode.com/problems/build-array-from-permutation/)

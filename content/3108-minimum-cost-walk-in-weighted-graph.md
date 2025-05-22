@@ -7,7 +7,7 @@ tags:
   - bit-manipulation
   - union-find
   - graph
-date: 2024-04-11
+date: 2025-03-21
 ---
 
 [Problem Link](https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/)

@@ -7,7 +7,7 @@ tags:
   - hash-table
   - bit-manipulation
   - counting
-date: 2022-03-19
+date: 2025-03-17
 ---
 
 [Problem Link](https://leetcode.com/problems/divide-array-into-equal-pairs/)
@@ -63,16 +63,14 @@ There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy 
 ``` py title='divide-array-into-equal-pairs'
 class Solution:
     def divideArray(self, nums: List[int]) -> bool:
-        N = len(nums)
-        n = N // 2
+        mp = {}
+
+        for x in nums:
+            if x in mp:
+                del mp[x]
+            else:
+                mp[x] = x
         
-        counter = Counter(nums)
-        
-        for k, v in counter.items():
-            if v == 1: return False
-            
-            n -= v // 2
-        
-        return n == 0
+        return len(mp) == 0
 ```
 

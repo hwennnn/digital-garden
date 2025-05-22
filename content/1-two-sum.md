@@ -65,13 +65,10 @@ class Solution:
         mp = {}
 
         for i, x in enumerate(nums):
-            k = target - x
-            if k in mp:
-                return [mp[k], i]
+            if target - x in mp:
+                return [mp[target - x], i]
             
             mp[x] = i
-
-        return None
 ```
 ### Python
 ``` py title='two-sum'

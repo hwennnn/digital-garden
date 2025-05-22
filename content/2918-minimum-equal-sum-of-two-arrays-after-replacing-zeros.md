@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - array
   - greedy
-date: 2023-10-29
+date: 2025-05-10
 ---
 
 [Problem Link](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/)
@@ -55,34 +55,34 @@ Both arrays have an equal sum of 12. It can be shown that it is the minimum sum 
 ``` py title='minimum-equal-sum-of-two-arrays-after-replacing-zeros'
 class Solution:
     def minSum(self, nums1: List[int], nums2: List[int]) -> int:
-        s1 = sum(nums1)
-        s2 = sum(nums2)
-        zeroes1, zeroes2 = nums1.count(0), nums2.count(0)
-        
-        if zeroes1 == 0 and zeroes2 == 0:
-            return s1 if s1 == s2 else -1
-        
-        if zeroes1 == 0:
-            return s1 if s2 + zeroes2 <= s1 else -1
-        
-        if zeroes2 == 0:
-            return s2 if s1 + zeroes1 <= s2 else -1
-        
-        def good(k):
-            return s1 + zeroes1 <= k and s2 + zeroes2 <= k
-        
-        left, right = -1, 10 ** 30 + 1
-        res = -1
-        
-        while left < right:
-            mid = left + (right - left) // 2
-            
-            if good(mid):
-                res = mid
-                right = mid
-            else:
-                left = mid + 1
+        N, M = len(nums1), len(nums2)
+        zero1 = zero2 = sum1 = sum2 = 0
 
-        return res
+        for x in nums1:
+            if x == 0:
+                zero1 += 1
+            else:
+                sum1 += x
+        
+        for x in nums2:
+            if x == 0:
+                zero2 += 1
+            else:
+                sum2 += x
+        
+        if zero1 == 0 and zero2 == 0:
+            return -1 if sum1 != sum2 else sum1
+        
+        if zero1 == 0:
+            if zero2 + sum2 > sum1: return -1
+            return sum1
+        
+        if zero2 == 0:
+            if zero1 + sum1 > sum2: return -1
+            return sum2
+        
+        return max(sum1 + zero1, sum2 + zero2)
+
+
 ```
 

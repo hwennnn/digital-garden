@@ -7,7 +7,7 @@ tags:
   - breadth-first-search
   - union-find
   - graph
-date: 2023-05-14
+date: 2025-03-22
 ---
 
 [Problem Link](https://leetcode.com/problems/count-the-number-of-complete-components/)

@@ -6,7 +6,7 @@ tags:
   - array
   - math
   - sorting
-date: 2024-02-04
+date: 2025-05-19
 ---
 
 [Problem Link](https://leetcode.com/problems/type-of-triangle/)

@@ -7,7 +7,7 @@ tags:
   - graph
   - topological-sort
   - shortest-path
-date: 2021-12-31
+date: 2025-03-23
 ---
 
 [Problem Link](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/)
@@ -65,37 +65,39 @@ The four ways to get there in 7 minutes are:
 ``` py title='number-of-ways-to-arrive-at-destination'
 class Solution:
     def countPaths(self, n: int, roads: List[List[int]]) -> int:
-        graph = collections.defaultdict(list)
+        MOD = 10 ** 9 + 7
+        graph = defaultdict(list)
+
+        for x, y, time in roads:
+            graph[x].append((y, time))
+            graph[y].append((x, time))
         
-        for u, v, w in roads:
-            graph[u].append((w, v))
-            graph[v].append((w, u))
-            
-        M = 10 ** 9 + 7
-        dest = [float('inf')] * n
-        dest[0] = 0
+        dist = [inf] * n
+        dist[0] = 0
         count = [0] * n
         count[0] = 1
-        
-        pq = [(0, 0)]
-        
+        pq = [(0, 0)] # (dist, node)
+
         while pq:
-            d, src = heapq.heappop(pq)
-            
-            if src == n - 1:
-                return count[src] % M
-            
-            if dest[src] != d: continue
-            
-            for weight, nei in graph[src]:
-                old = dest[nei]
-                new = dest[src] + weight
-                
-                if new == old:
-                    count[nei] += count[src]
-                elif new < old:
-                    dest[nei] = new
-                    heapq.heappush(pq, (new, nei))
-                    count[nei] = count[src]
+            d, node = heappop(pq)
+
+            if node == n - 1:
+                return count[node] % MOD
+
+            if d != dist[node]: continue
+
+            for adj, t in graph[node]:
+                oldT = dist[adj]
+                newT = d + t
+
+                if newT == oldT:
+                    count[adj] += count[node]
+                    count[adj] %= MOD
+                elif newT < dist[adj]:
+                    heappush(pq, (newT, adj))
+                    dist[adj] = newT
+                    count[adj] = count[node]
+                    count[adj] %= MOD
+        
 ```
 

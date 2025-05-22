@@ -9,7 +9,7 @@ tags:
   - bit-manipulation
   - combinatorics
   - enumeration
-date: 2024-05-20
+date: 2025-04-05
 ---
 
 [Problem Link](https://leetcode.com/problems/sum-of-all-subset-xor-totals/)

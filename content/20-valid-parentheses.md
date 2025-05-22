@@ -5,7 +5,7 @@ tags:
   - leetcode-easy
   - string
   - stack
-date: 2024-08-13
+date: 2025-05-19
 ---
 
 [Problem Link](https://leetcode.com/problems/valid-parentheses/)
@@ -72,17 +72,17 @@ date: 2024-08-13
 ``` py title='valid-parentheses'
 class Solution:
     def isValid(self, s: str) -> bool:
-        mp = {")" : "(", "}" : "{", "]" : "["}
         stack = []
+        mp = {")" : "(", "}" : "{", "]" : "["}
 
         for x in s:
-            if x in mp:
-                if stack and stack[-1] == mp[x]:
-                    stack.pop()
-                else:
-                    return False
-            else:
+            if x in "({[":
                 stack.append(x)
+            else:
+                if not stack or stack[-1] != mp[x]:
+                    return False
+                
+                stack.pop()
 
         return len(stack) == 0
 ```

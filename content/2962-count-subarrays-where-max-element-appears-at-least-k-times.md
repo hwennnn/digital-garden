@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - array
   - sliding-window
-date: 2024-03-29
+date: 2025-04-29
 ---
 
 [Problem Link](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/)

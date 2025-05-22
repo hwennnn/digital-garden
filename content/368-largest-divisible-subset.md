@@ -7,7 +7,7 @@ tags:
   - math
   - dynamic-programming
   - sorting
-date: 2024-02-09
+date: 2025-04-06
 ---
 
 [Problem Link](https://leetcode.com/problems/largest-divisible-subset/)

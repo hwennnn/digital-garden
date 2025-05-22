@@ -7,7 +7,7 @@ tags:
   - greedy
   - sorting
   - heap-priority-queue
-date: 2023-07-08
+date: 2025-03-31
 ---
 
 [Problem Link](https://leetcode.com/problems/put-marbles-in-bags/)

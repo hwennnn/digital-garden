@@ -6,7 +6,7 @@ tags:
   - array
   - hash-table
   - counting
-date: 2021-05-23
+date: 2025-05-04
 ---
 
 [Problem Link](https://leetcode.com/problems/number-of-equivalent-domino-pairs/)
@@ -49,20 +49,18 @@ date: 2021-05-23
 ### Python3
 ``` py title='number-of-equivalent-domino-pairs'
 class Solution:
-    def numEquivDominoPairs(self, A: List[List[int]]) -> int:
-        n = len(A)
-        mp = collections.defaultdict(int)
-        
-        def make(A):
-            return (min(A), max(A))
-        
+    def numEquivDominoPairs(self, dominoes: List[List[int]]) -> int:
+        pair = defaultdict(int)
         res = 0
-        for i in range(n):
-            m = make(A[i])
-            res += mp[m]
+
+        for a, b in dominoes:
+            if a < b:
+                res += pair[(a, b)]
+                pair[(a, b)] += 1
+            else:
+                res += pair[(b, a)]
+                pair[(b, a)] += 1
             
-            mp[m] += 1
-        
         return res
 ```
 
