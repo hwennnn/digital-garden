@@ -5,7 +5,7 @@ tags:
   - leetcode-easy
   - array
   - string
-date: 2023-11-25
+date: 2025-05-24
 ---
 
 [Problem Link](https://leetcode.com/problems/find-words-containing-character/)
@@ -65,7 +65,13 @@ class Solution:
         res = []
         
         for i, word in enumerate(words):
-            if x in word:
+            ok = False
+            for char in word:
+                if char == x:
+                    ok = True
+                    break
+            
+            if ok:
                 res.append(i)
         
         return res

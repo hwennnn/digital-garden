@@ -8,7 +8,7 @@ tags:
   - string
   - greedy
   - counting
-date: 2022-11-03
+date: 2025-05-25
 ---
 
 [Problem Link](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/)
@@ -69,9 +69,8 @@ Note that &quot;ll&quot; is another longest palindrome that can be created, and 
 ``` py title='longest-palindrome-by-concatenating-two-letter-words'
 class Solution:
     def longestPalindrome(self, words: List[str]) -> int:
-        middle = 0
-        res = 0
         counter = Counter()
+        middle = res = 0
 
         for word in words:
             if word[0] == word[1]:
