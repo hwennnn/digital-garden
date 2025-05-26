@@ -23,7 +23,7 @@ for node, p in enumerate(A):
 # construct binary jumping array
 for power in range(1, M):
     for node in range(N):
-    parent[node][power] = parent[[parent[node][power - 1]]][power - 1]
+    parent[node][power] = parent[parent[node][power - 1]][power - 1]
 ```
 
 ### Complexity for Generic Binary Lifting
