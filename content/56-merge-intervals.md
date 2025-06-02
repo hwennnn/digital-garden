@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - array
   - sorting
-date: 2025-01-23
+date: 2025-06-01
 ---
 
 [Problem Link](https://leetcode.com/problems/merge-intervals/)
@@ -49,20 +49,20 @@ date: 2025-01-23
 ``` py title='merge-intervals'
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
-        intervals.sort()
         N = len(intervals)
+        intervals.sort()
         res = []
         sx, sy = intervals[0]
 
         for i in range(1, N):
             x, y = intervals[i]
 
-            if x > sy:
+            if x <= sy:
+                sy = max(sy, y)
+            else:
                 res.append([sx, sy])
                 sx, sy = x, y
-            else:
-                sx, sy = min(sx, x), max(sy, y)
-        
+
         res.append([sx, sy])
         return res
 ```

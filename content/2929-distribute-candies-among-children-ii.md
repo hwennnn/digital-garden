@@ -6,7 +6,7 @@ tags:
   - math
   - combinatorics
   - enumeration
-date: 2023-11-13
+date: 2025-06-01
 ---
 
 [Problem Link](https://leetcode.com/problems/distribute-candies-among-children-ii/)

@@ -58,11 +58,10 @@ class Solution:
             if nums[i] < 0:
                 pos, neg = neg, pos
             
-            pos = max(nums[i], nums[i] * pos)
-            neg = min(nums[i], nums[i] * neg)
-
+            pos = max(nums[i], pos * nums[i])
+            neg = min(nums[i], neg * nums[i])
             res = max(res, pos)
-        
+
         return res
 ```
 ### C++

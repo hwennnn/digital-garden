@@ -4,7 +4,7 @@ draft: false
 tags: 
   - leetcode-easy
   - math
-date: 2023-10-18
+date: 2025-05-27
 ---
 
 [Problem Link](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/)
@@ -72,14 +72,6 @@ We return 0 - 15 = -15 as the answer.
 ``` py title='divisible-and-non-divisible-sums-difference'
 class Solution:
     def differenceOfSums(self, n: int, m: int) -> int:
-        res = 0
-        
-        for i in range(1, n + 1):
-            if i % m == 0:
-                res -= i
-            else:
-                res += i
-        
-        return res
+        return sum(x if x % m != 0 else -x for x in range(1, n + 1))
 ```
 

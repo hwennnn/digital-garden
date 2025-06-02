@@ -7,7 +7,7 @@ tags:
   - hash-table
   - string
   - sorting
-date: 2024-08-13
+date: 2025-06-01
 ---
 
 [Problem Link](https://leetcode.com/problems/group-anagrams/)
@@ -67,19 +67,19 @@ date: 2024-08-13
 ``` py title='group-anagrams'
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        mp = defaultdict(list)
+        res = defaultdict(list)
 
-        def hash(words):
-            count = [0] * 26
+        def hash(s):
+            counter = [0] * 26
 
-            for word in words:
-                count[ord(word) - ord('a')] += 1
+            for x in s:
+                counter[ord(x) - ord('a')] += 1
             
-            return ",".join(map(str, count))
+            return ",".join(map(str, counter))
 
-        for x in strs:
-            mp[hash(x)].append(x)
-
-        return mp.values()
+        for s in strs:
+            res[hash(s)].append(s)
+        
+        return list(res.values())
 ```
 

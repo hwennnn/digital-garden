@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - depth-first-search
   - graph
-date: 2023-01-25
+date: 2025-05-30
 ---
 
 [Problem Link](https://leetcode.com/problems/find-closest-node-to-given-two-nodes/)

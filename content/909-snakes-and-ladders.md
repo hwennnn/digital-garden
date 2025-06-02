@@ -80,35 +80,43 @@ This is the lowest possible number of moves to reach the last square, so return 
 class Solution:
     def snakesAndLadders(self, board: List[List[int]]) -> int:
         N = len(board)
-        G = {}
+        mp = {}
 
-        def f(v):
-            row = N - 1 - (v - 1) // N
-            col = (v - 1) % N
-            if (v - 1) // N % 2:
-                col = N - 1 - col
+        curr = 1
+        rev = False
+        for i in range(N - 1, -1, -1):
+            if not rev:
+                for j in range(N):
+                    mp[curr] = (i, j)
+                    curr += 1
+            else:
+                for j in range(N - 1, -1, -1):
+                    mp[curr] = (i, j)
+                    curr += 1
 
-            return (row, col)
-        
-        dq = deque([1])
-        seen = {1}
-        moves = 1
+            rev = not rev
 
-        while dq:
-            for _ in range(len(dq)):
-                index = dq.popleft()
+        queue = deque([1])
+        seen = set([1])
+        moves = 0
 
-                for adj in range(index + 1, min(index + 6, N * N) + 1):
-                    r, c = f(adj)
+        while queue:
+            M = len(queue)
+
+            for _ in range(M):
+                node = queue.popleft()
+
+                if node == N * N: return moves
+
+                for adj in range(node + 1, min(node + 6, N * N) + 1):
+                    r, c = mp[adj]
                     
                     if board[r][c] != -1:
                         adj = board[r][c]
-                    
-                    if adj == N * N: return moves
 
                     if adj not in seen:
                         seen.add(adj)
-                        dq.append(adj)
+                        queue.append(adj)
             
             moves += 1
 

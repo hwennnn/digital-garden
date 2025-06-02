@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - array
   - binary-search
-date: 2023-08-08
+date: 2025-06-01
 ---
 
 [Problem Link](https://leetcode.com/problems/search-in-rotated-sorted-array/)

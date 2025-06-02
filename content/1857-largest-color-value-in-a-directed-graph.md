@@ -9,7 +9,7 @@ tags:
   - topological-sort
   - memoization
   - counting
-date: 2023-04-09
+date: 2025-05-26
 ---
 
 [Problem Link](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/)
@@ -65,35 +65,41 @@ date: 2023-04-09
 ``` py title='largest-color-value-in-a-directed-graph'
 class Solution:
     def largestPathValue(self, colors: str, edges: List[List[int]]) -> int:
-        N, K = len(colors), 26
-        ind = [0] * N
+        N = len(colors)
         graph = defaultdict(list)
-        res = visited = 0
+        indegree = [0] * N
+        visited = 0
 
         for a, b in edges:
+            indegree[b] += 1
             graph[a].append(b)
-            ind[b] += 1
-        
-        curr = [i for i in range(N) if ind[i] == 0]
-        counts = [[0] * K for _ in range(N)]
 
-        for node, x in enumerate(colors):
-            counts[node][ord(x) - ord('a')] += 1
-        
-        while curr:
-            node = curr.pop()
+        queue = deque()
+        dp = [[0] * 26 for _ in range(N)]
+        for node in range(N):
+            if indegree[node] == 0:
+                queue.append(node)
+            
+            dp[node][ord(colors[node]) - ord('a')] += 1
+
+        ans = 0
+
+        while queue:
+            node = queue.popleft()
             visited += 1
 
             for adj in graph[node]:
-                for k in range(K):
-                    counts[adj][k] = max(counts[adj][k], counts[node][k] + int(ord(colors[adj]) - ord('a') == k))
-
-                ind[adj] -= 1
-                if ind[adj] == 0:
-                    curr.append(adj)
+                for k in range(26):
+                    dp[adj][k] = max(dp[adj][k], dp[node][k] + int(ord(colors[adj]) - ord('a') == k))
+            
+                indegree[adj] -= 1
+                if indegree[adj] == 0:
+                    queue.append(adj)
                 
-            res = max(res, max(counts[node]))
+            ans = max(ans, max(dp[node]))
         
-        return res if visited == N else -1
+        if visited != N: return -1
+
+        return ans
 ```
 

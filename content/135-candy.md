@@ -5,7 +5,7 @@ tags:
   - leetcode-hard
   - array
   - greedy
-date: 2023-09-13
+date: 2025-06-02
 ---
 
 [Problem Link](https://leetcode.com/problems/candy/)
