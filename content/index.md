@@ -25,10 +25,6 @@ Feel free to explore and learn alongside me. Happy coding! 💻
 
 ## 🏗️ [[System Design]]
 
-## ➗ Math
-
-## 📝 Resume Writing
-
 ## 🤖 GPT Prompting
 
 - [Useful Prompting Techniques](./GPT%20Prompting/Useful%20Prompting%20Techniques.md)
