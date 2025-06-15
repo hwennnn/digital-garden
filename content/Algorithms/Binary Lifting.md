@@ -52,7 +52,7 @@ def dfs(node, prev, depth):
         if adj != prev:
             dfs(adj, node, depth + 1)
 
-dfs(0, -1, 0)
+dfs(0, 0, 0)
 
 # binary lifting
 for power in range(1, M):
