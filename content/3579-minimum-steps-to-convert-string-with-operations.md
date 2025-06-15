@@ -1,0 +1,171 @@
+---
+title: 3579. Minimum Steps to Convert String with Operations
+draft: false
+tags: 
+  - leetcode-hard
+  - string
+  - dynamic-programming
+  - greedy
+date: 2025-06-12
+---
+
+[Problem Link](https://leetcode.com/problems/minimum-steps-to-convert-string-with-operations/)
+
+## Description
+
+---
+<p>You are given two strings, <code>word1</code> and <code>word2</code>, of equal length. You need to transform <code>word1</code> into <code>word2</code>.</p>
+
+<p>For this, divide <code>word1</code> into one or more <strong>contiguous <span data-keyword="substring-nonempty">substrings</span></strong>. For each substring <code>substr</code> you can perform the following operations:</p>
+
+<ol>
+	<li>
+	<p><strong>Replace:</strong> Replace the character at any one index of <code>substr</code> with another lowercase English letter.</p>
+	</li>
+	<li>
+	<p><strong>Swap:</strong> Swap any two characters in <code>substr</code>.</p>
+	</li>
+	<li>
+	<p><strong>Reverse Substring:</strong> Reverse <code>substr</code>.</p>
+	</li>
+</ol>
+
+<p>Each of these counts as <strong>one</strong> operation and each character of each substring can be used in each type of operation at most once (i.e. no single index may be involved in more than one replace, one swap, or one reverse).</p>
+
+<p>Return the <strong>minimum number of operations</strong> required to transform <code>word1</code> into <code>word2</code>.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">word1 = &quot;abcdf&quot;, word2 = &quot;dacbe&quot;</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">4</span></p>
+
+<p><strong>Explanation:</strong></p>
+
+<p>Divide <code>word1</code> into <code>&quot;ab&quot;</code>, <code>&quot;c&quot;</code>, and <code>&quot;df&quot;</code>. The operations are:</p>
+
+<ul>
+	<li>For the substring <code>&quot;ab&quot;</code>,
+
+	<ul>
+		<li>Perform operation of type 3 on <code>&quot;ab&quot; -&gt; &quot;ba&quot;</code>.</li>
+		<li>Perform operation of type 1 on <code>&quot;ba&quot; -&gt; &quot;da&quot;</code>.</li>
+	</ul>
+	</li>
+	<li>For the substring <code>&quot;c&quot;</code> do no operations.</li>
+	<li>For the substring <code>&quot;df&quot;</code>,
+	<ul>
+		<li>Perform operation of type 1 on <code>&quot;df&quot; -&gt; &quot;bf&quot;</code>.</li>
+		<li>Perform operation of type 1 on <code>&quot;bf&quot; -&gt; &quot;be&quot;</code>.</li>
+	</ul>
+	</li>
+</ul>
+</div>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">word1 = &quot;abceded&quot;, word2 = &quot;baecfef&quot;</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">4</span></p>
+
+<p><strong>Explanation:</strong></p>
+
+<p>Divide <code>word1</code> into <code>&quot;ab&quot;</code>, <code>&quot;ce&quot;</code>, and <code>&quot;ded&quot;</code>. The operations are:</p>
+
+<ul>
+	<li>For the substring <code>&quot;ab&quot;</code>,
+
+	<ul>
+		<li>Perform operation of type 2 on <code>&quot;ab&quot; -&gt; &quot;ba&quot;</code>.</li>
+	</ul>
+	</li>
+	<li>For the substring <code>&quot;ce&quot;</code>,
+	<ul>
+		<li>Perform operation of type 2 on <code>&quot;ce&quot; -&gt; &quot;ec&quot;</code>.</li>
+	</ul>
+	</li>
+	<li>For the substring <code>&quot;ded&quot;</code>,
+	<ul>
+		<li>Perform operation of type 1 on <code>&quot;ded&quot; -&gt; &quot;fed&quot;</code>.</li>
+		<li>Perform operation of type 1 on <code>&quot;fed&quot; -&gt; &quot;fef&quot;</code>.</li>
+	</ul>
+	</li>
+</ul>
+</div>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">word1 = &quot;abcdef&quot;, word2 = &quot;fedabc&quot;</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">2</span></p>
+
+<p><strong>Explanation:</strong></p>
+
+<p>Divide <code>word1</code> into <code>&quot;abcdef&quot;</code>. The operations are:</p>
+
+<ul>
+	<li>For the substring <code>&quot;abcdef&quot;</code>,
+
+	<ul>
+		<li>Perform operation of type 3 on <code>&quot;abcdef&quot; -&gt; &quot;fedcba&quot;</code>.</li>
+		<li>Perform operation of type 2 on <code>&quot;fedcba&quot; -&gt; &quot;fedabc&quot;</code>.</li>
+	</ul>
+	</li>
+</ul>
+</div>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= word1.length == word2.length &lt;= 100</code></li>
+	<li><code>word1</code> and <code>word2</code> consist only of lowercase English letters.</li>
+</ul>
+
+
+## Solution
+
+---
+### Python3
+``` py title='minimum-steps-to-convert-string-with-operations'
+class Solution:
+    def minOperations(self, word1: str, word2: str) -> int:
+        N = len(word1)
+
+        def solve(i, j, isReversed):
+            operations = 1 if isReversed else 0
+            count = [[0] * 26 for _ in range(26)]
+            index1 = i
+            index2 = j if isReversed else i
+            add = -1 if isReversed else 1
+
+            for _ in range(j - i + 1):
+                if word1[index1] != word2[index2]:
+                    got, wanted = ord(word1[index1]) - ord('a'), ord(word2[index2]) - ord('a')
+                    if count[got][wanted] > 0:
+                        count[got][wanted] -= 1
+                    else:
+                        count[wanted][got] += 1
+                        operations += 1
+                
+                index1 += 1
+                index2 += add
+
+            return operations
+
+        @cache
+        def go(i, j):
+            if i >= N: return 0
+            if j >= N: return inf
+
+            skip = go(i, j + 1)
+            take = min(solve(i, j, False), solve(i, j, True)) + go(j + 1, j + 1)
+            return min(skip, take)
+        
+        return go(0, 0)
+```
+

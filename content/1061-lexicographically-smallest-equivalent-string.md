@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - string
   - union-find
-date: 2025-01-14
+date: 2025-06-05
 ---
 
 [Problem Link](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/)
@@ -79,7 +79,7 @@ So only the second letter &#39;o&#39; in baseStr is changed to &#39;d&#39;, the 
 class DSU:
     def __init__(self, n):
         self.parent = [i for i in range(n)]
-        self.rank = [0] * n
+        self.rank = [0 for _ in range(n)]
  
     def find(self, x):
         if self.parent[x] == x:
@@ -109,20 +109,17 @@ class Solution:
         for a, b in zip(s1, s2):
             uf.union(ord(a) - ord('a'), ord(b) - ord('a'))
         
-        mp = {}
-        for k in range(26):
-            p = uf.find(k)
-            if p not in mp:
-                mp[p] = k
-            else:
-                mp[p] = min(mp[p], k)
-        
+        parent = {}
+        for i in range(26):
+            p = uf.find(i)
+            if p not in parent or i < parent[p]:
+                parent[p] = i
+
         res = []
         for x in baseStr:
             k = ord(x) - ord('a')
-            p = uf.find(k)
-
-            res.append(chr(ord('a') + mp[p]))
+            p = parent[uf.find(k)]
+            res.append(chr(ord('a') + p))
         
         return "".join(res)
 ```

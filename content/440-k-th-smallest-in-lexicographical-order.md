@@ -4,7 +4,7 @@ draft: false
 tags: 
   - leetcode-hard
   - trie
-date: 2024-09-22
+date: 2025-06-09
 ---
 
 [Problem Link](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/)

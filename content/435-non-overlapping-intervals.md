@@ -7,7 +7,7 @@ tags:
   - dynamic-programming
   - greedy
   - sorting
-date: 2024-03-18
+date: 2025-06-13
 ---
 
 [Problem Link](https://leetcode.com/problems/non-overlapping-intervals/)
@@ -62,9 +62,6 @@ date: 2024-03-18
 class Solution:
     def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
         N = len(intervals)
-
-        if N < 2: return 0
-
         intervals.sort()
         last = intervals[0][1]
         res = 0
@@ -77,5 +74,6 @@ class Solution:
                 last = intervals[i][1]
 
         return res
+
 ```
 

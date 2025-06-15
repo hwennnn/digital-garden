@@ -7,7 +7,7 @@ tags:
   - depth-first-search
   - breadth-first-search
   - binary-tree
-date: 2023-02-18
+date: 2025-06-13
 ---
 
 [Problem Link](https://leetcode.com/problems/invert-binary-tree/)
@@ -61,16 +61,17 @@ date: 2023-02-18
 #         self.right = right
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        
-        def go(node):
+
+        def invert(node):
             if not node: return None
-            
-            left, right = go(node.left), go(node.right)
-            
-            node.left, node.right = right, left
-            
+
+            left, right = invert(node.left), invert(node.right)
+            node.left = right
+            node.right = left
+
             return node
         
-        return go(root)
+        return invert(root)
+
 ```
 

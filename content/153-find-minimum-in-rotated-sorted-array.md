@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - array
   - binary-search
-date: 2022-05-14
+date: 2025-06-06
 ---
 
 [Problem Link](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
@@ -70,18 +70,20 @@ date: 2022-05-14
 ``` py title='find-minimum-in-rotated-sorted-array'
 class Solution:
     def findMin(self, nums: List[int]) -> int:
-        left, right = 0, len(nums) - 1
-        
+        N = len(nums)
+        left, right = 0, N - 1
+
         while left < right:
+            if nums[left] < nums[right]:
+                return nums[left]
+                
             mid = left + (right - left) // 2
-            
-            if nums[mid] > nums[right]:
+
+            if nums[left] <= nums[mid]:
                 left = mid + 1
             else:
                 right = mid
-                
+        
         return nums[left]
-            
-            
 ```
 

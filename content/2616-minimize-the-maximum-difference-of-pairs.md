@@ -6,7 +6,7 @@ tags:
   - array
   - binary-search
   - greedy
-date: 2023-08-09
+date: 2025-06-13
 ---
 
 [Problem Link](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/)
@@ -59,22 +59,22 @@ class Solution:
         nums.sort()
         
         def good(k):
-            i = 1
             count = 0
-            
+            i = 1
+
             while i < N:
                 if nums[i] - nums[i - 1] <= k:
                     i += 1
                     count += 1
+                
                 i += 1
-            
+
             return count >= p
         
-        left, right = 0, 10 ** 9
-        
+        left, right = 0, nums[-1] - nums[0]
         while left < right:
             mid = left + (right - left) // 2
-            
+
             if good(mid):
                 right = mid
             else:

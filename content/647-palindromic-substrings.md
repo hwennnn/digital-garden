@@ -6,7 +6,7 @@ tags:
   - two-pointers
   - string
   - dynamic-programming
-date: 2024-02-10
+date: 2025-06-06
 ---
 
 [Problem Link](https://leetcode.com/problems/palindromic-substrings/)
@@ -53,22 +53,21 @@ date: 2024-02-10
 ``` py title='palindromic-substrings'
 class Solution:
     def countSubstrings(self, s: str) -> int:
+        N = len(s)
+
+        @cache
+        def isPal(i, j):
+            if i == j: return True
+            if i > j: return True
+
+            return s[i] == s[j] and isPal(i + 1, j - 1)
+        
         res = 0
-        n = len(s)
-        
-        def helper(left, right):
-            count = 0
-            
-            while left >= 0 and right < n and s[left] == s[right]:
-                left -= 1
-                right += 1
-                count += 1
-            
-            return count
-        
-        for mid in range(n):
-            res += helper(mid, mid)
-            res += helper(mid, mid + 1)
+
+        for i in range(N):
+            for j in range(i, N):
+                if isPal(i, j):
+                    res += 1
         
         return res
 ```

@@ -8,7 +8,7 @@ tags:
   - divide-and-conquer
   - tree
   - binary-tree
-date: 2022-07-14
+date: 2025-06-13
 ---
 
 [Problem Link](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
@@ -60,22 +60,26 @@ date: 2022-07-14
 #         self.right = right
 class Solution:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
+        N = len(preorder)
+        mp = {}
+
+        for i, x in enumerate(inorder):
+            mp[x] = i
+
+        # preorder -> node, left, right
+        # inorder -> left, node, right
+
+        def go(preIndex, inLeft, inRight):
+            if preIndex >= N or inLeft > inRight: return None
+
+            node = TreeNode(preorder[preIndex])
+            rootIndex = mp[node.val]
+
+            node.left = go(preIndex + 1, inLeft, rootIndex - 1)
+            node.right = go(preIndex + rootIndex - inLeft + 1, rootIndex + 1, inRight)
+
+            return node
         
-        def go(preStart, inStart, inEnd):
-            if inStart > inEnd or preStart >= len(preorder): return None
-            
-            root = TreeNode(preorder[preStart])
-            
-            rootIndex = 0
-            for index in range(inStart, inEnd + 1):
-                if inorder[index] == root.val:
-                    rootIndex = index
-            
-            root.left = go(preStart + 1, inStart, rootIndex - 1)
-            root.right = go(preStart + rootIndex - inStart + 1, rootIndex + 1, inEnd)
-            
-            return root
-        
-        return go(0, 0, len(inorder) - 1)
+        return go(0, 0, N - 1)
 ```
 

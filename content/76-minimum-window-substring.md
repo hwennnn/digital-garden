@@ -6,7 +6,7 @@ tags:
   - hash-table
   - string
   - sliding-window
-date: 2025-01-23
+date: 2025-06-13
 ---
 
 [Problem Link](https://leetcode.com/problems/minimum-window-substring/)
@@ -65,33 +65,35 @@ Since the largest window of s only has one &#39;a&#39;, return empty string.
 ``` py title='minimum-window-substring'
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
-        N, M = len(s), len(t)
-        res = (-1, inf) # (start, length)
+        S, T = len(s), len(t)
         counter = Counter(t)
-        curr = len(counter)
+        tCount = len(counter)
+        res = None
         i = 0
 
         for j, x in enumerate(s):
             if x in counter:
                 counter[x] -= 1
                 if counter[x] == 0:
-                    curr -= 1
+                    tCount -= 1
             
-            while curr == 0:
+            while tCount == 0:
                 length = j - i + 1
-                if length < res[1]:
+                if res is None or length < res[1]:
                     res = (i, length)
                 
                 if s[i] in counter:
                     counter[s[i]] += 1
                     if counter[s[i]] == 1:
-                        curr += 1
+                        tCount += 1
                 
                 i += 1
         
-        start, length = res
-        if start == -1: return ""
+        if res is None: return ""
 
-        return s[start : start + length]
+        return s[res[0] : res[0] + res[1]]
+
+
+        
 ```
 

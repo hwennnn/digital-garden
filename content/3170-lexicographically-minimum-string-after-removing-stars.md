@@ -8,7 +8,7 @@ tags:
   - stack
   - greedy
   - heap-priority-queue
-date: 2024-06-02
+date: 2025-06-07
 ---
 
 [Problem Link](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/)
@@ -69,23 +69,22 @@ date: 2024-06-02
 class Solution:
     def clearStars(self, s: str) -> str:
         N = len(s)
-        mp = [[] for _ in range(26)]
-        stack = []
-        deleted = [False] * N
+        A = [[] for _ in range(26)]
         
         for i, x in enumerate(s):
-            if x == "*":
-                deleted[i] = True
-                
+            if x == '*':
                 for k in range(26):
-                    if len(mp[k]) > 0:
-                        j = mp[k].pop()
-                        deleted[j] = True
+                    if len(A[k]) != 0:
+                        A[k].pop()
                         break
             else:
-                mp[ord(x) - ord('a')].append(i)
+                A[ord(x) - ord('a')].append(i)
         
-        return "".join(s[i] for i in range(N) if not deleted[i])
-                
+        res = ["" for _ in range(N)]
+        for k in range(26):
+            for index in A[k]:
+                res[index] = chr(ord('a') + k)
+        
+        return "".join(res)
 ```
 

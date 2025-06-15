@@ -5,7 +5,7 @@ tags:
   - leetcode-easy
   - math
   - greedy
-date: 2023-02-25
+date: 2025-06-14
 ---
 
 [Problem Link](https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/)

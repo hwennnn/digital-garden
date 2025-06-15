@@ -6,7 +6,7 @@ tags:
   - hash-table
   - string
   - sliding-window
-date: 2025-01-23
+date: 2025-06-06
 ---
 
 [Problem Link](https://leetcode.com/problems/longest-repeating-character-replacement/)

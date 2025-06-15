@@ -7,7 +7,7 @@ tags:
   - string
   - stack
   - greedy
-date: 2022-10-09
+date: 2025-06-06
 ---
 
 [Problem Link](https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string/)

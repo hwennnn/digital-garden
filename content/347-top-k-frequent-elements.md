@@ -53,11 +53,11 @@ class Solution:
         counter = Counter(nums)
         pq = []
 
-        for key, val in counter.items():
+        for key, v in counter.items():
             if len(pq) == k:
-                heappushpop(pq, (val, key))
+                heappushpop(pq, (v, key))
             else:
-                heappush(pq, (val, key))
+                heappush(pq, (v, key))
         
         return [key for _, key in pq]
 ```

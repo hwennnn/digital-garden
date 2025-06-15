@@ -6,7 +6,7 @@ tags:
   - array
   - breadth-first-search
   - graph
-date: 2020-12-27
+date: 2025-06-03
 ---
 
 [Problem Link](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes/)
@@ -75,22 +75,21 @@ The total number of candies will be 6.
 ``` py title='maximum-candies-you-can-get-from-boxes'
 class Solution:
     def maxCandies(self, status: List[int], candies: List[int], keys: List[List[int]], containedBoxes: List[List[int]], initialBoxes: List[int]) -> int:
-        
         boxes = set(initialBoxes)
-        bfs = [i for i in boxes if status[i]]
-        
-        for i in bfs:
-            for b in containedBoxes[i]:
-                boxes.add(b)
-                if status[b]: bfs.append(b)
+        opened = [box for box in boxes if status[box] == 1]
+
+        for box in opened:
+            for cb in containedBoxes[box]:
+                boxes.add(cb)
+                if status[cb] == 1:
+                    opened.append(cb)
             
-            for k in keys[i]:
-                if status[k] == 0 and k in boxes:
-                    bfs.append(k)
-                
-                status[k] = 1
+            for key in keys[box]:
+                if status[key] == 0 and key in boxes:
+                    opened.append(key)
+
+                status[key] = 1
         
-        return sum([candies[v] for v in bfs])
-                    
+        return sum(candies[v] for v in opened)
 ```
 

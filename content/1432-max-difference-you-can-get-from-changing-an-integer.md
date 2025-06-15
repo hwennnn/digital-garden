@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - math
   - greedy
-date: 2020-10-13
+date: 2025-06-15
 ---
 
 [Problem Link](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/)
@@ -62,23 +62,21 @@ We have now a = 9 and b = 1 and max difference = 8
 ``` py title='max-difference-you-can-get-from-changing-an-integer'
 class Solution:
     def maxDiff(self, num: int) -> int:
-        
-        a = b = str(num)
-        
-        for c in a:
-            if c != "9":
-                a = a.replace(c,"9")
+        A, B = str(num), str(num)
+
+        for x in A:
+            if x != "9":
+                A = A.replace(x, "9")
                 break
         
-        if b[0] != "1":
-            b = b.replace(b[0], "1")
+        if B[0] != "1":
+            B = B.replace(B[0], "1")
         else:
-            for c in b[1:]:
-                if c not in "01":
-                    b = b.replace(c, "0")
+            for x in B:
+                if x not in "01":
+                    B = B.replace(x, "0")
                     break
         
-        return int(a) - int(b)
-            
+        return int(A) - int(B)
 ```
 

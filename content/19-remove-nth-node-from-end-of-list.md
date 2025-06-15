@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - linked-list
   - two-pointers
-date: 2024-03-03
+date: 2025-06-06
 ---
 
 [Problem Link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
@@ -64,10 +64,10 @@ date: 2024-03-03
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
         res = curr = ListNode(-1, head)
-
+        
         for _ in range(n):
             head = head.next
-        
+
         while head and curr:
             head = head.next
             curr = curr.next
@@ -75,5 +75,7 @@ class Solution:
         curr.next = curr.next.next
 
         return res.next
+        
+
 ```
 

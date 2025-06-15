@@ -6,7 +6,7 @@ tags:
   - array
   - two-pointers
   - greedy
-date: 2024-08-13
+date: 2025-06-06
 ---
 
 [Problem Link](https://leetcode.com/problems/container-with-most-water/)
@@ -57,16 +57,18 @@ class Solution:
     def maxArea(self, height: List[int]) -> int:
         N = len(height)
         res = 0
-        left, right = 0, N - 1
-        
-        while left < right:
-            res = max(res, (right - left) * min(height[left], height[right]))
+        i, j = 0, N - 1
+
+        while i < j:
+            w = j - i
+            h = min(height[i], height[j])
+            res = max(res, w * h)
             
-            if height[left] < height[right]:
-                left += 1
+            if height[i] < height[j]:
+                i += 1
             else:
-                right -= 1
-        
+                j -= 1
+
         return res
 ```
 

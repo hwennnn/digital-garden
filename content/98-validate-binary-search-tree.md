@@ -7,7 +7,7 @@ tags:
   - depth-first-search
   - binary-search-tree
   - binary-tree
-date: 2022-08-11
+date: 2025-06-13
 ---
 
 [Problem Link](https://leetcode.com/problems/validate-binary-search-tree/)
@@ -63,19 +63,14 @@ date: 2022-08-11
 #         self.right = right
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
+
+        def dfs(node, mmin, mmax):
+            if not node: return True
+
+            if not (mmin < node.val < mmax): return False
+
+            return dfs(node.left, mmin, node.val) and dfs(node.right, node.val, mmax)
         
-        def dfs(node, mmax, mmin):
-            if not (mmin < node.val < mmax):
-                return False
-            
-            if node.left and not dfs(node.left, node.val, mmin):
-                return False
-            
-            if node.right and not dfs(node.right, mmax, node.val):
-                return False
-            
-            return True
-        
-        return dfs(root, inf, -inf)
+        return dfs(root, -inf, inf)
 ```
 

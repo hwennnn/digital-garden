@@ -8,7 +8,7 @@ tags:
   - breadth-first-search
   - union-find
   - matrix
-date: 2024-08-13
+date: 2025-06-06
 ---
 
 [Problem Link](https://leetcode.com/problems/number-of-islands/)

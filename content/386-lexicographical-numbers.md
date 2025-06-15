@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - depth-first-search
   - trie
-date: 2025-01-01
+date: 2025-06-08
 ---
 
 [Problem Link](https://leetcode.com/problems/lexicographical-numbers/)
