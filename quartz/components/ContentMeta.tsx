@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { JSX } from "preact"
 import readingTime from "reading-time"
 import { i18n } from "../i18n"
@@ -5,6 +6,15 @@ import { classNames } from "../util/lang"
 import { Date } from "./Date"
 import style from "./styles/contentMeta.scss"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
+=======
+import { Date, getDate } from "./Date"
+import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import readingTime from "reading-time"
+import { classNames } from "../util/lang"
+import { i18n } from "../i18n"
+import { JSX } from "preact"
+import style from "./styles/contentMeta.scss"
+>>>>>>> upstream/v4
 
 interface ContentMetaOptions {
   /**
@@ -29,6 +39,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     if (text) {
       const segments: (string | JSX.Element)[] = []
 
+<<<<<<< HEAD
       // First line: Reading stats
       if (options.showReadingTime) {
         const { minutes, words } = readingTime(text)
@@ -52,6 +63,26 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       }
 
       return <div class={classNames(displayClass, "content-meta")}>{segments}</div>
+=======
+      if (fileData.dates) {
+        segments.push(<Date date={getDate(cfg, fileData)!} locale={cfg.locale} />)
+      }
+
+      // Display reading time if enabled
+      if (options.showReadingTime) {
+        const { minutes, words: _words } = readingTime(text)
+        const displayedTime = i18n(cfg.locale).components.contentMeta.readingTime({
+          minutes: Math.ceil(minutes),
+        })
+        segments.push(<span>{displayedTime}</span>)
+      }
+
+      return (
+        <p show-comma={options.showComma} class={classNames(displayClass, "content-meta")}>
+          {segments}
+        </p>
+      )
+>>>>>>> upstream/v4
     } else {
       return null
     }

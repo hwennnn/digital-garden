@@ -31,13 +31,14 @@ export interface Translation {
       lightMode: string
       darkMode: string
     }
+    readerMode: {
+      title: string
+    }
     explorer: {
       title: string
     }
     footer: {
-      createdBy: string
       createdWith: string
-      poweredBy: string
     }
     graph: {
       title: string

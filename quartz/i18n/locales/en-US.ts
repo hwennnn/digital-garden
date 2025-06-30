@@ -29,13 +29,14 @@ export default {
       lightMode: "Light mode",
       darkMode: "Dark mode",
     },
+    readerMode: {
+      title: "Reader mode",
+    },
     explorer: {
       title: "Explorer",
     },
     footer: {
-      createdBy: "Created by",
       createdWith: "Created with",
-      poweredBy: "Powered by",
     },
     graph: {
       title: "Graph View",

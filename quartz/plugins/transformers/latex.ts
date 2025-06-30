@@ -1,11 +1,11 @@
-import remarkMath from "remark-math"
 import rehypeKatex from "rehype-katex"
 import rehypeMathjax from "rehype-mathjax/svg"
+import remarkMath from "remark-math"
 //@ts-ignore
 import rehypeTypst from "@myriaddreamin/rehype-typst"
-import { QuartzTransformerPlugin } from "../types"
 import { KatexOptions } from "katex"
 import { Options as MathjaxOptions } from "rehype-mathjax/svg"
+import { QuartzTransformerPlugin } from "../types"
 //@ts-ignore
 import { Options as TypstOptions } from "@myriaddreamin/rehype-typst"
 
@@ -59,8 +59,6 @@ export const Latex: QuartzTransformerPlugin<Partial<Options>> = (opts) => {
               },
             ],
           }
-        default:
-          return { css: [], js: [] }
       }
     },
   }

@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["esnext", "DOM", "DOM.Iterable"],
+    "lib": [
+      "esnext",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "experimentalDecorators": true,
     "module": "esnext",
     "target": "esnext",
@@ -11,10 +15,18 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
   },
-  "include": ["**/*.ts", "**/*.tsx", "./package.json"],
-  "exclude": ["build/**/*.d.ts"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "./package.json"
+  ],
+  "exclude": [
+    "build/**/*.d.ts"
+  ]
 }

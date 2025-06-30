@@ -29,13 +29,14 @@ export default {
       lightMode: "亮色模式",
       darkMode: "暗色模式",
     },
+    readerMode: {
+      title: "阅读模式",
+    },
     explorer: {
       title: "探索",
     },
     footer: {
-      createdBy: "Created by",
       createdWith: "Created with",
-      poweredBy: "Powered by",
     },
     graph: {
       title: "关系图谱",

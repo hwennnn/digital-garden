@@ -1,5 +1,5 @@
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 // @ts-ignore
 import script from "./scripts/comments.inline"
 
@@ -17,6 +17,7 @@ type Options = {
     strict?: boolean
     reactionsEnabled?: boolean
     inputPosition?: "top" | "bottom"
+    lang?: string
   }
 }
 
@@ -50,6 +51,7 @@ export default ((opts: Options) => {
         data-theme-url={
           opts.options.themeUrl ?? `https://${cfg.baseUrl ?? "example.com"}/static/giscus`
         }
+        data-lang={opts.options.lang ?? "en"}
       ></div>
     )
   }
