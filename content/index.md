@@ -25,6 +25,14 @@ Feel free to explore and learn alongside me. Happy coding! 💻
 
 ## 🏗️ [[System Design]]
 
+## 🌐 [[Networking]]
+
+## 🔧 [[OS]]
+
+## 🐹 [[Golang]]
+
+- [Go Concurrency Notes](./Golang/Go%20Concurrency%20Notes.md)
+
 ## 🤖 GPT Prompting
 
 - [Useful Prompting Techniques](./GPT%20Prompting/Useful%20Prompting%20Techniques.md)
@@ -32,4 +40,3 @@ Feel free to explore and learn alongside me. Happy coding! 💻
 ## 👨‍💻 LeetCode Solutions
 
 > ⚠️ **Note**: Please visit [leetcode.hwendev.com](https://www.leetcode.hwendev.com/) for my complete collection of LeetCode solutions.
-	

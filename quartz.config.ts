@@ -21,7 +21,6 @@ const config: QuartzConfig = {
     baseUrl: "https://github.com/hwennnn/digital-garden",
     ignorePatterns: ["private", ".obsidian"],
     defaultDateType: "modified",
-    generateSocialImages: false,
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
