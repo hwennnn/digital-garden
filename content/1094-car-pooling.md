@@ -8,6 +8,8 @@ tags:
   - heap-priority-queue
   - simulation
   - prefix-sum
+  - weekly-contest-142
+  - contest-question
 date: 2022-01-06
 ---
 

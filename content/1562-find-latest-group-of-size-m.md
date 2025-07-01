@@ -7,6 +7,8 @@ tags:
   - hash-table
   - binary-search
   - simulation
+  - weekly-contest-203
+  - contest-question
 date: 2020-08-23
 ---
 

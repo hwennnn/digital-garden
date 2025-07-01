@@ -7,6 +7,8 @@ tags:
   - hash-table
   - string
   - trie
+  - weekly-contest-81
+  - contest-question
 date: 2022-06-20
 ---
 

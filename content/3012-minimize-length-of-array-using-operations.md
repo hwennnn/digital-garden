@@ -7,6 +7,8 @@ tags:
   - math
   - greedy
   - number-theory
+  - biweekly-contest-122
+  - contest-question
 date: 2024-01-22
 ---
 

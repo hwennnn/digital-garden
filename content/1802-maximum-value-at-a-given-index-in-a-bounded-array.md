@@ -3,8 +3,11 @@ title: 1802. Maximum Value at a Given Index in a Bounded Array
 draft: false
 tags: 
   - leetcode-medium
+  - math
   - binary-search
   - greedy
+  - weekly-contest-233
+  - contest-question
 date: 2023-11-14
 ---
 

@@ -6,6 +6,8 @@ tags:
   - string
   - greedy
   - counting
+  - weekly-contest-158
+  - contest-question
 date: 2021-01-08
 ---
 

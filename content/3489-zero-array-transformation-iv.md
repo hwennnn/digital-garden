@@ -3,6 +3,10 @@ title: 3489. Zero Array Transformation IV
 draft: false
 tags: 
   - leetcode-medium
+  - array
+  - dynamic-programming
+  - weekly-contest-441
+  - contest-question
 date: 2025-03-16
 ---
 

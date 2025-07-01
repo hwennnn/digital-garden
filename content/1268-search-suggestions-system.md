@@ -9,6 +9,8 @@ tags:
   - trie
   - sorting
   - heap-priority-queue
+  - weekly-contest-164
+  - contest-question
 date: 2022-06-19
 ---
 

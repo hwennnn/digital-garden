@@ -9,6 +9,8 @@ tags:
   - topological-sort
   - memoization
   - counting
+  - weekly-contest-240
+  - contest-question
 date: 2025-05-26
 ---
 
@@ -57,6 +59,7 @@ date: 2025-05-26
 	<li><code>colors</code> consists of lowercase English letters.</li>
 	<li><code>0 &lt;= a<sub>j</sub>, b<sub>j</sub>&nbsp;&lt; n</code></li>
 </ul>
+
 
 ## Solution
 

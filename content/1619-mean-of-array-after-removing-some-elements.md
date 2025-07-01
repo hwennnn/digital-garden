@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - array
   - sorting
+  - biweekly-contest-37
+  - contest-question
 date: 2020-10-17
 ---
 

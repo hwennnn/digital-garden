@@ -6,6 +6,8 @@ tags:
   - array
   - greedy
   - sorting
+  - weekly-contest-216
+  - contest-question
 date: 2020-11-23
 ---
 

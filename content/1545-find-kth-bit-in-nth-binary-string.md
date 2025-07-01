@@ -6,6 +6,8 @@ tags:
   - string
   - recursion
   - simulation
+  - weekly-contest-201
+  - contest-question
 date: 2025-01-05
 ---
 

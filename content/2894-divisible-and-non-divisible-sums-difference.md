@@ -4,6 +4,8 @@ draft: false
 tags: 
   - leetcode-easy
   - math
+  - weekly-contest-366
+  - contest-question
 date: 2025-05-27
 ---
 

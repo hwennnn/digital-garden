@@ -6,6 +6,8 @@ tags:
   - string
   - backtracking
   - enumeration
+  - weekly-contest-80
+  - contest-question
 date: 2021-05-13
 ---
 

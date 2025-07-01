@@ -6,6 +6,8 @@ tags:
   - array
   - math
   - dynamic-programming
+  - weekly-contest-272
+  - contest-question
 date: 2021-12-19
 ---
 

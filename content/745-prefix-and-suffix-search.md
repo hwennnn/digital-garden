@@ -8,6 +8,8 @@ tags:
   - string
   - design
   - trie
+  - weekly-contest-by-app-academy
+  - contest-question
 date: 2022-06-18
 ---
 

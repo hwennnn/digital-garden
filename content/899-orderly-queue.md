@@ -6,6 +6,8 @@ tags:
   - math
   - string
   - sorting
+  - weekly-contest-100
+  - contest-question
 date: 2022-11-06
 ---
 

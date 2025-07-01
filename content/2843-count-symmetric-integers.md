@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - math
   - enumeration
+  - weekly-contest-361
+  - contest-question
 date: 2025-04-11
 ---
 

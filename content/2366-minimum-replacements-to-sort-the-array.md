@@ -6,6 +6,8 @@ tags:
   - array
   - math
   - greedy
+  - biweekly-contest-84
+  - contest-question
 date: 2023-08-30
 ---
 

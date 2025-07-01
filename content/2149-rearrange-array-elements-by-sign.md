@@ -6,6 +6,8 @@ tags:
   - array
   - two-pointers
   - simulation
+  - weekly-contest-277
+  - contest-question
 date: 2024-02-14
 ---
 

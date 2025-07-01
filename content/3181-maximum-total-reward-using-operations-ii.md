@@ -6,6 +6,8 @@ tags:
   - array
   - dynamic-programming
   - bit-manipulation
+  - weekly-contest-401
+  - contest-question
 date: 2024-06-09
 ---
 

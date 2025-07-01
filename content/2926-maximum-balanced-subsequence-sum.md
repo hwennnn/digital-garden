@@ -8,6 +8,8 @@ tags:
   - dynamic-programming
   - binary-indexed-tree
   - segment-tree
+  - weekly-contest-370
+  - contest-question
 date: 2023-11-06
 ---
 

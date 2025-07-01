@@ -8,6 +8,8 @@ tags:
   - math
   - combinatorics
   - counting
+  - biweekly-contest-129
+  - contest-question
 date: 2024-04-28
 ---
 

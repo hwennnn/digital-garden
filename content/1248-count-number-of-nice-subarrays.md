@@ -8,6 +8,8 @@ tags:
   - math
   - sliding-window
   - prefix-sum
+  - weekly-contest-161
+  - contest-question
 date: 2024-06-22
 ---
 

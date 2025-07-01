@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - tree
   - depth-first-search
+  - weekly-contest-410
+  - contest-question
 date: 2024-08-14
 ---
 

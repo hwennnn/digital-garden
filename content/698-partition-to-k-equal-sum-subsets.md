@@ -9,6 +9,8 @@ tags:
   - bit-manipulation
   - memoization
   - bitmask
+  - weekly-contest-54
+  - contest-question
 date: 2022-07-12
 ---
 

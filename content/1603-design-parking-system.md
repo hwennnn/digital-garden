@@ -6,6 +6,8 @@ tags:
   - design
   - simulation
   - counting
+  - biweekly-contest-36
+  - contest-question
 date: 2023-05-29
 ---
 

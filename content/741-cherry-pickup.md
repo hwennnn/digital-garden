@@ -6,6 +6,8 @@ tags:
   - array
   - dynamic-programming
   - matrix
+  - weekly-contest-61
+  - contest-question
 date: 2022-01-08
 ---
 

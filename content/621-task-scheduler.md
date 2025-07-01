@@ -9,6 +9,8 @@ tags:
   - sorting
   - heap-priority-queue
   - counting
+  - weekly-contest-37
+  - contest-question
 date: 2024-03-19
 ---
 

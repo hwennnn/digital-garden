@@ -7,6 +7,8 @@ tags:
   - depth-first-search
   - breadth-first-search
   - binary-tree
+  - weekly-contest-36
+  - contest-question
 date: 2021-09-25
 ---
 

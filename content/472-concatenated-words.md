@@ -8,6 +8,8 @@ tags:
   - dynamic-programming
   - depth-first-search
   - trie
+  - weekly-contest-13
+  - contest-question
 date: 2023-01-27
 ---
 

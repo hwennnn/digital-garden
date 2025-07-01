@@ -7,6 +7,8 @@ tags:
   - string
   - greedy
   - enumeration
+  - weekly-contest-361
+  - contest-question
 date: 2023-09-03
 ---
 

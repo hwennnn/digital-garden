@@ -3,6 +3,10 @@ title: 3582. Generate Tag for Video Caption
 draft: false
 tags: 
   - leetcode-easy
+  - string
+  - simulation
+  - weekly-contest-454
+  - contest-question
 date: 2025-06-15
 ---
 

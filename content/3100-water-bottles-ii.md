@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - math
   - simulation
+  - weekly-contest-391
+  - contest-question
 date: 2024-03-31
 ---
 

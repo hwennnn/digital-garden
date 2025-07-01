@@ -7,6 +7,8 @@ tags:
   - hash-table
   - design
   - simulation
+  - weekly-contest-263
+  - contest-question
 date: 2021-10-17
 ---
 

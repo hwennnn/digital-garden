@@ -3,6 +3,11 @@ title: 3561. Resulting String After Adjacent Removals
 draft: false
 tags: 
   - leetcode-medium
+  - string
+  - stack
+  - simulation
+  - weekly-contest-451
+  - contest-question
 date: 2025-05-25
 ---
 

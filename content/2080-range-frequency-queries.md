@@ -8,6 +8,8 @@ tags:
   - binary-search
   - design
   - segment-tree
+  - weekly-contest-268
+  - contest-question
 date: 2021-11-22
 ---
 

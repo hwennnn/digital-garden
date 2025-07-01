@@ -9,6 +9,8 @@ tags:
   - bit-manipulation
   - combinatorics
   - number-theory
+  - weekly-contest-393
+  - contest-question
 date: 2024-04-14
 ---
 

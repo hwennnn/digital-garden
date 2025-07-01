@@ -7,6 +7,8 @@ tags:
   - stack
   - queue
   - simulation
+  - biweekly-contest-42
+  - contest-question
 date: 2024-04-10
 ---
 

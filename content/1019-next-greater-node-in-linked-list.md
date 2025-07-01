@@ -7,6 +7,8 @@ tags:
   - linked-list
   - stack
   - monotonic-stack
+  - weekly-contest-130
+  - contest-question
 date: 2022-01-15
 ---
 

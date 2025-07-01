@@ -6,6 +6,8 @@ tags:
   - array
   - string
   - dynamic-programming
+  - weekly-contest-12
+  - contest-question
 date: 2022-05-23
 ---
 

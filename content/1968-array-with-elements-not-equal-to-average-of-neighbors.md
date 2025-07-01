@@ -6,6 +6,8 @@ tags:
   - array
   - greedy
   - sorting
+  - weekly-contest-254
+  - contest-question
 date: 2021-08-15
 ---
 
@@ -41,7 +43,7 @@ When i=3, nums[i] = 5, and the average of its neighbors is (4+3) / 2 = 3.5.
 When i=1, nums[i] = 7, and the average of its neighbors is (9+6) / 2 = 7.5.
 When i=2, nums[i] = 6, and the average of its neighbors is (7+2) / 2 = 4.5.
 When i=3, nums[i] = 2, and the average of its neighbors is (6+0) / 2 = 3.
-</pre>
+Note that the original array [6,2,0,9,7] also satisfies the conditions.</pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>

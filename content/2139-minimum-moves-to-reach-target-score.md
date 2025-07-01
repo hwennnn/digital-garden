@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - math
   - greedy
+  - weekly-contest-276
+  - contest-question
 date: 2022-01-16
 ---
 

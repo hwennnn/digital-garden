@@ -8,6 +8,8 @@ tags:
   - depth-first-search
   - binary-search-tree
   - binary-tree
+  - weekly-contest-100
+  - contest-question
 date: 2020-12-03
 ---
 

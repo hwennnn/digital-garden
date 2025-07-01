@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - math
   - greedy
+  - weekly-contest-338
+  - contest-question
 date: 2023-03-26
 ---
 

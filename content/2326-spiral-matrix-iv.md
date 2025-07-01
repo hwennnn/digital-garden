@@ -7,6 +7,8 @@ tags:
   - linked-list
   - matrix
   - simulation
+  - weekly-contest-300
+  - contest-question
 date: 2025-01-01
 ---
 

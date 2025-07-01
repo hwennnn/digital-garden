@@ -6,6 +6,8 @@ tags:
   - array
   - binary-indexed-tree
   - segment-tree
+  - weekly-contest-402
+  - contest-question
 date: 2024-06-16
 ---
 

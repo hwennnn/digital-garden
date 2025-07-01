@@ -8,6 +8,8 @@ tags:
   - heap-priority-queue
   - data-stream
   - ordered-set
+  - weekly-contest-236
+  - contest-question
 date: 2021-04-11
 ---
 
@@ -66,7 +68,7 @@ obj.calculateMKAverage(); // The last 3 elements are [5,5,5].
 
 <ul>
 	<li><code>3 &lt;= m &lt;= 10<sup>5</sup></code></li>
-	<li><code>1 &lt;= k*2 &lt; m</code></li>
+	<li><code>1 &lt; k*2 &lt; m</code></li>
 	<li><code>1 &lt;= num &lt;= 10<sup>5</sup></code></li>
 	<li>At most <code>10<sup>5</sup></code> calls will be made to <code>addElement</code> and <code>calculateMKAverage</code>.</li>
 </ul>

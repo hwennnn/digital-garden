@@ -6,6 +6,8 @@ tags:
   - array
   - dynamic-programming
   - prefix-sum
+  - biweekly-contest-67
+  - contest-question
 date: 2021-12-15
 ---
 

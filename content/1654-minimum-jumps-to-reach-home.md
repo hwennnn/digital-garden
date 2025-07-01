@@ -6,6 +6,8 @@ tags:
   - array
   - dynamic-programming
   - breadth-first-search
+  - biweekly-contest-39
+  - contest-question
 date: 2022-03-10
 ---
 

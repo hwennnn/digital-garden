@@ -8,6 +8,8 @@ tags:
   - stack
   - monotonic-stack
   - ordered-set
+  - smarking-algorithm-contest-4
+  - contest-question
 date: 2024-06-22
 ---
 

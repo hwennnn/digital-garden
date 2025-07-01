@@ -7,6 +7,8 @@ tags:
   - hash-table
   - greedy
   - sorting
+  - weekly-contest-87
+  - contest-question
 date: 2024-06-06
 ---
 

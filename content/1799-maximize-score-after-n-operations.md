@@ -10,6 +10,8 @@ tags:
   - bit-manipulation
   - number-theory
   - bitmask
+  - biweekly-contest-48
+  - contest-question
 date: 2023-05-14
 ---
 

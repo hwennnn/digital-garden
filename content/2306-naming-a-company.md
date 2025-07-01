@@ -8,6 +8,8 @@ tags:
   - string
   - bit-manipulation
   - enumeration
+  - weekly-contest-297
+  - contest-question
 date: 2023-02-09
 ---
 

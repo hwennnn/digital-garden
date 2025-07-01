@@ -9,6 +9,8 @@ tags:
   - sorting
   - prefix-sum
   - ordered-set
+  - weekly-contest-290
+  - contest-question
 date: 2023-10-17
 ---
 

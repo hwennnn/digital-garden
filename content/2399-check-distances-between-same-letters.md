@@ -6,6 +6,8 @@ tags:
   - array
   - hash-table
   - string
+  - weekly-contest-309
+  - contest-question
 date: 2022-09-04
 ---
 

@@ -8,6 +8,8 @@ tags:
   - string
   - trie
   - hash-function
+  - weekly-contest-251
+  - contest-question
 date: 2023-08-02
 ---
 

@@ -8,6 +8,8 @@ tags:
   - binary-search
   - stack
   - monotonic-stack
+  - biweekly-contest-34
+  - contest-question
 date: 2020-09-06
 ---
 

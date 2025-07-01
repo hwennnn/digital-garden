@@ -3,6 +3,11 @@ title: 3583. Count Special Triplets
 draft: false
 tags: 
   - leetcode-medium
+  - array
+  - hash-table
+  - counting
+  - weekly-contest-454
+  - contest-question
 date: 2025-06-15
 ---
 

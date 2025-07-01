@@ -8,6 +8,8 @@ tags:
   - binary-indexed-tree
   - enumeration
   - prefix-sum
+  - weekly-contest-330
+  - contest-question
 date: 2023-01-30
 ---
 

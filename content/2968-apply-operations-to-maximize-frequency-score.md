@@ -8,6 +8,8 @@ tags:
   - sliding-window
   - sorting
   - prefix-sum
+  - weekly-contest-376
+  - contest-question
 date: 2023-12-20
 ---
 

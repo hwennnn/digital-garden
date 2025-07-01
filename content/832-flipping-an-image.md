@@ -8,6 +8,8 @@ tags:
   - bit-manipulation
   - matrix
   - simulation
+  - weekly-contest-84
+  - contest-question
 date: 2020-11-10
 ---
 

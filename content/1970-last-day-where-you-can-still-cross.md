@@ -9,6 +9,8 @@ tags:
   - breadth-first-search
   - union-find
   - matrix
+  - weekly-contest-254
+  - contest-question
 date: 2023-06-30
 ---
 

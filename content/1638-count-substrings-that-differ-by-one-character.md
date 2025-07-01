@@ -7,6 +7,8 @@ tags:
   - string
   - dynamic-programming
   - enumeration
+  - biweekly-contest-38
+  - contest-question
 date: 2020-11-01
 ---
 

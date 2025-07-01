@@ -8,6 +8,8 @@ tags:
   - string
   - bit-manipulation
   - counting
+  - biweekly-contest-41
+  - contest-question
 date: 2025-01-01
 ---
 

@@ -7,6 +7,8 @@ tags:
   - brainteaser
   - sorting
   - prefix-sum
+  - biweekly-contest-106
+  - contest-question
 date: 2023-06-11
 ---
 

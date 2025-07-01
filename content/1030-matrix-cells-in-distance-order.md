@@ -8,6 +8,8 @@ tags:
   - geometry
   - sorting
   - matrix
+  - weekly-contest-133
+  - contest-question
 date: 2022-01-10
 ---
 

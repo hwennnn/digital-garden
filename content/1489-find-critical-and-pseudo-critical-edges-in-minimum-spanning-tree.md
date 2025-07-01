@@ -8,6 +8,8 @@ tags:
   - sorting
   - minimum-spanning-tree
   - strongly-connected-component
+  - weekly-contest-194
+  - contest-question
 date: 2023-08-19
 ---
 

@@ -8,6 +8,8 @@ tags:
   - dynamic-programming
   - combinatorics
   - prefix-sum
+  - weekly-contest-410
+  - contest-question
 date: 2024-08-14
 ---
 

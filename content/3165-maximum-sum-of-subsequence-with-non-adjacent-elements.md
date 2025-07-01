@@ -7,6 +7,8 @@ tags:
   - divide-and-conquer
   - dynamic-programming
   - segment-tree
+  - weekly-contest-399
+  - contest-question
 date: 2024-06-23
 ---
 

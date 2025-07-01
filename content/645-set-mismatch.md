@@ -7,6 +7,8 @@ tags:
   - hash-table
   - bit-manipulation
   - sorting
+  - weekly-contest-42
+  - contest-question
 date: 2024-01-22
 ---
 

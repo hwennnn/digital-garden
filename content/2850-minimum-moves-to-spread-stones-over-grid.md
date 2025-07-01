@@ -7,6 +7,8 @@ tags:
   - dynamic-programming
   - breadth-first-search
   - matrix
+  - weekly-contest-362
+  - contest-question
 date: 2023-09-10
 ---
 

@@ -8,6 +8,8 @@ tags:
   - greedy
   - sorting
   - counting
+  - weekly-contest-389
+  - contest-question
 date: 2025-06-21
 ---
 

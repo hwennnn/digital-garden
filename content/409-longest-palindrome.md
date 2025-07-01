@@ -6,6 +6,8 @@ tags:
   - hash-table
   - string
   - greedy
+  - weekly-contest-7
+  - contest-question
 date: 2024-06-04
 ---
 

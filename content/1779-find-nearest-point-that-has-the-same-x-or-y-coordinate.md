@@ -4,6 +4,8 @@ draft: false
 tags: 
   - leetcode-easy
   - array
+  - biweekly-contest-47
+  - contest-question
 date: 2022-03-02
 ---
 

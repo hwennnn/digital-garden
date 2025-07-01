@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - array
   - matrix
+  - weekly-contest-306
+  - contest-question
 date: 2024-05-12
 ---
 

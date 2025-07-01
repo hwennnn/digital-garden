@@ -10,6 +10,8 @@ tags:
   - bit-manipulation
   - ordered-set
   - bitmask
+  - weekly-contest-262
+  - contest-question
 date: 2022-10-03
 ---
 

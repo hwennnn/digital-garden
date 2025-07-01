@@ -6,6 +6,8 @@ tags:
   - array
   - hash-table
   - prefix-sum
+  - weekly-contest-362
+  - contest-question
 date: 2023-09-11
 ---
 

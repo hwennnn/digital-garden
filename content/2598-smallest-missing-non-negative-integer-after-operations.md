@@ -7,6 +7,8 @@ tags:
   - hash-table
   - math
   - greedy
+  - weekly-contest-337
+  - contest-question
 date: 2023-03-19
 ---
 

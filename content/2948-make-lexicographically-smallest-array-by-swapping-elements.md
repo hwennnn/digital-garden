@@ -6,6 +6,8 @@ tags:
   - array
   - union-find
   - sorting
+  - weekly-contest-373
+  - contest-question
 date: 2025-01-25
 ---
 

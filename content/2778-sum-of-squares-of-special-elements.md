@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - array
   - enumeration
+  - weekly-contest-354
+  - contest-question
 date: 2023-07-16
 ---
 

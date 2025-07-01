@@ -8,6 +8,8 @@ tags:
   - tree
   - depth-first-search
   - number-theory
+  - weekly-contest-364
+  - contest-question
 date: 2023-09-27
 ---
 

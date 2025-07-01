@@ -6,8 +6,10 @@ tags:
   - array
   - math
   - design
-  - queue
   - data-stream
+  - prefix-sum
+  - weekly-contest-176
+  - contest-question
 date: 2025-02-14
 ---
 
@@ -63,6 +65,8 @@ productOfNumbers.getProduct(2); // return 32. The product of the last 2 numbers 
 	<li>The product of the stream at any point in time will fit in a <strong>32-bit</strong> integer.</li>
 </ul>
 
+<p>&nbsp;</p>
+<strong>Follow-up: </strong>Can you implement <strong>both</strong> <code>GetProduct</code> and <code>Add</code> to work in <code>O(1)</code> time complexity instead of <code>O(k)</code> time complexity?
 
 ## Solution
 

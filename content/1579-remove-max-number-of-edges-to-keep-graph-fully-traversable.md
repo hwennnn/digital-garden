@@ -5,6 +5,8 @@ tags:
   - leetcode-hard
   - union-find
   - graph
+  - weekly-contest-205
+  - contest-question
 date: 2024-06-30
 ---
 

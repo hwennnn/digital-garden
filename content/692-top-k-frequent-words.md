@@ -3,6 +3,7 @@ title: 692. Top K Frequent Words
 draft: false
 tags: 
   - leetcode-medium
+  - array
   - hash-table
   - string
   - trie

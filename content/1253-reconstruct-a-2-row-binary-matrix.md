@@ -6,6 +6,8 @@ tags:
   - array
   - greedy
   - matrix
+  - weekly-contest-162
+  - contest-question
 date: 2021-01-02
 ---
 

@@ -8,6 +8,8 @@ tags:
   - string
   - interactive
   - game-theory
+  - weekly-contest-86
+  - contest-question
 date: 2022-12-01
 ---
 

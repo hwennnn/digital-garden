@@ -7,6 +7,8 @@ tags:
   - hash-table
   - bit-manipulation
   - prefix-sum
+  - weekly-contest-336
+  - contest-question
 date: 2023-03-12
 ---
 
@@ -23,11 +25,13 @@ date: 2023-03-12
 	<li>Subtract <code>2<sup>k</sup></code> from <code>nums[i]</code> and <code>nums[j]</code>.</li>
 </ul>
 
-<p>A subarray is <strong>beautiful</strong> if it is possible to make all of its elements equal to <code>0</code> after applying the above operation any number of times.</p>
+<p>A subarray is <strong>beautiful</strong> if it is possible to make all of its elements equal to <code>0</code> after applying the above operation any number of times (including zero).</p>
 
 <p>Return <em>the number of <strong>beautiful subarrays</strong> in the array</em> <code>nums</code>.</p>
 
 <p>A subarray is a contiguous <strong>non-empty</strong> sequence of elements within an array.</p>
+
+<p><strong>Note</strong>: Subarrays where all elements are initially 0 are considered beautiful, as no operation is needed.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>

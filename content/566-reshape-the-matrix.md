@@ -6,6 +6,8 @@ tags:
   - array
   - matrix
   - simulation
+  - weekly-contest-30
+  - contest-question
 date: 2022-03-06
 ---
 

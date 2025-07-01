@@ -7,6 +7,8 @@ tags:
   - dynamic-programming
   - greedy
   - sorting
+  - smarking-algorithm-contest-2
+  - contest-question
 date: 2025-06-13
 ---
 

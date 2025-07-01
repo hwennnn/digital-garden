@@ -7,6 +7,8 @@ tags:
   - math
   - sorting
   - matrix
+  - weekly-contest-262
+  - contest-question
 date: 2025-03-26
 ---
 

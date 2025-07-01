@@ -7,6 +7,9 @@ tags:
   - dynamic-programming
   - memoization
   - matrix
+  - prefix-sum
+  - weekly-contest-188
+  - contest-question
 date: 2023-04-01
 ---
 

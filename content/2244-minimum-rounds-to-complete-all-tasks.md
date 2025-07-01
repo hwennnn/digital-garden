@@ -7,6 +7,8 @@ tags:
   - hash-table
   - greedy
   - counting
+  - weekly-contest-289
+  - contest-question
 date: 2023-01-04
 ---
 

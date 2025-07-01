@@ -6,6 +6,8 @@ tags:
   - string
   - greedy
   - enumeration
+  - weekly-contest-291
+  - contest-question
 date: 2022-05-01
 ---
 

@@ -8,6 +8,8 @@ tags:
   - design
   - matrix
   - simulation
+  - weekly-contest-409
+  - contest-question
 date: 2024-08-05
 ---
 

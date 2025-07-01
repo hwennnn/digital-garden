@@ -6,6 +6,8 @@ tags:
   - array
   - bit-manipulation
   - sliding-window
+  - biweekly-contest-127
+  - contest-question
 date: 2025-01-13
 ---
 

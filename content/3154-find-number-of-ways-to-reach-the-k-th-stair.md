@@ -8,6 +8,8 @@ tags:
   - bit-manipulation
   - memoization
   - combinatorics
+  - weekly-contest-398
+  - contest-question
 date: 2024-05-19
 ---
 

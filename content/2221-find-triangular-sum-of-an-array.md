@@ -7,6 +7,8 @@ tags:
   - math
   - simulation
   - combinatorics
+  - biweekly-contest-75
+  - contest-question
 date: 2022-04-02
 ---
 

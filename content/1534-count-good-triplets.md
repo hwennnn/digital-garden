@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - array
   - enumeration
+  - weekly-contest-200
+  - contest-question
 date: 2020-08-02
 ---
 

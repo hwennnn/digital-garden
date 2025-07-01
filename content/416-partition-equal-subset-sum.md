@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - array
   - dynamic-programming
+  - weekly-contest-8
+  - contest-question
 date: 2020-11-27
 ---
 

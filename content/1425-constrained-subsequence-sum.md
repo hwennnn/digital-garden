@@ -9,6 +9,8 @@ tags:
   - sliding-window
   - heap-priority-queue
   - monotonic-queue
+  - weekly-contest-186
+  - contest-question
 date: 2023-10-21
 ---
 

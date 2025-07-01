@@ -7,6 +7,8 @@ tags:
   - math
   - string
   - dynamic-programming
+  - weekly-contest-292
+  - contest-question
 date: 2022-05-08
 ---
 

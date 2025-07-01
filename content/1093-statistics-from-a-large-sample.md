@@ -6,6 +6,8 @@ tags:
   - array
   - math
   - probability-and-statistics
+  - weekly-contest-142
+  - contest-question
 date: 2021-05-28
 ---
 

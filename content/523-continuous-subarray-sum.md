@@ -7,6 +7,8 @@ tags:
   - hash-table
   - math
   - prefix-sum
+  - weekly-contest-21
+  - contest-question
 date: 2024-06-08
 ---
 

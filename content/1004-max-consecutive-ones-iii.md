@@ -7,6 +7,8 @@ tags:
   - binary-search
   - sliding-window
   - prefix-sum
+  - weekly-contest-126
+  - contest-question
 date: 2022-02-19
 ---
 

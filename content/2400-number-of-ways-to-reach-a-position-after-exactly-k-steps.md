@@ -6,6 +6,8 @@ tags:
   - math
   - dynamic-programming
   - combinatorics
+  - weekly-contest-309
+  - contest-question
 date: 2022-09-04
 ---
 

@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - math
   - geometry
+  - biweekly-contest-92
+  - contest-question
 date: 2022-11-26
 ---
 

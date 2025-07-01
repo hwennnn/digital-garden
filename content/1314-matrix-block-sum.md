@@ -6,6 +6,8 @@ tags:
   - array
   - matrix
   - prefix-sum
+  - biweekly-contest-17
+  - contest-question
 date: 2021-09-28
 ---
 

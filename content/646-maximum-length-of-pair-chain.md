@@ -7,6 +7,8 @@ tags:
   - dynamic-programming
   - greedy
   - sorting
+  - weekly-contest-42
+  - contest-question
 date: 2020-08-14
 ---
 

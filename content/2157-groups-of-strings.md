@@ -6,6 +6,8 @@ tags:
   - string
   - bit-manipulation
   - union-find
+  - weekly-contest-278
+  - contest-question
 date: 2022-01-30
 ---
 

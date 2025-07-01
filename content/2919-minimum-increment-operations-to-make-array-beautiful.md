@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - array
   - dynamic-programming
+  - weekly-contest-369
+  - contest-question
 date: 2023-10-30
 ---
 

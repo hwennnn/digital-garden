@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - array
   - sorting
+  - weekly-contest-64
+  - contest-question
 date: 2020-03-09
 ---
 

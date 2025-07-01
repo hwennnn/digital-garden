@@ -7,6 +7,8 @@ tags:
   - math
   - brainteaser
   - combinatorics
+  - weekly-contest-453
+  - contest-question
 date: 2025-06-09
 ---
 

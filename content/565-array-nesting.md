@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - array
   - depth-first-search
+  - weekly-contest-34
+  - contest-question
 date: 2021-09-01
 ---
 

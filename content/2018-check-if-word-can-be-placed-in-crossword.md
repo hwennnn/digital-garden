@@ -6,6 +6,8 @@ tags:
   - array
   - matrix
   - enumeration
+  - weekly-contest-260
+  - contest-question
 date: 2021-09-30
 ---
 

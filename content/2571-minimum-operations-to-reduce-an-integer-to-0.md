@@ -6,6 +6,8 @@ tags:
   - dynamic-programming
   - greedy
   - bit-manipulation
+  - weekly-contest-333
+  - contest-question
 date: 2023-02-26
 ---
 

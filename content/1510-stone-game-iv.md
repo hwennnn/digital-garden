@@ -6,6 +6,8 @@ tags:
   - math
   - dynamic-programming
   - game-theory
+  - biweekly-contest-30
+  - contest-question
 date: 2022-01-22
 ---
 

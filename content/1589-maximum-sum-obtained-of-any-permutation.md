@@ -7,6 +7,8 @@ tags:
   - greedy
   - sorting
   - prefix-sum
+  - biweekly-contest-35
+  - contest-question
 date: 2020-12-26
 ---
 

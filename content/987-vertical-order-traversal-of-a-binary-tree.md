@@ -9,6 +9,8 @@ tags:
   - breadth-first-search
   - sorting
   - binary-tree
+  - weekly-contest-122
+  - contest-question
 date: 2022-09-04
 ---
 

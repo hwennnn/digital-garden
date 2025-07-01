@@ -7,6 +7,8 @@ tags:
   - hash-table
   - string
   - string-matching
+  - biweekly-contest-80
+  - contest-question
 date: 2022-07-24
 ---
 

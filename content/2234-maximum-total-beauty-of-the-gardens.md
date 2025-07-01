@@ -8,6 +8,10 @@ tags:
   - binary-search
   - greedy
   - sorting
+  - enumeration
+  - prefix-sum
+  - weekly-contest-288
+  - contest-question
 date: 2022-04-10
 ---
 

@@ -7,6 +7,8 @@ tags:
   - dynamic-programming
   - bit-manipulation
   - bitmask
+  - biweekly-contest-53
+  - contest-question
 date: 2022-01-04
 ---
 

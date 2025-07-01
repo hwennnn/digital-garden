@@ -8,6 +8,8 @@ tags:
   - greedy
   - sorting
   - heap-priority-queue
+  - weekly-contest-174
+  - contest-question
 date: 2020-09-03
 ---
 

@@ -6,6 +6,8 @@ tags:
   - array
   - breadth-first-search
   - matrix
+  - weekly-contest-167
+  - contest-question
 date: 2022-10-30
 ---
 

@@ -6,6 +6,8 @@ tags:
   - array
   - hash-table
   - simulation
+  - biweekly-contest-84
+  - contest-question
 date: 2022-08-08
 ---
 

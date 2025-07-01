@@ -6,6 +6,8 @@ tags:
   - math
   - backtracking
   - bit-manipulation
+  - weekly-contest-160
+  - contest-question
 date: 2021-01-02
 ---
 

@@ -7,6 +7,8 @@ tags:
   - backtracking
   - bit-manipulation
   - enumeration
+  - weekly-contest-208
+  - contest-question
 date: 2023-07-02
 ---
 

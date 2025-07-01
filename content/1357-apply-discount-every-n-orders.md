@@ -6,6 +6,8 @@ tags:
   - array
   - hash-table
   - design
+  - biweekly-contest-20
+  - contest-question
 date: 2020-10-17
 ---
 

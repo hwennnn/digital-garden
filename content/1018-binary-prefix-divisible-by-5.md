@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - array
   - bit-manipulation
+  - weekly-contest-130
+  - contest-question
 date: 2022-01-15
 ---
 

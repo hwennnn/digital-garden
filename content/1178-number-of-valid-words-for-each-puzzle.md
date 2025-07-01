@@ -8,6 +8,8 @@ tags:
   - string
   - bit-manipulation
   - trie
+  - weekly-contest-152
+  - contest-question
 date: 2021-11-09
 ---
 

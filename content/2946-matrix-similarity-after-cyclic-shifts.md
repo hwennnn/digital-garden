@@ -7,6 +7,8 @@ tags:
   - math
   - matrix
   - simulation
+  - weekly-contest-373
+  - contest-question
 date: 2023-11-27
 ---
 

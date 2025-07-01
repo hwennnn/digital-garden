@@ -5,6 +5,8 @@ tags:
   - leetcode-hard
   - math
   - enumeration
+  - weekly-contest-268
+  - contest-question
 date: 2025-06-23
 ---
 

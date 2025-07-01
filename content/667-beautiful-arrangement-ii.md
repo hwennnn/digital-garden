@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - array
   - math
+  - weekly-contest-47
+  - contest-question
 date: 2021-04-12
 ---
 

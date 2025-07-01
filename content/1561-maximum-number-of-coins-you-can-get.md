@@ -8,6 +8,8 @@ tags:
   - greedy
   - sorting
   - game-theory
+  - weekly-contest-203
+  - contest-question
 date: 2023-11-24
 ---
 

@@ -8,6 +8,8 @@ tags:
   - math
   - bit-manipulation
   - prefix-sum
+  - weekly-contest-188
+  - contest-question
 date: 2024-05-30
 ---
 

@@ -6,6 +6,8 @@ tags:
   - array
   - hash-table
   - string
+  - weekly-contest-189
+  - contest-question
 date: 2020-10-13
 ---
 

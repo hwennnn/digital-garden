@@ -6,6 +6,8 @@ tags:
   - array
   - math
   - bit-manipulation
+  - biweekly-contest-81
+  - contest-question
 date: 2022-06-26
 ---
 

@@ -7,6 +7,8 @@ tags:
   - bit-manipulation
   - breadth-first-search
   - matrix
+  - weekly-contest-92
+  - contest-question
 date: 2023-06-29
 ---
 

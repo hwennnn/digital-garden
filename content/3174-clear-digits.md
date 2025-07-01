@@ -6,6 +6,8 @@ tags:
   - string
   - stack
   - simulation
+  - biweekly-contest-132
+  - contest-question
 date: 2025-02-10
 ---
 
@@ -23,6 +25,8 @@ date: 2025-02-10
 </ul>
 
 <p>Return the resulting string after removing all digits.</p>
+
+<p><strong>Note</strong> that the operation <em>cannot</em> be performed on a digit that does not have any non-digit character to its left.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>

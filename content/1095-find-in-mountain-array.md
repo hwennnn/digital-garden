@@ -6,6 +6,8 @@ tags:
   - array
   - binary-search
   - interactive
+  - weekly-contest-142
+  - contest-question
 date: 2023-10-17
 ---
 

@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - array
   - prefix-sum
+  - biweekly-contest-24
+  - contest-question
 date: 2021-11-11
 ---
 

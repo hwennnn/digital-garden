@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - math
   - recursion
+  - weekly-contest-248
+  - contest-question
 date: 2021-07-06
 ---
 

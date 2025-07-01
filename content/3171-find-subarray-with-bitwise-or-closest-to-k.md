@@ -7,6 +7,8 @@ tags:
   - binary-search
   - bit-manipulation
   - segment-tree
+  - weekly-contest-400
+  - contest-question
 date: 2024-07-14
 ---
 

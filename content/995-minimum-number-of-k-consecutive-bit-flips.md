@@ -8,6 +8,8 @@ tags:
   - queue
   - sliding-window
   - prefix-sum
+  - weekly-contest-124
+  - contest-question
 date: 2024-06-24
 ---
 

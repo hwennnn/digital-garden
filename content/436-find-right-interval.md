@@ -6,6 +6,8 @@ tags:
   - array
   - binary-search
   - sorting
+  - smarking-algorithm-contest-2
+  - contest-question
 date: 2022-04-20
 ---
 

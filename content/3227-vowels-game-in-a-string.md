@@ -7,6 +7,8 @@ tags:
   - string
   - brainteaser
   - game-theory
+  - weekly-contest-407
+  - contest-question
 date: 2024-07-21
 ---
 

@@ -6,6 +6,8 @@ tags:
   - math
   - simulation
   - number-theory
+  - weekly-contest-324
+  - contest-question
 date: 2022-12-18
 ---
 

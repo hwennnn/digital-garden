@@ -3,6 +3,11 @@ title: 3487. Maximum Unique Subarray Sum After Deletion
 draft: false
 tags: 
   - leetcode-easy
+  - array
+  - hash-table
+  - greedy
+  - weekly-contest-441
+  - contest-question
 date: 2025-03-16
 ---
 

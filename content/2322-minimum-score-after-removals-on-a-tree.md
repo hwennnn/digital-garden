@@ -7,6 +7,8 @@ tags:
   - bit-manipulation
   - tree
   - depth-first-search
+  - weekly-contest-299
+  - contest-question
 date: 2022-06-29
 ---
 

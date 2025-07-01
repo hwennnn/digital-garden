@@ -10,6 +10,8 @@ tags:
   - segment-tree
   - sorting
   - monotonic-stack
+  - weekly-contest-349
+  - contest-question
 date: 2023-06-27
 ---
 

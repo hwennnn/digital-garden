@@ -7,6 +7,8 @@ tags:
   - string
   - bit-manipulation
   - sorting
+  - weekly-contest-2
+  - contest-question
 date: 2023-09-25
 ---
 

@@ -8,6 +8,8 @@ tags:
   - dynamic-programming
   - recursion
   - game-theory
+  - weekly-contest-16b
+  - contest-question
 date: 2023-07-28
 ---
 

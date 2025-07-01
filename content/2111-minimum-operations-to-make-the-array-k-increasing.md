@@ -5,6 +5,8 @@ tags:
   - leetcode-hard
   - array
   - binary-search
+  - weekly-contest-272
+  - contest-question
 date: 2021-12-19
 ---
 

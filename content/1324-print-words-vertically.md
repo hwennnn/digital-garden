@@ -6,6 +6,8 @@ tags:
   - array
   - string
   - simulation
+  - weekly-contest-172
+  - contest-question
 date: 2020-12-28
 ---
 

@@ -6,6 +6,8 @@ tags:
   - math
   - simulation
   - game-theory
+  - biweekly-contest-135
+  - contest-question
 date: 2024-07-21
 ---
 

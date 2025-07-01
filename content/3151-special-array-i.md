@@ -4,6 +4,8 @@ draft: false
 tags: 
   - leetcode-easy
   - array
+  - weekly-contest-398
+  - contest-question
 date: 2025-02-01
 ---
 
@@ -12,7 +14,7 @@ date: 2025-02-01
 ## Description
 
 ---
-<p>An array is considered <strong>special</strong> if every pair of its adjacent elements contains two numbers with different parity.<!-- notionvc: e6bed0fa-c67d-43a7-81b4-99fb85b99e98 --></p>
+<p>An array is considered <strong>special</strong> if the <em>parity</em> of every pair of adjacent elements is different. In other words, one element in each pair <strong>must</strong> be even, and the other <strong>must</strong> be odd.</p>
 
 <p>You are given an array of integers <code>nums</code>. Return <code>true</code> if <code>nums</code> is a <strong>special</strong> array, otherwise, return <code>false</code>.</p>
 

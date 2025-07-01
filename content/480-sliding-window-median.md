@@ -7,6 +7,8 @@ tags:
   - hash-table
   - sliding-window
   - heap-priority-queue
+  - weekly-contest-14
+  - contest-question
 date: 2021-09-20
 ---
 

@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - math
   - binary-search
+  - smarking-algorithm-contest-2
+  - contest-question
 date: 2022-05-14
 ---
 

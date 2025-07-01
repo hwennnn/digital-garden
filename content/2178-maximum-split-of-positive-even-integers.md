@@ -6,6 +6,8 @@ tags:
   - math
   - backtracking
   - greedy
+  - biweekly-contest-72
+  - contest-question
 date: 2022-02-20
 ---
 

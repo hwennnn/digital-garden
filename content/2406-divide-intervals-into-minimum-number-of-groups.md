@@ -9,6 +9,8 @@ tags:
   - sorting
   - heap-priority-queue
   - prefix-sum
+  - weekly-contest-310
+  - contest-question
 date: 2025-01-01
 ---
 

@@ -8,6 +8,8 @@ tags:
   - math
   - counting
   - number-theory
+  - weekly-contest-104
+  - contest-question
 date: 2020-03-09
 ---
 

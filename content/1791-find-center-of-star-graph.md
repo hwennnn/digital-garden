@@ -4,6 +4,8 @@ draft: false
 tags: 
   - leetcode-easy
   - graph
+  - weekly-contest-232
+  - contest-question
 date: 2024-06-27
 ---
 

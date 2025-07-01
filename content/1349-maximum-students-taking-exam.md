@@ -8,6 +8,8 @@ tags:
   - bit-manipulation
   - matrix
   - bitmask
+  - weekly-contest-175
+  - contest-question
 date: 2022-01-04
 ---
 

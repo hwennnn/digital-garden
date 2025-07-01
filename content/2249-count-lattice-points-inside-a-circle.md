@@ -8,6 +8,8 @@ tags:
   - math
   - geometry
   - enumeration
+  - weekly-contest-290
+  - contest-question
 date: 2022-04-27
 ---
 

@@ -6,6 +6,8 @@ tags:
   - array
   - bit-manipulation
   - trie
+  - weekly-contest-221
+  - contest-question
 date: 2023-11-13
 ---
 

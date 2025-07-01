@@ -7,6 +7,8 @@ tags:
   - stack
   - monotonic-stack
   - prefix-sum
+  - weekly-contest-294
+  - contest-question
 date: 2022-06-02
 ---
 

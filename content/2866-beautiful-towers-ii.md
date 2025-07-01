@@ -6,6 +6,8 @@ tags:
   - array
   - stack
   - monotonic-stack
+  - weekly-contest-364
+  - contest-question
 date: 2023-09-30
 ---
 

@@ -6,6 +6,8 @@ tags:
   - math
   - dynamic-programming
   - probability-and-statistics
+  - weekly-contest-78
+  - contest-question
 date: 2023-07-29
 ---
 

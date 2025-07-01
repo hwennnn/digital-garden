@@ -6,6 +6,8 @@ tags:
   - math
   - two-pointers
   - binary-search
+  - weekly-contest-39
+  - contest-question
 date: 2024-06-17
 ---
 

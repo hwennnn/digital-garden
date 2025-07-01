@@ -8,6 +8,8 @@ tags:
   - union-find
   - graph
   - sorting
+  - weekly-contest-269
+  - contest-question
 date: 2024-02-24
 ---
 

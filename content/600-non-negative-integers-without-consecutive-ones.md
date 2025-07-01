@@ -4,6 +4,8 @@ draft: false
 tags: 
   - leetcode-hard
   - dynamic-programming
+  - weekly-contest-34
+  - contest-question
 date: 2022-09-06
 ---
 

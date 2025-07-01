@@ -7,6 +7,8 @@ tags:
   - breadth-first-search
   - heap-priority-queue
   - matrix
+  - weekly-contest-6
+  - contest-question
 date: 2025-01-19
 ---
 

@@ -3,6 +3,9 @@ title: 3490. Count Beautiful Numbers
 draft: false
 tags: 
   - leetcode-hard
+  - dynamic-programming
+  - weekly-contest-441
+  - contest-question
 date: 2025-03-16
 ---
 

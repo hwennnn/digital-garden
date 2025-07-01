@@ -8,6 +8,8 @@ tags:
   - greedy
   - sorting
   - monotonic-stack
+  - weekly-contest-257
+  - contest-question
 date: 2022-09-09
 ---
 

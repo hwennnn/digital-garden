@@ -7,6 +7,8 @@ tags:
   - binary-search
   - sliding-window
   - prefix-sum
+  - weekly-contest-271
+  - contest-question
 date: 2021-12-12
 ---
 

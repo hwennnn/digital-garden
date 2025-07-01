@@ -6,6 +6,8 @@ tags:
   - array
   - matrix
   - prefix-sum
+  - weekly-contest-405
+  - contest-question
 date: 2024-07-12
 ---
 

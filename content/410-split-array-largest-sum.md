@@ -8,6 +8,8 @@ tags:
   - dynamic-programming
   - greedy
   - prefix-sum
+  - weekly-contest-7
+  - contest-question
 date: 2022-03-31
 ---
 

@@ -6,6 +6,8 @@ tags:
   - array
   - binary-search
   - binary-indexed-tree
+  - weekly-contest-253
+  - contest-question
 date: 2023-05-07
 ---
 

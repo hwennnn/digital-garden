@@ -5,6 +5,9 @@ tags:
   - leetcode-medium
   - string
   - bit-manipulation
+  - simulation
+  - weekly-contest-183
+  - contest-question
 date: 2020-08-31
 ---
 

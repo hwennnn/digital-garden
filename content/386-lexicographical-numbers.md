@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - depth-first-search
   - trie
+  - warm-up-contest
+  - contest-question
 date: 2025-06-08
 ---
 

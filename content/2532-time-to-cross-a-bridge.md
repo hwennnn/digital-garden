@@ -6,6 +6,8 @@ tags:
   - array
   - heap-priority-queue
   - simulation
+  - weekly-contest-327
+  - contest-question
 date: 2023-07-01
 ---
 

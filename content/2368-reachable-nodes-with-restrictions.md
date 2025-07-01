@@ -10,6 +10,8 @@ tags:
   - breadth-first-search
   - union-find
   - graph
+  - weekly-contest-305
+  - contest-question
 date: 2022-09-22
 ---
 

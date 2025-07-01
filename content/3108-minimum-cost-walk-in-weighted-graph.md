@@ -7,6 +7,8 @@ tags:
   - bit-manipulation
   - union-find
   - graph
+  - weekly-contest-392
+  - contest-question
 date: 2025-03-21
 ---
 

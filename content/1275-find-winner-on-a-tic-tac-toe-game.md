@@ -7,6 +7,8 @@ tags:
   - hash-table
   - matrix
   - simulation
+  - weekly-contest-165
+  - contest-question
 date: 2021-09-20
 ---
 

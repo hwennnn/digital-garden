@@ -7,6 +7,8 @@ tags:
   - hash-table
   - backtracking
   - bit-manipulation
+  - weekly-contest-16a
+  - contest-question
 date: 2023-01-20
 ---
 

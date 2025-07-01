@@ -3,6 +3,12 @@ title: 3557. Find Maximum Number of Non Intersecting Substrings
 draft: false
 tags: 
   - leetcode-medium
+  - hash-table
+  - string
+  - dynamic-programming
+  - greedy
+  - biweekly-contest-157
+  - contest-question
 date: 2025-05-25
 ---
 
@@ -13,9 +19,7 @@ date: 2025-05-25
 ---
 <p>You are given a string <code>word</code>.</p>
 
-<p>Return the <strong>maximum</strong> number of non-intersecting <strong>substrings</strong> of word that are at <strong>least</strong> four characters long and start and end with the same letter.</p>
-
-<p>A <strong>substring</strong> is a contiguous <b>non-empty</b> sequence of characters within a string.</p>
+<p>Return the <strong>maximum</strong> number of non-intersecting <strong><span data-keyword="substring-nonempty">substrings</span></strong> of word that are at <strong>least</strong> four characters long and start and end with the same letter.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>

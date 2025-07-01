@@ -6,6 +6,8 @@ tags:
   - array
   - two-pointers
   - binary-search
+  - weekly-contest-240
+  - contest-question
 date: 2022-05-14
 ---
 

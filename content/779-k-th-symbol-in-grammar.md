@@ -6,6 +6,8 @@ tags:
   - math
   - bit-manipulation
   - recursion
+  - weekly-contest-70
+  - contest-question
 date: 2023-10-28
 ---
 

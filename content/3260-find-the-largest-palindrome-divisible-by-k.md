@@ -8,6 +8,8 @@ tags:
   - dynamic-programming
   - greedy
   - number-theory
+  - weekly-contest-411
+  - contest-question
 date: 2024-08-18
 ---
 

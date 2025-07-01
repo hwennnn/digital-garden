@@ -7,6 +7,8 @@ tags:
   - string
   - bit-manipulation
   - prefix-sum
+  - weekly-contest-247
+  - contest-question
 date: 2024-04-30
 ---
 

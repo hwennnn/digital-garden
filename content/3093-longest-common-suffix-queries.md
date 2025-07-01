@@ -6,6 +6,8 @@ tags:
   - array
   - string
   - trie
+  - weekly-contest-390
+  - contest-question
 date: 2024-03-24
 ---
 

@@ -7,6 +7,8 @@ tags:
   - hash-table
   - greedy
   - prefix-sum
+  - weekly-contest-201
+  - contest-question
 date: 2020-10-12
 ---
 

@@ -7,6 +7,8 @@ tags:
   - bit-manipulation
   - sorting
   - counting
+  - biweekly-contest-20
+  - contest-question
 date: 2023-10-30
 ---
 

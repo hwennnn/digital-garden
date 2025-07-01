@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - array
   - hash-table
+  - weekly-contest-156
+  - contest-question
 date: 2019-10-08
 ---
 

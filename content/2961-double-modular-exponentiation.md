@@ -6,6 +6,8 @@ tags:
   - array
   - math
   - simulation
+  - weekly-contest-375
+  - contest-question
 date: 2023-12-10
 ---
 

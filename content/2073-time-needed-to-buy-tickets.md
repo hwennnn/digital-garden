@@ -6,6 +6,8 @@ tags:
   - array
   - queue
   - simulation
+  - weekly-contest-267
+  - contest-question
 date: 2024-04-10
 ---
 

@@ -6,6 +6,8 @@ tags:
   - array
   - math
   - prefix-sum
+  - biweekly-contest-35
+  - contest-question
 date: 2022-03-05
 ---
 

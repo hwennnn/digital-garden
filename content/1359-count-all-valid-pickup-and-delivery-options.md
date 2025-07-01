@@ -6,6 +6,8 @@ tags:
   - math
   - dynamic-programming
   - combinatorics
+  - biweekly-contest-20
+  - contest-question
 date: 2023-09-10
 ---
 

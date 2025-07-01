@@ -7,6 +7,8 @@ tags:
   - binary-search
   - greedy
   - heap-priority-queue
+  - weekly-contest-386
+  - contest-question
 date: 2024-02-25
 ---
 

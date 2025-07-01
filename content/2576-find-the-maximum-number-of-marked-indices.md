@@ -8,6 +8,8 @@ tags:
   - binary-search
   - greedy
   - sorting
+  - weekly-contest-334
+  - contest-question
 date: 2023-02-26
 ---
 

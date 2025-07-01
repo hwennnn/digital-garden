@@ -7,6 +7,8 @@ tags:
   - depth-first-search
   - breadth-first-search
   - graph
+  - weekly-contest-404
+  - contest-question
 date: 2024-12-25
 ---
 

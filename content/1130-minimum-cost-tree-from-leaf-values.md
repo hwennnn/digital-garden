@@ -8,6 +8,8 @@ tags:
   - stack
   - greedy
   - monotonic-stack
+  - weekly-contest-146
+  - contest-question
 date: 2021-05-23
 ---
 

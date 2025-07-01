@@ -8,6 +8,8 @@ tags:
   - bit-manipulation
   - rolling-hash
   - hash-function
+  - biweekly-contest-27
+  - contest-question
 date: 2022-05-31
 ---
 

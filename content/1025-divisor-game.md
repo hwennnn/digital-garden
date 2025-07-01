@@ -7,6 +7,8 @@ tags:
   - dynamic-programming
   - brainteaser
   - game-theory
+  - weekly-contest-132
+  - contest-question
 date: 2022-01-14
 ---
 

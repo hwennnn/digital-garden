@@ -6,6 +6,8 @@ tags:
   - hash-table
   - string
   - counting
+  - weekly-contest-396
+  - contest-question
 date: 2024-05-09
 ---
 
@@ -43,6 +45,14 @@ date: 2024-05-09
 <p><strong>Explanation:</strong></p>
 
 <p>One possible string <code>t</code> could be <code>&quot;cdef&quot;</code>, notice that <code>t</code> can be equal to <code>s</code>.</p>
+</div>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">s = &quot;abcbcacabbaccba&quot;</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">3</span></p>
 </div>
 
 <p>&nbsp;</p>

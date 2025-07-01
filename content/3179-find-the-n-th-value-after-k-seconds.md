@@ -8,6 +8,8 @@ tags:
   - simulation
   - combinatorics
   - prefix-sum
+  - weekly-contest-401
+  - contest-question
 date: 2024-06-09
 ---
 

@@ -6,6 +6,8 @@ tags:
   - math
   - string
   - simulation
+  - weekly-contest-8
+  - contest-question
 date: 2021-08-31
 ---
 

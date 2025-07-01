@@ -6,6 +6,8 @@ tags:
   - array
   - hash-table
   - matrix
+  - weekly-contest-275
+  - contest-question
 date: 2022-01-09
 ---
 

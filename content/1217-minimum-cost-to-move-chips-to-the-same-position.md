@@ -6,6 +6,8 @@ tags:
   - array
   - math
   - greedy
+  - weekly-contest-157
+  - contest-question
 date: 2021-12-06
 ---
 

@@ -6,6 +6,8 @@ tags:
   - array
   - greedy
   - sorting
+  - smarking-algorithm-contest-3
+  - contest-question
 date: 2024-03-18
 ---
 

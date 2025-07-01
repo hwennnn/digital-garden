@@ -6,6 +6,8 @@ tags:
   - array
   - backtracking
   - graph
+  - weekly-contest-266
+  - contest-question
 date: 2021-11-07
 ---
 

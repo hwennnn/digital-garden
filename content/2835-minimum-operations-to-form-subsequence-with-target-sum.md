@@ -6,6 +6,8 @@ tags:
   - array
   - greedy
   - bit-manipulation
+  - weekly-contest-360
+  - contest-question
 date: 2023-08-27
 ---
 

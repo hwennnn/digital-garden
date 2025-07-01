@@ -7,6 +7,8 @@ tags:
   - string
   - greedy
   - binary-indexed-tree
+  - biweekly-contest-73
+  - contest-question
 date: 2022-03-05
 ---
 

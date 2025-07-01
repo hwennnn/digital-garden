@@ -8,6 +8,8 @@ tags:
   - dynamic-programming
   - prefix-sum
   - game-theory
+  - weekly-contest-242
+  - contest-question
 date: 2023-07-26
 ---
 

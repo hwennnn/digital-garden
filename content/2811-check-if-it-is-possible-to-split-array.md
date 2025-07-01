@@ -6,6 +6,8 @@ tags:
   - array
   - dynamic-programming
   - greedy
+  - weekly-contest-357
+  - contest-question
 date: 2023-08-06
 ---
 

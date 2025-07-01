@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - array
   - math
+  - weekly-contest-169
+  - contest-question
 date: 2020-12-27
 ---
 

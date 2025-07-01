@@ -8,6 +8,8 @@ tags:
   - breadth-first-search
   - binary-search-tree
   - binary-tree
+  - weekly-contest-21
+  - contest-question
 date: 2023-06-14
 ---
 

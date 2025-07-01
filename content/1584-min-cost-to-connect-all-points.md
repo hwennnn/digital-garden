@@ -7,6 +7,8 @@ tags:
   - union-find
   - graph
   - minimum-spanning-tree
+  - weekly-contest-206
+  - contest-question
 date: 2023-10-03
 ---
 

@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - array
   - bit-manipulation
+  - biweekly-contest-44
+  - contest-question
 date: 2021-01-24
 ---
 

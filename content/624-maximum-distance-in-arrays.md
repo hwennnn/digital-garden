@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - array
   - greedy
+  - weekly-contest-37
+  - contest-question
 date: 2024-08-16
 ---
 

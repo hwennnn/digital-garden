@@ -8,6 +8,8 @@ tags:
   - binary-search
   - greedy
   - number-theory
+  - weekly-contest-338
+  - contest-question
 date: 2025-01-13
 ---
 

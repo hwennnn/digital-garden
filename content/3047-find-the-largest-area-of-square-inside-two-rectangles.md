@@ -6,6 +6,8 @@ tags:
   - array
   - math
   - geometry
+  - weekly-contest-386
+  - contest-question
 date: 2024-02-25
 ---
 

@@ -10,6 +10,8 @@ tags:
   - segment-tree
   - merge-sort
   - ordered-set
+  - weekly-contest-214
+  - contest-question
 date: 2021-01-10
 ---
 

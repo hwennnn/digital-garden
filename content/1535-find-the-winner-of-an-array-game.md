@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - array
   - simulation
+  - weekly-contest-200
+  - contest-question
 date: 2020-10-12
 ---
 

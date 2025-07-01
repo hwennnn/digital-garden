@@ -6,6 +6,8 @@ tags:
   - array
   - binary-search
   - greedy
+  - weekly-contest-266
+  - contest-question
 date: 2025-01-13
 ---
 

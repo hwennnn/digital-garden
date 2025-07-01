@@ -6,6 +6,8 @@ tags:
   - array
   - stack
   - simulation
+  - weekly-contest-51
+  - contest-question
 date: 2022-04-10
 ---
 

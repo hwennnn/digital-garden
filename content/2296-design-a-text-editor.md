@@ -9,6 +9,8 @@ tags:
   - design
   - simulation
   - doubly-linked-list
+  - weekly-contest-296
+  - contest-question
 date: 2022-06-05
 ---
 

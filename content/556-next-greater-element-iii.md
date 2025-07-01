@@ -6,6 +6,8 @@ tags:
   - math
   - two-pointers
   - string
+  - weekly-contest-27
+  - contest-question
 date: 2022-03-21
 ---
 

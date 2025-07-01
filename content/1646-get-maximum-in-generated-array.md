@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - array
   - simulation
+  - weekly-contest-214
+  - contest-question
 date: 2021-01-15
 ---
 

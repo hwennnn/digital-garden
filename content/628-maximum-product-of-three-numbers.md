@@ -6,6 +6,8 @@ tags:
   - array
   - math
   - sorting
+  - weekly-contest-38
+  - contest-question
 date: 2020-08-20
 ---
 

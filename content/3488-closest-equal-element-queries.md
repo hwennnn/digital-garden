@@ -3,6 +3,11 @@ title: 3488. Closest Equal Element Queries
 draft: false
 tags: 
   - leetcode-medium
+  - array
+  - hash-table
+  - binary-search
+  - weekly-contest-441
+  - contest-question
 date: 2025-03-16
 ---
 

@@ -7,6 +7,8 @@ tags:
   - math
   - greedy
   - sorting
+  - weekly-contest-283
+  - contest-question
 date: 2022-03-06
 ---
 

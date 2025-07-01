@@ -7,6 +7,8 @@ tags:
   - math
   - bit-manipulation
   - matrix
+  - weekly-contest-71
+  - contest-question
 date: 2021-09-26
 ---
 

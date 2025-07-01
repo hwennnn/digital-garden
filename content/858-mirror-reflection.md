@@ -6,6 +6,8 @@ tags:
   - math
   - geometry
   - number-theory
+  - weekly-contest-90
+  - contest-question
 date: 2022-08-04
 ---
 

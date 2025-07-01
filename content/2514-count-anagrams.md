@@ -8,6 +8,8 @@ tags:
   - string
   - combinatorics
   - counting
+  - biweekly-contest-94
+  - contest-question
 date: 2022-12-25
 ---
 

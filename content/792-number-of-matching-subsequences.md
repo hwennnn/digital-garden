@@ -10,6 +10,8 @@ tags:
   - dynamic-programming
   - trie
   - sorting
+  - weekly-contest-74
+  - contest-question
 date: 2022-07-20
 ---
 

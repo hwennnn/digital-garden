@@ -9,6 +9,8 @@ tags:
   - depth-first-search
   - graph
   - topological-sort
+  - weekly-contest-289
+  - contest-question
 date: 2023-01-14
 ---
 

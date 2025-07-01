@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - math
   - dynamic-programming
+  - weekly-contest-73
+  - contest-question
 date: 2022-09-06
 ---
 

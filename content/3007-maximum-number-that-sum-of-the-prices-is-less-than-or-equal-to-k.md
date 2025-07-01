@@ -6,6 +6,8 @@ tags:
   - binary-search
   - dynamic-programming
   - bit-manipulation
+  - weekly-contest-380
+  - contest-question
 date: 2024-01-15
 ---
 

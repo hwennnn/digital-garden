@@ -7,6 +7,8 @@ tags:
   - string
   - design
   - trie
+  - weekly-contest-50
+  - contest-question
 date: 2021-07-30
 ---
 

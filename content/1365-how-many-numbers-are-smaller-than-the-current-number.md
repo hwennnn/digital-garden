@@ -6,7 +6,9 @@ tags:
   - array
   - hash-table
   - sorting
-  - counting
+  - counting-sort
+  - weekly-contest-178
+  - contest-question
 date: 2020-10-16
 ---
 

@@ -8,6 +8,8 @@ tags:
   - sorting
   - enumeration
   - prefix-sum
+  - weekly-contest-280
+  - contest-question
 date: 2022-02-15
 ---
 

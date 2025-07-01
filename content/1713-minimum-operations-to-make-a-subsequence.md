@@ -7,6 +7,8 @@ tags:
   - hash-table
   - binary-search
   - greedy
+  - weekly-contest-222
+  - contest-question
 date: 2021-01-03
 ---
 

@@ -7,6 +7,8 @@ tags:
   - backtracking
   - bit-manipulation
   - matrix
+  - weekly-contest-120
+  - contest-question
 date: 2022-12-31
 ---
 

@@ -6,6 +6,8 @@ tags:
   - breadth-first-search
   - graph
   - prefix-sum
+  - weekly-contest-381
+  - contest-question
 date: 2024-01-22
 ---
 

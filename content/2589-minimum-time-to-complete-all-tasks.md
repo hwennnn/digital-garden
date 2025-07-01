@@ -8,6 +8,8 @@ tags:
   - stack
   - greedy
   - sorting
+  - weekly-contest-336
+  - contest-question
 date: 2023-03-12
 ---
 

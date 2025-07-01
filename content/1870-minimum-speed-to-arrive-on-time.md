@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - array
   - binary-search
+  - weekly-contest-242
+  - contest-question
 date: 2023-07-26
 ---
 

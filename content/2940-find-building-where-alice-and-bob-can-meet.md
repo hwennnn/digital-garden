@@ -10,6 +10,8 @@ tags:
   - segment-tree
   - heap-priority-queue
   - monotonic-stack
+  - weekly-contest-372
+  - contest-question
 date: 2024-12-22
 ---
 

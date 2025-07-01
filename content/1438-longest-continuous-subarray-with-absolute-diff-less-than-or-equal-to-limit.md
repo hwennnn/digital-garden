@@ -9,6 +9,8 @@ tags:
   - heap-priority-queue
   - ordered-set
   - monotonic-queue
+  - weekly-contest-187
+  - contest-question
 date: 2024-06-23
 ---
 

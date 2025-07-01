@@ -7,6 +7,8 @@ tags:
   - math
   - string
   - matrix
+  - weekly-contest-274
+  - contest-question
 date: 2024-01-06
 ---
 

@@ -3,6 +3,13 @@ title: 3568. Minimum Moves to Clean the Classroom
 draft: false
 tags: 
   - leetcode-medium
+  - array
+  - hash-table
+  - bit-manipulation
+  - breadth-first-search
+  - matrix
+  - weekly-contest-452
+  - contest-question
 date: 2025-06-02
 ---
 

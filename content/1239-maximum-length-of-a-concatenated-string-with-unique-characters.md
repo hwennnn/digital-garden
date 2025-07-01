@@ -7,6 +7,8 @@ tags:
   - string
   - backtracking
   - bit-manipulation
+  - weekly-contest-160
+  - contest-question
 date: 2024-01-23
 ---
 

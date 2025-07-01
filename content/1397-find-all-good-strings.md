@@ -6,6 +6,8 @@ tags:
   - string
   - dynamic-programming
   - string-matching
+  - weekly-contest-182
+  - contest-question
 date: 2023-07-31
 ---
 

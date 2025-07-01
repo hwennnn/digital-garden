@@ -7,6 +7,8 @@ tags:
   - binary-indexed-tree
   - segment-tree
   - sorting
+  - weekly-contest-6
+  - contest-question
 date: 2022-06-29
 ---
 

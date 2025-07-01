@@ -6,6 +6,8 @@ tags:
   - array
   - simulation
   - prefix-sum
+  - weekly-contest-383
+  - contest-question
 date: 2024-02-04
 ---
 

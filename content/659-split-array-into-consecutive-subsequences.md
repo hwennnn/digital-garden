@@ -7,6 +7,8 @@ tags:
   - hash-table
   - greedy
   - heap-priority-queue
+  - weekly-contest-45
+  - contest-question
 date: 2022-08-19
 ---
 

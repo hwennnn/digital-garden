@@ -6,6 +6,8 @@ tags:
   - dynamic-programming
   - queue
   - simulation
+  - weekly-contest-300
+  - contest-question
 date: 2022-07-03
 ---
 

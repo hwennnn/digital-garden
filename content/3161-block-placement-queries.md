@@ -7,6 +7,8 @@ tags:
   - binary-search
   - binary-indexed-tree
   - segment-tree
+  - biweekly-contest-131
+  - contest-question
 date: 2024-05-26
 ---
 

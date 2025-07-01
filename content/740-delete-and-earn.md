@@ -6,6 +6,8 @@ tags:
   - array
   - hash-table
   - dynamic-programming
+  - weekly-contest-61
+  - contest-question
 date: 2020-08-14
 ---
 

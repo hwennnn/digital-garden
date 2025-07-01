@@ -7,6 +7,8 @@ tags:
   - string
   - bit-manipulation
   - counting
+  - weekly-contest-303
+  - contest-question
 date: 2022-07-24
 ---
 

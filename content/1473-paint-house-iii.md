@@ -5,6 +5,8 @@ tags:
   - leetcode-hard
   - array
   - dynamic-programming
+  - weekly-contest-192
+  - contest-question
 date: 2022-07-08
 ---
 

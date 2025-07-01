@@ -7,6 +7,8 @@ tags:
   - greedy
   - sliding-window
   - prefix-sum
+  - biweekly-contest-42
+  - contest-question
 date: 2020-12-30
 ---
 

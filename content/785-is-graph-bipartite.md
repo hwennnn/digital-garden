@@ -7,6 +7,8 @@ tags:
   - breadth-first-search
   - union-find
   - graph
+  - weekly-contest-72
+  - contest-question
 date: 2023-05-19
 ---
 

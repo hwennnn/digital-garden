@@ -7,6 +7,8 @@ tags:
   - math
   - enumeration
   - number-theory
+  - weekly-contest-352
+  - contest-question
 date: 2023-07-02
 ---
 

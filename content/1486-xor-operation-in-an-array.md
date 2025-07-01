@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - math
   - bit-manipulation
+  - weekly-contest-194
+  - contest-question
 date: 2020-08-17
 ---
 

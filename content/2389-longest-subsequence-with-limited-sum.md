@@ -8,6 +8,8 @@ tags:
   - greedy
   - sorting
   - prefix-sum
+  - weekly-contest-308
+  - contest-question
 date: 2022-12-25
 ---
 

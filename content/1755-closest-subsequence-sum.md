@@ -7,7 +7,10 @@ tags:
   - two-pointers
   - dynamic-programming
   - bit-manipulation
+  - sorting
   - bitmask
+  - weekly-contest-227
+  - contest-question
 date: 2021-10-10
 ---
 

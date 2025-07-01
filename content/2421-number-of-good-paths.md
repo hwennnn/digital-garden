@@ -9,6 +9,8 @@ tags:
   - union-find
   - graph
   - sorting
+  - weekly-contest-312
+  - contest-question
 date: 2023-01-15
 ---
 

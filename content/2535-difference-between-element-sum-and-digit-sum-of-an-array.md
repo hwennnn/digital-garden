@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - array
   - math
+  - weekly-contest-328
+  - contest-question
 date: 2023-01-15
 ---
 

@@ -4,6 +4,8 @@ draft: false
 tags: 
   - leetcode-easy
   - array
+  - weekly-contest-189
+  - contest-question
 date: 2020-10-12
 ---
 

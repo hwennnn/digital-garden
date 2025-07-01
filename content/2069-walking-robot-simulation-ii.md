@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - design
   - simulation
+  - biweekly-contest-65
+  - contest-question
 date: 2021-11-14
 ---
 

@@ -10,6 +10,8 @@ tags:
   - heap-priority-queue
   - prefix-sum
   - monotonic-queue
+  - biweekly-contest-86
+  - contest-question
 date: 2022-09-04
 ---
 

@@ -6,6 +6,8 @@ tags:
   - array
   - hash-table
   - sorting
+  - biweekly-contest-38
+  - contest-question
 date: 2020-10-31
 ---
 

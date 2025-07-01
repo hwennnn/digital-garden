@@ -6,6 +6,8 @@ tags:
   - math
   - greedy
   - heap-priority-queue
+  - weekly-contest-227
+  - contest-question
 date: 2021-02-14
 ---
 

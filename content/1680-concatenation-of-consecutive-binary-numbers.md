@@ -6,6 +6,8 @@ tags:
   - math
   - bit-manipulation
   - simulation
+  - weekly-contest-218
+  - contest-question
 date: 2022-09-23
 ---
 

@@ -6,6 +6,8 @@ tags:
   - array
   - brainteaser
   - simulation
+  - weekly-contest-196
+  - contest-question
 date: 2023-11-04
 ---
 

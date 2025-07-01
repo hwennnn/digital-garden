@@ -7,6 +7,8 @@ tags:
   - math
   - binary-search
   - greedy
+  - weekly-contest-304
+  - contest-question
 date: 2022-07-31
 ---
 

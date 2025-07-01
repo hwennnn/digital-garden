@@ -9,6 +9,8 @@ tags:
   - bit-manipulation
   - combinatorics
   - enumeration
+  - weekly-contest-241
+  - contest-question
 date: 2025-04-05
 ---
 

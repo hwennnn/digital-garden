@@ -8,6 +8,8 @@ tags:
   - breadth-first-search
   - graph
   - bitmask
+  - weekly-contest-87
+  - contest-question
 date: 2023-09-17
 ---
 

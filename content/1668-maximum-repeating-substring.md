@@ -6,6 +6,8 @@ tags:
   - string
   - dynamic-programming
   - string-matching
+  - biweekly-contest-40
+  - contest-question
 date: 2020-11-29
 ---
 

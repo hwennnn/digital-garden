@@ -8,6 +8,8 @@ tags:
   - recursion
   - queue
   - simulation
+  - weekly-contest-236
+  - contest-question
 date: 2024-07-14
 ---
 

@@ -7,6 +7,8 @@ tags:
   - hash-table
   - math
   - combinatorics
+  - weekly-contest-375
+  - contest-question
 date: 2023-12-10
 ---
 

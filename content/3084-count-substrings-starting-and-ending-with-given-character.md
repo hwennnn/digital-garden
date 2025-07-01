@@ -6,6 +6,8 @@ tags:
   - math
   - string
   - counting
+  - weekly-contest-389
+  - contest-question
 date: 2024-03-17
 ---
 

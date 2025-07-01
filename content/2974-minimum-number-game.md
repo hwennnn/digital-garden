@@ -7,6 +7,8 @@ tags:
   - sorting
   - heap-priority-queue
   - simulation
+  - weekly-contest-377
+  - contest-question
 date: 2023-12-24
 ---
 

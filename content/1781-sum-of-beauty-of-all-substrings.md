@@ -6,6 +6,8 @@ tags:
   - hash-table
   - string
   - counting
+  - biweekly-contest-47
+  - contest-question
 date: 2021-04-10
 ---
 

@@ -7,6 +7,8 @@ tags:
   - binary-search
   - dynamic-programming
   - greedy
+  - biweekly-contest-40
+  - contest-question
 date: 2025-01-06
 ---
 

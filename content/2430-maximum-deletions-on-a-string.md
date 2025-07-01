@@ -8,6 +8,8 @@ tags:
   - rolling-hash
   - string-matching
   - hash-function
+  - weekly-contest-313
+  - contest-question
 date: 2022-10-02
 ---
 

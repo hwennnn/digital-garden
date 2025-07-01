@@ -3,6 +3,13 @@ title: 3585. Find Weighted Median Node in Tree
 draft: false
 tags: 
   - leetcode-hard
+  - array
+  - binary-search
+  - dynamic-programming
+  - tree
+  - depth-first-search
+  - weekly-contest-454
+  - contest-question
 date: 2025-06-16
 ---
 

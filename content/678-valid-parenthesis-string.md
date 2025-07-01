@@ -7,6 +7,8 @@ tags:
   - dynamic-programming
   - stack
   - greedy
+  - weekly-contest-50
+  - contest-question
 date: 2020-04-16
 ---
 

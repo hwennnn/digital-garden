@@ -7,6 +7,8 @@ tags:
   - two-pointers
   - string
   - simulation
+  - weekly-contest-272
+  - contest-question
 date: 2024-12-03
 ---
 

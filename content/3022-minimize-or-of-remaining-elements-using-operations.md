@@ -6,6 +6,8 @@ tags:
   - array
   - greedy
   - bit-manipulation
+  - weekly-contest-382
+  - contest-question
 date: 2024-01-28
 ---
 

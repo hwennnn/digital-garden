@@ -10,6 +10,8 @@ tags:
   - segment-tree
   - queue
   - monotonic-queue
+  - weekly-contest-310
+  - contest-question
 date: 2022-09-11
 ---
 

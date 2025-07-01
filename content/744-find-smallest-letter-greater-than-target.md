@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - array
   - binary-search
+  - weekly-contest-by-app-academy
+  - contest-question
 date: 2023-06-09
 ---
 

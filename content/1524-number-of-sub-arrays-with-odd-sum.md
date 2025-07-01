@@ -7,6 +7,8 @@ tags:
   - math
   - dynamic-programming
   - prefix-sum
+  - biweekly-contest-31
+  - contest-question
 date: 2020-08-26
 ---
 

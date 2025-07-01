@@ -7,6 +7,8 @@ tags:
   - design
   - binary-indexed-tree
   - segment-tree
+  - biweekly-contest-79
+  - contest-question
 date: 2022-06-02
 ---
 

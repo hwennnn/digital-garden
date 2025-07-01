@@ -6,6 +6,8 @@ tags:
   - array
   - hash-table
   - design
+  - weekly-contest-241
+  - contest-question
 date: 2021-05-16
 ---
 

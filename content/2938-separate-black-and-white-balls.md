@@ -6,6 +6,8 @@ tags:
   - two-pointers
   - string
   - greedy
+  - weekly-contest-372
+  - contest-question
 date: 2024-10-15
 ---
 

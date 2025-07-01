@@ -3,9 +3,12 @@ title: 2493. Divide Nodes Into the Maximum Number of Groups
 draft: false
 tags: 
   - leetcode-hard
+  - depth-first-search
   - breadth-first-search
   - union-find
   - graph
+  - weekly-contest-322
+  - contest-question
 date: 2025-01-30
 ---
 

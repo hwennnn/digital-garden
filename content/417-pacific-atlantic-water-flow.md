@@ -7,6 +7,8 @@ tags:
   - depth-first-search
   - breadth-first-search
   - matrix
+  - weekly-contest-8
+  - contest-question
 date: 2022-08-31
 ---
 

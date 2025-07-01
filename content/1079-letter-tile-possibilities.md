@@ -7,6 +7,8 @@ tags:
   - string
   - backtracking
   - counting
+  - weekly-contest-140
+  - contest-question
 date: 2019-10-09
 ---
 

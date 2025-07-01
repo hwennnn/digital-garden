@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - string
   - greedy
+  - weekly-contest-406
+  - contest-question
 date: 2024-07-14
 ---
 

@@ -8,6 +8,8 @@ tags:
   - breadth-first-search
   - union-find
   - matrix
+  - weekly-contest-246
+  - contest-question
 date: 2024-12-26
 ---
 

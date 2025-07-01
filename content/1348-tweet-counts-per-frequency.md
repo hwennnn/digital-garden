@@ -8,6 +8,8 @@ tags:
   - design
   - sorting
   - ordered-set
+  - weekly-contest-175
+  - contest-question
 date: 2020-10-24
 ---
 

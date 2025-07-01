@@ -7,6 +7,8 @@ tags:
   - hash-table
   - string
   - counting
+  - weekly-contest-80
+  - contest-question
 date: 2020-03-03
 ---
 
@@ -18,6 +20,8 @@ date: 2020-03-03
 <p>Given a string <code>paragraph</code> and a string array of the banned words <code>banned</code>, return <em>the most frequent word that is not banned</em>. It is <strong>guaranteed</strong> there is <strong>at least one word</strong> that is not banned, and that the answer is <strong>unique</strong>.</p>
 
 <p>The words in <code>paragraph</code> are <strong>case-insensitive</strong> and the answer should be returned in <strong>lowercase</strong>.</p>
+
+<p><strong>Note</strong> that words can not contain punctuation symbols.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>

@@ -6,6 +6,8 @@ tags:
   - string
   - stack
   - simulation
+  - weekly-contest-285
+  - contest-question
 date: 2022-03-20
 ---
 

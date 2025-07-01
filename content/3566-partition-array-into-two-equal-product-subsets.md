@@ -3,6 +3,12 @@ title: 3566. Partition Array into Two Equal Product Subsets
 draft: false
 tags: 
   - leetcode-medium
+  - array
+  - bit-manipulation
+  - recursion
+  - enumeration
+  - weekly-contest-452
+  - contest-question
 date: 2025-06-02
 ---
 

@@ -10,6 +10,8 @@ tags:
   - dynamic-programming
   - sorting
   - counting
+  - weekly-contest-402
+  - contest-question
 date: 2024-06-16
 ---
 

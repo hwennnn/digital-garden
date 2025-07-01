@@ -6,6 +6,8 @@ tags:
   - tree
   - depth-first-search
   - binary-tree
+  - smarking-algorithm-contest
+  - contest-question
 date: 2022-06-24
 ---
 

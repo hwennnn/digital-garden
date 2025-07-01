@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - array
   - backtracking
+  - biweekly-contest-43
+  - contest-question
 date: 2025-02-16
 ---
 
@@ -13,7 +15,7 @@ date: 2025-02-16
 ## Description
 
 ---
-<p>Given an integer <code>n</code>, find a sequence that satisfies all of the following:</p>
+<p>Given an integer <code>n</code>, find a sequence with elements in the range <code>[1, n]</code> that satisfies all of the following:</p>
 
 <ul>
 	<li>The integer <code>1</code> occurs once in the sequence.</li>

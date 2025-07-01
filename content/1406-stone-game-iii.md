@@ -7,6 +7,8 @@ tags:
   - math
   - dynamic-programming
   - game-theory
+  - weekly-contest-183
+  - contest-question
 date: 2023-05-27
 ---
 

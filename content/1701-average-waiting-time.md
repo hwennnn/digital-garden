@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - array
   - simulation
+  - biweekly-contest-42
+  - contest-question
 date: 2024-07-14
 ---
 

@@ -7,6 +7,8 @@ tags:
   - hash-table
   - math
   - counting
+  - weekly-contest-197
+  - contest-question
 date: 2023-10-03
 ---
 

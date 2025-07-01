@@ -7,6 +7,8 @@ tags:
   - stack
   - sorting
   - simulation
+  - weekly-contest-351
+  - contest-question
 date: 2024-07-13
 ---
 

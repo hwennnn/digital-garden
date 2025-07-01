@@ -9,6 +9,8 @@ tags:
   - segment-tree
   - prefix-sum
   - ordered-set
+  - weekly-contest-59
+  - contest-question
 date: 2025-01-01
 ---
 

@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - math
   - simulation
+  - weekly-contest-350
+  - contest-question
 date: 2023-06-18
 ---
 

@@ -7,6 +7,8 @@ tags:
   - greedy
   - sorting
   - heap-priority-queue
+  - weekly-contest-301
+  - contest-question
 date: 2022-07-11
 ---
 

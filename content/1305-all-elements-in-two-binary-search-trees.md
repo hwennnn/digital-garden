@@ -8,6 +8,8 @@ tags:
   - binary-search-tree
   - sorting
   - binary-tree
+  - weekly-contest-169
+  - contest-question
 date: 2022-01-26
 ---
 

@@ -7,6 +7,8 @@ tags:
   - binary-search
   - matrix
   - prefix-sum
+  - weekly-contest-167
+  - contest-question
 date: 2020-12-30
 ---
 

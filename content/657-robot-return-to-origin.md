@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - string
   - simulation
+  - weekly-contest-45
+  - contest-question
 date: 2019-10-08
 ---
 

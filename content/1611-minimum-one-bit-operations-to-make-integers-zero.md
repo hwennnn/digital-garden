@@ -6,6 +6,8 @@ tags:
   - dynamic-programming
   - bit-manipulation
   - memoization
+  - weekly-contest-209
+  - contest-question
 date: 2023-12-01
 ---
 

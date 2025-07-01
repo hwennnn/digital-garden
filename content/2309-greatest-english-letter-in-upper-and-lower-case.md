@@ -6,6 +6,8 @@ tags:
   - hash-table
   - string
   - enumeration
+  - weekly-contest-298
+  - contest-question
 date: 2022-06-19
 ---
 

@@ -7,8 +7,11 @@ tags:
   - math
   - stack
   - greedy
+  - sorting
   - monotonic-stack
   - number-theory
+  - weekly-contest-358
+  - contest-question
 date: 2025-03-29
 ---
 

@@ -7,6 +7,8 @@ tags:
   - hash-table
   - math
   - matrix
+  - weekly-contest-86
+  - contest-question
 date: 2024-08-09
 ---
 

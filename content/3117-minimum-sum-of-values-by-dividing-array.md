@@ -9,6 +9,8 @@ tags:
   - bit-manipulation
   - segment-tree
   - queue
+  - weekly-contest-393
+  - contest-question
 date: 2024-04-14
 ---
 

@@ -3,10 +3,14 @@ title: 2353. Design a Food Rating System
 draft: false
 tags: 
   - leetcode-medium
+  - array
   - hash-table
+  - string
   - design
   - heap-priority-queue
   - ordered-set
+  - weekly-contest-303
+  - contest-question
 date: 2023-12-17
 ---
 

@@ -3,6 +3,9 @@ title: 3560. Find Minimum Log Transportation Cost
 draft: false
 tags: 
   - leetcode-easy
+  - math
+  - weekly-contest-451
+  - contest-question
 date: 2025-05-25
 ---
 

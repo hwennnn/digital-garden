@@ -8,6 +8,8 @@ tags:
   - sorting
   - counting
   - enumeration
+  - weekly-contest-93
+  - contest-question
 date: 2022-08-26
 ---
 

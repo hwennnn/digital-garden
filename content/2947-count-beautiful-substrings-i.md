@@ -9,6 +9,8 @@ tags:
   - enumeration
   - number-theory
   - prefix-sum
+  - weekly-contest-373
+  - contest-question
 date: 2023-11-26
 ---
 

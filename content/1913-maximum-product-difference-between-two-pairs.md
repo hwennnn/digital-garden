@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - array
   - sorting
+  - weekly-contest-247
+  - contest-question
 date: 2023-12-18
 ---
 

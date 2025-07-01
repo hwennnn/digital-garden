@@ -6,6 +6,8 @@ tags:
   - array
   - math
   - number-theory
+  - weekly-contest-316
+  - contest-question
 date: 2022-10-23
 ---
 

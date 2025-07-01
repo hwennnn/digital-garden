@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - math
   - simulation
+  - biweekly-contest-72
+  - contest-question
 date: 2022-02-19
 ---
 

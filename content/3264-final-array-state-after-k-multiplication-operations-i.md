@@ -7,6 +7,8 @@ tags:
   - math
   - heap-priority-queue
   - simulation
+  - weekly-contest-412
+  - contest-question
 date: 2024-12-16
 ---
 

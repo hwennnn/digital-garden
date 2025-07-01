@@ -7,6 +7,8 @@ tags:
   - bit-manipulation
   - graph
   - bitmask
+  - biweekly-contest-29
+  - contest-question
 date: 2022-01-10
 ---
 

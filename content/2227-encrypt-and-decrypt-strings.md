@@ -8,6 +8,8 @@ tags:
   - string
   - design
   - trie
+  - weekly-contest-287
+  - contest-question
 date: 2022-04-05
 ---
 

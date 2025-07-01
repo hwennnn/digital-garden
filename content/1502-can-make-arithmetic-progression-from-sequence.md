@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - array
   - sorting
+  - weekly-contest-196
+  - contest-question
 date: 2023-06-06
 ---
 

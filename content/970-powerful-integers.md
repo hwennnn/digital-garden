@@ -6,6 +6,8 @@ tags:
   - hash-table
   - math
   - enumeration
+  - weekly-contest-118
+  - contest-question
 date: 2022-02-22
 ---
 

@@ -6,6 +6,8 @@ tags:
   - array
   - hash-table
   - greedy
+  - weekly-contest-379
+  - contest-question
 date: 2024-01-10
 ---
 

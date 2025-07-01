@@ -8,6 +8,8 @@ tags:
   - sorting
   - heap-priority-queue
   - matrix
+  - biweekly-contest-70
+  - contest-question
 date: 2022-01-23
 ---
 

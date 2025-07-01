@@ -6,6 +6,8 @@ tags:
   - math
   - combinatorics
   - enumeration
+  - biweekly-contest-117
+  - contest-question
 date: 2025-06-01
 ---
 

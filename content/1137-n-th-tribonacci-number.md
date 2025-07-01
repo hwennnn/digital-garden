@@ -6,6 +6,8 @@ tags:
   - math
   - dynamic-programming
   - memoization
+  - weekly-contest-147
+  - contest-question
 date: 2019-10-10
 ---
 

@@ -7,6 +7,8 @@ tags:
   - binary-search
   - greedy
   - sorting
+  - weekly-contest-276
+  - contest-question
 date: 2023-07-27
 ---
 

@@ -10,6 +10,8 @@ tags:
   - backtracking
   - bit-manipulation
   - bitmask
+  - weekly-contest-124
+  - contest-question
 date: 2022-02-21
 ---
 

@@ -3,9 +3,13 @@ title: 2048. Next Greater Numerically Balanced Number
 draft: false
 tags: 
   - leetcode-medium
+  - hash-table
   - math
   - backtracking
+  - counting
   - enumeration
+  - weekly-contest-264
+  - contest-question
 date: 2021-10-24
 ---
 

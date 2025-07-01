@@ -7,6 +7,8 @@ tags:
   - binary-search
   - combinatorics
   - number-theory
+  - weekly-contest-155
+  - contest-question
 date: 2022-04-20
 ---
 

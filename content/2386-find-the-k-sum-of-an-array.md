@@ -6,6 +6,8 @@ tags:
   - array
   - sorting
   - heap-priority-queue
+  - weekly-contest-307
+  - contest-question
 date: 2022-09-05
 ---
 

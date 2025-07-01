@@ -8,6 +8,8 @@ tags:
   - geometry
   - sliding-window
   - sorting
+  - weekly-contest-209
+  - contest-question
 date: 2020-10-04
 ---
 

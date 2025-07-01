@@ -9,6 +9,8 @@ tags:
   - greedy
   - sorting
   - monotonic-stack
+  - weekly-contest-32
+  - contest-question
 date: 2023-08-23
 ---
 

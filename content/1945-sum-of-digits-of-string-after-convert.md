@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - string
   - simulation
+  - weekly-contest-251
+  - contest-question
 date: 2024-12-31
 ---
 

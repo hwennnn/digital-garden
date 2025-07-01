@@ -6,6 +6,8 @@ tags:
   - math
   - greedy
   - bit-manipulation
+  - weekly-contest-372
+  - contest-question
 date: 2023-11-19
 ---
 

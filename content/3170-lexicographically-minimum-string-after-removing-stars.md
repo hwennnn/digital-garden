@@ -8,6 +8,8 @@ tags:
   - stack
   - greedy
   - heap-priority-queue
+  - weekly-contest-400
+  - contest-question
 date: 2025-06-07
 ---
 

@@ -5,6 +5,8 @@ tags:
   - leetcode-easy
   - string
   - prefix-sum
+  - weekly-contest-186
+  - contest-question
 date: 2025-01-01
 ---
 

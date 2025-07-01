@@ -8,6 +8,8 @@ tags:
   - binary-search
   - stack
   - monotonic-stack
+  - weekly-contest-232
+  - contest-question
 date: 2023-10-22
 ---
 

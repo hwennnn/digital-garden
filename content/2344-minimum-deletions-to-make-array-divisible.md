@@ -8,6 +8,8 @@ tags:
   - sorting
   - heap-priority-queue
   - number-theory
+  - weekly-contest-302
+  - contest-question
 date: 2022-07-17
 ---
 

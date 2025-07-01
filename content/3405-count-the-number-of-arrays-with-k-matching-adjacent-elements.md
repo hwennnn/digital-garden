@@ -5,6 +5,8 @@ tags:
   - leetcode-hard
   - math
   - combinatorics
+  - weekly-contest-430
+  - contest-question
 date: 2025-06-17
 ---
 

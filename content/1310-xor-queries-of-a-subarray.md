@@ -6,6 +6,8 @@ tags:
   - array
   - bit-manipulation
   - prefix-sum
+  - weekly-contest-170
+  - contest-question
 date: 2025-01-01
 ---
 

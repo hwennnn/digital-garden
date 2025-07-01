@@ -7,6 +7,8 @@ tags:
   - binary-search
   - simulation
   - prefix-sum
+  - biweekly-contest-54
+  - contest-question
 date: 2024-12-31
 ---
 

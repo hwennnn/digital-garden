@@ -5,6 +5,8 @@ tags:
   - leetcode-hard
   - math
   - binary-search
+  - weekly-contest-47
+  - contest-question
 date: 2021-11-16
 ---
 

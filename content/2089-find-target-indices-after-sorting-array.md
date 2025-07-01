@@ -6,6 +6,8 @@ tags:
   - array
   - binary-search
   - sorting
+  - weekly-contest-269
+  - contest-question
 date: 2021-11-28
 ---
 

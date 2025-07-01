@@ -6,6 +6,8 @@ tags:
   - array
   - counting
   - prefix-sum
+  - weekly-contest-240
+  - contest-question
 date: 2021-05-09
 ---
 

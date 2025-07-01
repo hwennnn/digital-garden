@@ -6,6 +6,8 @@ tags:
   - array
   - hash-table
   - linked-list
+  - weekly-contest-406
+  - contest-question
 date: 2024-12-31
 ---
 

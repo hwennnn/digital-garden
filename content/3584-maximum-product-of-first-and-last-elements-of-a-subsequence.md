@@ -3,6 +3,10 @@ title: 3584. Maximum Product of First and Last Elements of a Subsequence
 draft: false
 tags: 
   - leetcode-medium
+  - array
+  - two-pointers
+  - weekly-contest-454
+  - contest-question
 date: 2025-06-15
 ---
 

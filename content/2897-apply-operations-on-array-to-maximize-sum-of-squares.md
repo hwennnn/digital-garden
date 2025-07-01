@@ -7,6 +7,8 @@ tags:
   - hash-table
   - greedy
   - bit-manipulation
+  - weekly-contest-366
+  - contest-question
 date: 2023-10-18
 ---
 

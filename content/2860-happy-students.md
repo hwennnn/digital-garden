@@ -6,6 +6,8 @@ tags:
   - array
   - sorting
   - enumeration
+  - weekly-contest-363
+  - contest-question
 date: 2023-09-17
 ---
 

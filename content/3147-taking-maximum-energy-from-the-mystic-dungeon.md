@@ -5,6 +5,8 @@ tags:
   - leetcode-medium
   - array
   - prefix-sum
+  - weekly-contest-397
+  - contest-question
 date: 2024-05-12
 ---
 
@@ -20,6 +22,8 @@ date: 2024-05-12
 <p>In other words, you will choose a starting point and then teleport with <code>k</code> jumps until you reach the end of the magicians&#39; sequence, <strong>absorbing all the energy</strong> during the journey.</p>
 
 <p>You are given an array <code>energy</code> and an integer <code>k</code>. Return the <strong>maximum</strong> possible energy you can gain.</p>
+
+<p><strong>Note</strong> that when you are reach a magician, you <em>must</em> take energy from them, whether it is negative or positive energy.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>

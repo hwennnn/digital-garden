@@ -6,6 +6,8 @@ tags:
   - array
   - string
   - prefix-sum
+  - weekly-contest-229
+  - contest-question
 date: 2025-01-06
 ---
 

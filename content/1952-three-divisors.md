@@ -6,6 +6,8 @@ tags:
   - math
   - enumeration
   - number-theory
+  - weekly-contest-252
+  - contest-question
 date: 2021-08-01
 ---
 

@@ -6,6 +6,8 @@ tags:
   - array
   - greedy
   - heap-priority-queue
+  - weekly-contest-221
+  - contest-question
 date: 2020-12-30
 ---
 

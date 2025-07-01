@@ -6,6 +6,8 @@ tags:
   - math
   - binary-search
   - number-theory
+  - biweekly-contest-94
+  - contest-question
 date: 2022-12-25
 ---
 

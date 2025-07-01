@@ -10,6 +10,8 @@ tags:
   - counting
   - enumeration
   - number-theory
+  - weekly-contest-385
+  - contest-question
 date: 2024-02-18
 ---
 

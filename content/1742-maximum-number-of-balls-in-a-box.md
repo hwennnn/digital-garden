@@ -6,6 +6,8 @@ tags:
   - hash-table
   - math
   - counting
+  - weekly-contest-226
+  - contest-question
 date: 2021-02-14
 ---
 

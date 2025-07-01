@@ -7,6 +7,8 @@ tags:
   - greedy
   - matrix
   - prefix-sum
+  - biweekly-contest-69
+  - contest-question
 date: 2022-01-10
 ---
 

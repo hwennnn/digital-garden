@@ -8,6 +8,8 @@ tags:
   - geometry
   - sorting
   - number-theory
+  - weekly-contest-294
+  - contest-question
 date: 2022-05-22
 ---
 

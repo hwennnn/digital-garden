@@ -4,6 +4,8 @@ draft: false
 tags: 
   - leetcode-easy
   - bit-manipulation
+  - weekly-contest-14
+  - contest-question
 date: 2024-12-26
 ---
 

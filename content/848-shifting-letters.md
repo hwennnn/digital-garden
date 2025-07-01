@@ -6,6 +6,8 @@ tags:
   - array
   - string
   - prefix-sum
+  - weekly-contest-88
+  - contest-question
 date: 2021-09-08
 ---
 

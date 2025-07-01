@@ -8,6 +8,8 @@ tags:
   - two-pointers
   - binary-search
   - sorting
+  - weekly-contest-22
+  - contest-question
 date: 2022-02-09
 ---
 

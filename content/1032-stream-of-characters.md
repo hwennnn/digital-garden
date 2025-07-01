@@ -8,6 +8,8 @@ tags:
   - design
   - trie
   - data-stream
+  - weekly-contest-133
+  - contest-question
 date: 2022-01-10
 ---
 

@@ -3,6 +3,11 @@ title: 3567. Minimum Absolute Difference in Sliding Submatrix
 draft: false
 tags: 
   - leetcode-medium
+  - array
+  - sorting
+  - matrix
+  - weekly-contest-452
+  - contest-question
 date: 2025-06-02
 ---
 

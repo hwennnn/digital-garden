@@ -10,6 +10,8 @@ tags:
   - union-find
   - heap-priority-queue
   - matrix
+  - weekly-contest-212
+  - contest-question
 date: 2023-09-16
 ---
 

@@ -7,6 +7,8 @@ tags:
   - hash-table
   - math
   - number-theory
+  - weekly-contest-335
+  - contest-question
 date: 2023-03-05
 ---
 

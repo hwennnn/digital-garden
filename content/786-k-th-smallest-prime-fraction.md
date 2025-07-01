@@ -8,6 +8,8 @@ tags:
   - binary-search
   - sorting
   - heap-priority-queue
+  - weekly-contest-72
+  - contest-question
 date: 2024-05-11
 ---
 

@@ -4,6 +4,8 @@ draft: false
 tags: 
   - leetcode-medium
   - array
+  - weekly-contest-344
+  - contest-question
 date: 2023-05-07
 ---
 
@@ -16,7 +18,7 @@ date: 2023-05-07
 
 <ul>
 	<li>Set <code>colors[index<sub>i</sub>]</code> to <code>color<sub>i</sub></code>.</li>
-	<li>Count adjacent pairs in <code>colors</code> set to the same color (regardless of <code>color<sub>i</sub></code>).</li>
+	<li>Count the number of adjacent pairs in <code>colors</code> which have the same color (regardless of <code>color<sub>i</sub></code>).</li>
 </ul>
 
 <p>Return an array <code>answer</code> of the same length as <code>queries</code> where <code>answer[i]</code> is the answer to the <code>i<sup>th</sup></code> query.</p>
