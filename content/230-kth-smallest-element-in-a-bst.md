@@ -7,7 +7,7 @@ tags:
   - depth-first-search
   - binary-search-tree
   - binary-tree
-date: 2022-06-26
+date: 2025-06-30
 ---
 
 [Problem Link](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
@@ -58,21 +58,21 @@ date: 2022-06-26
 #         self.right = right
 class Solution:
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
-        self.res = -1
-        self.k = k
-        
-        def dfs(node):
-            if node.left: dfs(node.left)
-                
-            self.k -= 1
-            if self.k == 0:
-                self.res = node.val
+        res = -1
+
+        def go(node):
+            nonlocal res, k
+
+            if node.left: go(node.left)
+
+            k -= 1
+            if k == 0:
+                res = node.val
                 return
             
-            if node.right: dfs(node.right)
+            if node.right: go(node.right)
         
-        dfs(root)
-        
-        return self.res
+        go(root)
+        return res
 ```
 

@@ -8,7 +8,7 @@ tags:
   - greedy
   - counting
   - enumeration
-date: 2021-09-19
+date: 2025-06-27
 ---
 
 [Problem Link](https://leetcode.com/problems/longest-subsequence-repeated-k-times/)

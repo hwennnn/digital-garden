@@ -8,7 +8,7 @@ tags:
   - string-matching
   - binary-tree
   - hash-function
-date: 2021-09-24
+date: 2025-06-30
 ---
 
 [Problem Link](https://leetcode.com/problems/subtree-of-another-tree/)
@@ -59,14 +59,21 @@ date: 2021-09-24
 #         self.right = right
 class Solution:
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
-        if not root: return False
-        
-        def isSameTree(a, b):
-            if not a and not b: return True
-            if not a or not b: return False
+
+        def same(root1, root2):
+            if not root1 and not root2: return True
+
+            if not root1 or not root2: return False
+
+            return root1.val == root2.val and same(root1.left, root2.left) and same(root1.right, root2.right)
+
+        def go(node):
+            if not node: return False
             
-            return a.val == b.val and isSameTree(a.left, b.left) and isSameTree(a.right, b.right)
+            return (node.val == subRoot.val and same(node, subRoot)) or go(node.left) or go(node.right)
         
-        return isSameTree(root, subRoot) or self.isSubtree(root.left, subRoot) or self.isSubtree(root.right, subRoot)
+        return go(root)
+
+
 ```
 

@@ -6,7 +6,7 @@ tags:
   - array
   - greedy
   - sorting
-date: 2022-06-05
+date: 2025-06-19
 ---
 
 [Problem Link](https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/)
@@ -75,21 +75,17 @@ Since three subsequences were created, we return 3. It can be shown that 3 is th
 ``` py title='partition-array-such-that-maximum-difference-is-k'
 class Solution:
     def partitionArray(self, nums: List[int], k: int) -> int:
-        n = len(nums)
+        N = len(nums)
         nums.sort()
-        res = 1
-        mmin = mmax = nums[0]
-        
-        for i in range(1, n):
-            if nums[i] > mmax:
-                mmax = nums[i]
-            
-            if nums[i] < mmin:
-                mmin = nums[i]
-            
-            if mmax - mmin > k:
-                res += 1
-                mmax = mmin = nums[i]
+        res = 0
+        i = j = 0
+
+        while i < N:
+            while j < N and nums[j] - nums[i] <= k:
+                j += 1
+
+            res += 1
+            i = j
         
         return res
 ```

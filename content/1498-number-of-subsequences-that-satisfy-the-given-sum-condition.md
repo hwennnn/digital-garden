@@ -7,7 +7,7 @@ tags:
   - two-pointers
   - binary-search
   - sorting
-date: 2023-05-06
+date: 2025-06-29
 ---
 
 [Problem Link](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/)
@@ -73,10 +73,10 @@ class Solution:
         res = 0
 
         for i, x in enumerate(nums):
-            index = bisect_right(nums, target - x) - 1
+            j = bisect_right(nums, target - x) - 1
 
-            if index >= i and nums[i] + nums[index] <= target:
-                res += pow(2, index - i)
+            if j >= i and nums[i] + nums[j] <= target:
+                res += pow(2, j - i)
                 res %= M
         
         return res

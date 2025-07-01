@@ -7,7 +7,7 @@ tags:
   - divide-and-conquer
   - heap-priority-queue
   - merge-sort
-date: 2024-08-13
+date: 2025-06-30
 ---
 
 [Problem Link](https://leetcode.com/problems/merge-k-sorted-lists/)
@@ -72,27 +72,34 @@ merging them into one sorted list:
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
+class Node:
+    def __init__(self, val, l):
+        self.val = val
+        self.l = l
+    
+    def __lt__(self, other):
+        return self.val < other.val
+
 class Solution:
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
-        if not lists: return None
-
-        res = curr = ListNode(-1)
         pq = []
 
-        for index, head in enumerate(lists):
-            if head:
-                heappush(pq, (head.val, index))
+        for l in lists:
+            if l:
+                heappush(pq, Node(l.val, l.next))
         
-        while pq:
-            val, index = heappop(pq)
+        res = curr = ListNode(-1)
 
-            curr.next = lists[index]
+        while pq:
+            node = heappop(pq)
+            val, rem = node.val, node.l
+
+            curr.next = ListNode(val)
             curr = curr.next
 
-            lists[index] = lists[index].next
-
-            if lists[index]:
-                heappush(pq, (lists[index].val, index))
+            if rem:
+                heappush(pq, Node(rem.val, rem.next))
 
         return res.next
 ```

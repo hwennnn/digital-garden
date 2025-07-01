@@ -5,7 +5,7 @@ tags:
   - leetcode-hard
   - math
   - enumeration
-date: 2021-11-22
+date: 2025-06-23
 ---
 
 [Problem Link](https://leetcode.com/problems/sum-of-k-mirror-numbers/)

@@ -7,7 +7,7 @@ tags:
   - string
   - design
   - trie
-date: 2023-03-17
+date: 2025-06-30
 ---
 
 [Problem Link](https://leetcode.com/problems/implement-trie-prefix-tree/)

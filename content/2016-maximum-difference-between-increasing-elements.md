@@ -4,7 +4,7 @@ draft: false
 tags: 
   - leetcode-easy
   - array
-date: 2021-09-30
+date: 2025-06-16
 ---
 
 [Problem Link](https://leetcode.com/problems/maximum-difference-between-increasing-elements/)
@@ -62,13 +62,14 @@ The maximum difference occurs with i = 0 and j = 3, nums[j] - nums[i] = 10 - 1 =
 ``` py title='maximum-difference-between-increasing-elements'
 class Solution:
     def maximumDifference(self, nums: List[int]) -> int:
-        n = len(nums)
+        N = len(nums)
+        mmin = nums[0]
         res = -1
-        
-        for i in range(n):
-            for j in range(i + 1, n):
-                if nums[i] < nums[j]:
-                    res = max(res, nums[j] - nums[i])
+
+        for i in range(1, N):
+            if nums[i] > mmin:
+                res = max(res, nums[i] - mmin)
+            mmin = min(mmin, nums[i])
         
         return res
 ```

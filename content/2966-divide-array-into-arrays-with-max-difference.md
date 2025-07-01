@@ -6,7 +6,7 @@ tags:
   - array
   - greedy
   - sorting
-date: 2024-02-01
+date: 2025-06-18
 ---
 
 [Problem Link](https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/)
@@ -87,25 +87,15 @@ date: 2024-02-01
 ``` py title='divide-array-into-arrays-with-max-difference'
 class Solution:
     def divideArray(self, nums: List[int], k: int) -> List[List[int]]:
-        N = len(nums)
-        if N % 3 != 0: return []
-        
+        N = len(nums) 
         nums.sort()
         res = []
-        curr = []
 
-        for x in nums:
-            if len(curr) == 0:
-                curr.append(x)
-            else:
-                if x - curr[0] > k:
-                    return []
-                
-                curr.append(x)
+        for i in range(0, N, 3):
+            if nums[i + 2] - nums[i] > k:
+                return []
             
-            if len(curr) == 3:
-                res.append(curr)
-                curr = []
+            res.append(nums[i : i + 3])
         
         return res
 ```

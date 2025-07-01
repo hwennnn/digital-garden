@@ -5,7 +5,7 @@ tags:
   - leetcode-hard
   - array
   - binary-search
-date: 2021-10-17
+date: 2025-06-25
 ---
 
 [Problem Link](https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/)

@@ -7,7 +7,7 @@ tags:
   - depth-first-search
   - breadth-first-search
   - binary-tree
-date: 2024-02-26
+date: 2025-06-22
 ---
 
 [Problem Link](https://leetcode.com/problems/same-tree/)
@@ -63,14 +63,12 @@ date: 2024-02-26
 #         self.right = right
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        def dfs(p, q):
+            if not p and not q: return True
+            if not p or not q: return False
+
+            return p.val == q.val and dfs(p.left, q.left) and dfs(p.right, q.right)
         
-        def same(node1, node2):
-            if not node1 and not node2: return True
-
-            if not node1 or not node2: return False
-
-            return node1.val == node2.val and same(node1.left, node2.left) and same(node1.right, node2.right)
-
-        return same(p, q)
+        return dfs(p, q)
 ```
 

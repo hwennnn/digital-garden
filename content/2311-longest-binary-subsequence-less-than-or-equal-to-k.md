@@ -7,7 +7,7 @@ tags:
   - dynamic-programming
   - greedy
   - memoization
-date: 2022-07-07
+date: 2025-06-26
 ---
 
 [Problem Link](https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/)

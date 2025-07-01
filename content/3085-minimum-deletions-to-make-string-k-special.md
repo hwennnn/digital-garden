@@ -8,7 +8,7 @@ tags:
   - greedy
   - sorting
   - counting
-date: 2024-03-17
+date: 2025-06-21
 ---
 
 [Problem Link](https://leetcode.com/problems/minimum-deletions-to-make-string-k-special/)

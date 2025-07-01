@@ -5,7 +5,7 @@ tags:
   - leetcode-easy
   - array
   - two-pointers
-date: 2022-03-13
+date: 2025-06-24
 ---
 
 [Problem Link](https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/)
@@ -61,15 +61,18 @@ Hence, we return [0,1,2,3,4].
 ``` py title='find-all-k-distant-indices-in-an-array'
 class Solution:
     def findKDistantIndices(self, nums: List[int], key: int, k: int) -> List[int]:
-        n = len(nums)
-        indices = [i for i, x in enumerate(nums) if x == key]
+        N = len(nums)
         res = []
-        
-        for i in range(n):
-            for j in indices:
-                if abs(i - j) <= k:
-                    res.append(i)
-                    break
+        i = j = 0
+
+        while i < N:
+            if nums[i] == key:
+                j = max(j, i - k)
+                while j <= i + k and j < N:
+                    res.append(j)
+                    j += 1
+            
+            i += 1
         
         return res
 ```

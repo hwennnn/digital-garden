@@ -7,7 +7,7 @@ tags:
   - breadth-first-search
   - graph
   - topological-sort
-date: 2023-07-13
+date: 2025-06-22
 ---
 
 [Problem Link](https://leetcode.com/problems/course-schedule/)
@@ -60,21 +60,20 @@ To take course 1 you should have finished course 0, and to take course 0 you sho
 ### Python3
 ``` py title='course-schedule'
 class Solution:
-    def canFinish(self, n: int, prerequisites: List[List[int]]) -> bool:
-        indegree = [0] * n
+    def canFinish(self, N: int, prerequisites: List[List[int]]) -> bool:
         graph = defaultdict(list)
-        took = 0
+        indegree = [0] * N
+        count = 0
 
         for a, b in prerequisites:
             graph[b].append(a)
             indegree[a] += 1
         
-        queue = deque([i for i in range(n) if indegree[i] == 0])
-        
+        queue = deque([i for i in range(N) if indegree[i] == 0])
+
         while queue:
             node = queue.popleft()
-
-            took += 1
+            count += 1
 
             for adj in graph[node]:
                 indegree[adj] -= 1
@@ -82,6 +81,6 @@ class Solution:
                 if indegree[adj] == 0:
                     queue.append(adj)
         
-        return took == n
+        return count == N
 ```
 

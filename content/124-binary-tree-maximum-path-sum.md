@@ -7,7 +7,7 @@ tags:
   - tree
   - depth-first-search
   - binary-tree
-date: 2022-12-11
+date: 2024-07-15
 ---
 
 [Problem Link](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
@@ -95,17 +95,19 @@ class Solution:
     def maxPathSum(self, root: Optional[TreeNode]) -> int:
         res = -inf
 
-        def go(node):
+        def dfs(node):
             nonlocal res
+
             if not node: return 0
 
-            curr = node.val
-            left, right = max(0, go(node.left)), max(0, go(node.right))
+            left = max(0, dfs(node.left))
+            right = max(0, dfs(node.right))
+
             res = max(res, node.val + left + right)
 
-            return node.val + max(0, left, right)
-            
-        go(root)
+            return node.val + max(left, right)
+
+        dfs(root)
         return res
 ```
 

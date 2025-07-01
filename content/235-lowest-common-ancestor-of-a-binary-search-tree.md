@@ -7,7 +7,7 @@ tags:
   - depth-first-search
   - binary-search-tree
   - binary-tree
-date: 2022-08-12
+date: 2025-06-30
 ---
 
 [Problem Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)

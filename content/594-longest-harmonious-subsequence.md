@@ -8,7 +8,7 @@ tags:
   - sliding-window
   - sorting
   - counting
-date: 2021-02-13
+date: 2025-06-30
 ---
 
 [Problem Link](https://leetcode.com/problems/longest-harmonious-subsequence/)
@@ -73,13 +73,18 @@ date: 2021-02-13
 ``` py title='longest-harmonious-subsequence'
 class Solution:
     def findLHS(self, nums: List[int]) -> int:
-        cnt = collections.Counter(nums)
+        counter = Counter(nums)
         res = 0
-        
-        for num in cnt:
-            if num + 1 in cnt:
-                res = max(res, cnt[num] + cnt[num + 1])
-        
+
+        for k in counter.keys():
+            # with k + 1
+            if counter[k + 1] > 0:
+                res = max(res, counter[k] + counter[k + 1])
+
+            # with k - 1
+            if counter[k - 1] > 0:
+                res = max(res, counter[k] + counter[k - 1])
+
         return res
 ```
 

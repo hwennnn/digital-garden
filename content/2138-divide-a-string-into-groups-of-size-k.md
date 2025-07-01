@@ -5,7 +5,7 @@ tags:
   - leetcode-easy
   - string
   - simulation
-date: 2022-01-16
+date: 2025-06-22
 ---
 
 [Problem Link](https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/)
@@ -67,18 +67,21 @@ Thus, the 4 groups formed are &quot;abc&quot;, &quot;def&quot;, &quot;ghi&quot;,
 ``` py title='divide-a-string-into-groups-of-size-k'
 class Solution:
     def divideString(self, s: str, k: int, fill: str) -> List[str]:
+        N = len(s)
         res = []
-        n = len(s)
-        
-        for i in range(0, n, k):
-            if i + k <= n:
-                res.append(s[i:i + k])
+
+        for i in range(0, N, k):
+            if i + k - 1 < N:
+                res.append(s[i : i + k])
             else:
-                c = s[i : n]
-                left = k - len(c)
+                curr = ""
+                for j in range(i, N):
+                    curr += s[j]
                 
-                res.append(c + fill * left)
-        
+                for _ in range(k - len(curr)):
+                    curr += fill
+                
+                res.append(curr)
         
         return res
 ```
