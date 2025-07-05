@@ -12,7 +12,6 @@ Coroutines are typically implemented using:
 - **State machines**: in languages like Go (goroutines) or Python (async/await), the compiler transforms functions into state machines that can yield execution and resume later.
 - **Event loop (for async coroutines)**: coroutines cooperate and are scheduled in a single thread via an event loop (e.g. Python’s asyncio, JavaScript).
 - Go uses M:N scheduling (many goroutines multiplexed onto fewer OS threads).
-Sure. Here’s a full, clear explanation of all these interview topics in **English**, suitable for backend or system design interviews:
 
 # [[Thread]] vs [[Coroutine]] – Key Differences and Application Scenarios
 
