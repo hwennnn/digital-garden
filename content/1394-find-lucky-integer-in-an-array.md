@@ -70,4 +70,18 @@ class Solution:
         
         return res
 ```
+### C++
+``` cpp title='find-lucky-integer-in-an-array'
+class Solution {
+public:
+    int findLucky(vector<int>& arr) {
+        vector<int> freq(501);
+        for (auto x : arr) freq[x]++;
+        for (int i = 500; i > 0; i--) {
+            if (freq[i] == i) return i;
+        }
+        return -1;
+    }
+};
+```
 

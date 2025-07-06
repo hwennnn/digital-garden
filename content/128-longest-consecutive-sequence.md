@@ -6,7 +6,7 @@ tags:
   - array
   - hash-table
   - union-find
-date: 2022-07-05
+date: 2025-07-04
 ---
 
 [Problem Link](https://leetcode.com/problems/longest-consecutive-sequence/)
@@ -59,10 +59,10 @@ class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         s = set(nums)
         res = 0
-        
+
         while s:
             first = last = s.pop()
-            
+
             while first - 1 in s:
                 s.remove(first - 1)
                 first -= 1
@@ -72,7 +72,7 @@ class Solution:
                 last += 1
             
             res = max(res, last - first + 1)
-        
+
         return res
 ```
 

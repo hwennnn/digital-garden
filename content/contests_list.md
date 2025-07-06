@@ -4,8 +4,20 @@ tags:
   - leetcode
   - algorithms
   - data-structures
-date: 2025-07-01
+date: 2025-07-06
 ---
+
+## Weekly Contest 457
+  - [Coupon Code Validator](3606-coupon-code-validator.md)
+  - [Power Grid Maintenance](3607-power-grid-maintenance.md)
+  - [Minimum Time for K Connected Components](3608-minimum-time-for-k-connected-components.md)
+  - [Minimum Moves to Reach Target in Grid](3609-minimum-moves-to-reach-target-in-grid.md)
+
+## Biweekly Contest 160
+  - [Hexadecimal and Hexatrigesimal Conversion](3602-hexadecimal-and-hexatrigesimal-conversion.md)
+  - [Minimum Cost Path with Alternating Directions II](3603-minimum-cost-path-with-alternating-directions-ii.md)
+  - [Minimum Time to Reach Destination in Directed Graph](3604-minimum-time-to-reach-destination-in-directed-graph.md)
+  - [Minimum Stability Factor of Array](https://leetcode.com/problems/minimum-stability-factor-of-array/)
 
 ## Weekly Contest 456
   - [Partition String](3597-partition-string.md)
@@ -329,7 +341,7 @@ date: 2025-07-01
   - [Find the Original Typed String I](3330-find-the-original-typed-string-i.md)
   - [Find Subtree Sizes After Changes](https://leetcode.com/problems/find-subtree-sizes-after-changes/)
   - [Maximum Points Tourist Can Earn](https://leetcode.com/problems/maximum-points-tourist-can-earn/)
-  - [Find the Original Typed String II](https://leetcode.com/problems/find-the-original-typed-string-ii/)
+  - [Find the Original Typed String II](3333-find-the-original-typed-string-ii.md)
 
 ## Weekly Contest 420
   - [Find the Sequence of Strings Appeared on the Screen](https://leetcode.com/problems/find-the-sequence-of-strings-appeared-on-the-screen/)
@@ -356,10 +368,10 @@ date: 2025-07-01
   - [Sorted GCD Pair Queries](https://leetcode.com/problems/sorted-gcd-pair-queries/)
 
 ## Weekly Contest 417
-  - [Find the K-th Character in String Game I](https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/)
+  - [Find the K-th Character in String Game I](3304-find-the-k-th-character-in-string-game-i.md)
   - [Count of Substrings Containing Every Vowel and K Consonants I](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/)
   - [Count of Substrings Containing Every Vowel and K Consonants II](3306-count-of-substrings-containing-every-vowel-and-k-consonants-ii.md)
-  - [Find the K-th Character in String Game II](https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/)
+  - [Find the K-th Character in String Game II](3307-find-the-k-th-character-in-string-game-ii.md)
 
 ## Biweekly Contest 140
   - [Minimum Element After Replacement With Digit Sum](https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/)

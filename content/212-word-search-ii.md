@@ -8,7 +8,7 @@ tags:
   - backtracking
   - trie
   - matrix
-date: 2021-10-09
+date: 2022-11-05
 ---
 
 [Problem Link](https://leetcode.com/problems/word-search-ii/)
@@ -118,57 +118,63 @@ public:
 ### Python3
 ``` py title='word-search-ii'
 class TrieNode:
-    
     def __init__(self):
-        self.hasWord = False
-        self.children = collections.defaultdict(TrieNode)
+        self.children = {}
+        self.hasEnd = False
     
-    def hasEdge(self, char: str) -> bool:
-        return char in self.children
+    def hasEdge(self, x):
+        return x in self.children
     
-    def get(self, char):
-        return self.children[char]
+    def get(self, x):
+        if not self.hasEdge(x): return None
+
+        return self.children[x]
 
 class Trie:
-
     def __init__(self):
         self.root = TrieNode()
-
-    def insert(self, word: str) -> None:
-        curr = self.root
-        
-        for w in word:
-            curr = curr.children[w]
-        
-        curr.hasWord = True
     
+    def insert(self, word):
+        curr = self.root
+
+        for x in word:
+            if curr.hasEdge(x):
+                curr = curr.children[x]
+            else:
+                curr.children[x] = TrieNode()
+                curr = curr.children[x]
+            
+        curr.hasEnd = True
+
 class Solution:
     def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
         rows, cols = len(board), len(board[0])
         trie = Trie()
-        res = set()
         visited = set()
-        
+        res = []
+
         for word in words:
             trie.insert(word)
-        
-        def go(x, y, curr, node):
-            if node.hasWord:
-                res.add(curr)
-            
+
+        def search(x, y, curr, node):
+            if node.hasEnd:
+                res.append(curr)
+                node.hasEnd = False
+
             for dx, dy in [(x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)]:
                 if 0 <= dx < rows and 0 <= dy < cols and (dx, dy) not in visited and node.hasEdge(board[dx][dy]):
                     visited.add((dx, dy))
-                    go(dx, dy, curr + board[dx][dy], node.get(board[dx][dy]))
+                    search(dx, dy, curr + board[dx][dy], node.get(board[dx][dy]))
                     visited.remove((dx, dy))
-            
+
+
         for x in range(rows):
             for y in range(cols):
-                if trie.root.hasEdge(board[x][y]):
+                if trie.root.hasEdge(board[x][y][0]):
                     visited.add((x, y))
-                    go(x, y, board[x][y], trie.root.get(board[x][y]))
+                    search(x, y, board[x][y][0], trie.root.get(board[x][y]))
                     visited.remove((x, y))
         
-        return list(res)
+        return res
 ```
 

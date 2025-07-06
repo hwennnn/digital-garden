@@ -8,7 +8,7 @@ tags:
   - sorting
   - heap-priority-queue
   - data-stream
-date: 2022-11-12
+date: 2025-07-04
 ---
 
 [Problem Link](https://leetcode.com/problems/find-median-from-data-stream/)
@@ -77,20 +77,21 @@ class MedianFinder:
 
     def __init__(self):
         self.small = []
-        self.large = []
+        self.big = []
 
     def addNum(self, num: int) -> None:
-        if len(self.small) == len(self.large):
-            heappush(self.large, -heappushpop(self.small, -num))
+        if len(self.small) == len(self.big):
+            heappush(self.big, -heappushpop(self.small, -num))
         else:
-            heappush(self.small, -heappushpop(self.large, num))
+            # len(self.small) < len(self.big)
+            heappush(self.small, -heappushpop(self.big, num))
 
     def findMedian(self) -> float:
-        if len(self.small) == len(self.large):
-            return (-self.small[0] + self.large[0]) / 2
+        if len(self.small) == len(self.big):
+            return (-self.small[0] + self.big[0]) / 2
         else:
-            return self.large[0]
-            
+            return self.big[0]
+        
 
 
 # Your MedianFinder object will be instantiated and called as such:

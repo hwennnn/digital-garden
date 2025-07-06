@@ -8,7 +8,7 @@ tags:
   - design
   - weekly-contest-241
   - contest-question
-date: 2021-05-16
+date: 2025-07-06
 ---
 
 [Problem Link](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/)
@@ -75,23 +75,23 @@ findSumPairs.count(7);  // return 11; pairs (2,1), (2,2), (2,4), (3,1), (3,2), (
 class FindSumPairs:
 
     def __init__(self, nums1: List[int], nums2: List[int]):
+        self.counter1 = Counter(nums1)
+        self.counter2 = Counter(nums2)
         self.nums2 = nums2
-        self.mp1 = collections.Counter(nums1)
-        self.mp2 = collections.Counter(nums2)
 
     def add(self, index: int, val: int) -> None:
-        self.mp2[self.nums2[index]] -= 1
+        self.counter2[self.nums2[index]] -= 1
         self.nums2[index] += val
-        self.mp2[self.nums2[index]] += 1
+        self.counter2[self.nums2[index]] += 1
+        
 
     def count(self, tot: int) -> int:
-        count = 0
+        res = 0
+        for k, v in self.counter1.items():
+            res += v * self.counter2[tot - k]
+
+        return res
         
-        for k,v in self.mp1.items():
-            if tot - k in self.mp2:
-                count += v * self.mp2[tot - k]
-        
-        return count
 
 
 # Your FindSumPairs object will be instantiated and called as such:
