@@ -6,7 +6,7 @@ tags:
   - array
   - dynamic-programming
   - greedy
-date: 2022-12-26
+date: 2025-07-20
 ---
 
 [Problem Link](https://leetcode.com/problems/jump-game/)
@@ -56,10 +56,10 @@ class Solution:
 
         for i, x in enumerate(nums):
             if i > maxJump: return False
-                
+
             maxJump = max(maxJump, i + x)
+
         
         return True
-
 ```
 

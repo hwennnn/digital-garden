@@ -52,13 +52,12 @@ Total amount you can rob = 2 + 9 + 1 = 12.
 ``` py title='house-robber'
 class Solution:
     def rob(self, nums: List[int]) -> int:
-        N = len(nums)
-        rob = skip = 0
+        rob, not_rob = 0, 0
 
         for x in nums:
-            rob, skip = max(rob, skip + x), rob
-
-        return max(rob, skip)
+            rob, not_rob = not_rob + x, max(rob, not_rob)
+        
+        return max(rob, not_rob)
 ```
 ### Python
 ``` py title='house-robber'

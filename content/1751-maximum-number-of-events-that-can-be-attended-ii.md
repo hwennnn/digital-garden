@@ -9,7 +9,7 @@ tags:
   - sorting
   - biweekly-contest-45
   - contest-question
-date: 2023-07-15
+date: 2025-07-08
 ---
 
 [Problem Link](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/)
@@ -72,22 +72,23 @@ class Solution:
     def maxValue(self, events: List[List[int]], k: int) -> int:
         N = len(events)
         events.sort()
-
+        
         @cache
-        def go(index, k):
-            if k == 0: return 0
+        def go(index, remK):
+            if index == N or remK == 0: return 0
 
-            if index == N: return 0
+            # skip
+            res = go(index + 1, remK)
 
-            res = go(index + 1, k)
+            start, end, value = events[index]
+            nextIndex = bisect_left(events, [end + 1, ])
 
-            startDay, endDay, value = events[index]
-            nextIndex = bisect_left(events, [endDay + 1, ])
-
-            res = max(res, value + go(nextIndex, k - 1))
+            res = max(res, value + go(nextIndex, remK - 1))
 
             return res
         
         return go(0, k)
+
+
 ```
 

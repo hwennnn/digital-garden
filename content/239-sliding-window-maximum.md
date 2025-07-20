@@ -71,9 +71,9 @@ class Solution:
             
             queue.append(x)
 
-            if i + 1 >= k:
+            if i >= k - 1:
                 res.append(queue[0])
-            
+
                 if queue[0] == nums[i - k + 1]:
                     queue.popleft()
 

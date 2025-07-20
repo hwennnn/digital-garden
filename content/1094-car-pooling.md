@@ -10,7 +10,7 @@ tags:
   - prefix-sum
   - weekly-contest-142
   - contest-question
-date: 2022-01-06
+date: 2025-07-20
 ---
 
 [Problem Link](https://leetcode.com/problems/car-pooling/)
@@ -59,19 +59,22 @@ date: 2022-01-06
 class Solution:
     def carPooling(self, trips: List[List[int]], capacity: int) -> bool:
         events = []
-        
-        for num, start, end in trips:
-            events.append((start, 1, num))
-            events.append((end, -1, num))
+
+        for count, a, b in trips:
+            events.append((a, 1, count))
+            events.append((b, 0, count))
         
         events.sort()
-        
-        for _, t, x in events:
-            if t == 1:
-                capacity -= x
+        curr = 0
+
+        for _, t, cnt in events:
+            if t == 0:
+                curr -= cnt
             else:
-                capacity += x
-            if capacity < 0: return False
+                curr += cnt
+            
+            if curr > capacity:
+                return False
         
         return True
 ```

@@ -11,7 +11,7 @@ tags:
   - sorting
   - weekly-contest-137
   - contest-question
-date: 2023-09-23
+date: 2025-07-19
 ---
 
 [Problem Link](https://leetcode.com/problems/longest-string-chain/)
@@ -74,23 +74,19 @@ date: 2023-09-23
 ``` py title='longest-string-chain'
 class Solution:
     def longestStrChain(self, words: List[str]) -> int:
+        dp = {}
         res = 1
         words.sort(key = len)
-        dp = {}
 
         for word in words:
-            curr = 1
+            dp[word] = 1
 
             for i in range(len(word)):
-                w = word[:i] + word[i + 1:]
-
-                if w in dp:
-                    curr = max(curr, dp[w] + 1)
-
-
-            dp[word] = curr
-            res = max(res, curr)
-
+                prev = word[:i] + word[i + 1:]
+                if prev in dp:
+                    dp[word] = max(dp[word], 1 + dp[prev])
+                    res = max(res, dp[word])
+        
         return res
 ```
 

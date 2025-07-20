@@ -6,7 +6,7 @@ tags:
   - array
   - binary-search
   - dynamic-programming
-date: 2025-01-23
+date: 2025-07-08
 ---
 
 [Problem Link](https://leetcode.com/problems/longest-increasing-subsequence/)
@@ -59,16 +59,16 @@ date: 2025-01-23
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         N = len(nums)
-        s = []
+        A = []
 
         for x in nums:
-            index = bisect_left(s, x)
+            index = bisect_left(A, x)
 
-            if index == len(s):
-                s.append(x)
+            if index < len(A):
+                A[index] = x
             else:
-                s[index] = x
-
-        return len(s)
+                A.append(x)
+        
+        return len(A)
 ```
 

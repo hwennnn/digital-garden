@@ -9,7 +9,7 @@ tags:
   - trie
   - weekly-contest-159
   - contest-question
-date: 2025-01-05
+date: 2025-07-19
 ---
 
 [Problem Link](https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/)

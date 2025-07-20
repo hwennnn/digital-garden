@@ -10,7 +10,7 @@ tags:
   - simulation
   - weekly-contest-309
   - contest-question
-date: 2024-02-18
+date: 2025-07-11
 ---
 
 [Problem Link](https://leetcode.com/problems/meeting-rooms-iii/)
@@ -85,26 +85,36 @@ Room 0 held 1 meeting while rooms 1 and 2 each held 2 meetings, so we return 1.
 ``` py title='meeting-rooms-iii'
 class Solution:
     def mostBooked(self, n: int, meetings: List[List[int]]) -> int:
+        count = [0] * n
         meetings.sort()
-        usedCount = [0] * n
-        
-        availableRooms = list(range(n))
-        usedRooms = []
-        
+
+        available = list(range(n))
+        heapify(available)
+
+        occupied = []
+
         for start, end in meetings:
-            while usedRooms and start >= usedRooms[0][0]:
-                t, roomId = heappop(usedRooms)
-                heappush(availableRooms, roomId)
+            duration = end - start
+
+            while occupied and start >= occupied[0][0]:
+                _, room = heappop(occupied)
+                heappush(available, room)
+
+            if not available:
+                endTime, room = heappop(occupied)
+                start = endTime
+                heappush(available, room)
             
-            if availableRooms:
-                r = heappop(availableRooms)
-                heappush(usedRooms, (end, r))
-            else:
-                endTime, r = heappop(usedRooms)
-                heappush(usedRooms, (endTime + end - start, r))
+            currRoom = heappop(available)
+            count[currRoom] += 1
+            heappush(occupied, (start + duration, currRoom))
+
+        maxCount = max(count)
+        for i in range(n):
+            if count[i] == maxCount:
+                return i
+        
+        return -1
                 
-            usedCount[r] += 1
-            
-        return usedCount.index(max(usedCount))
 ```
 

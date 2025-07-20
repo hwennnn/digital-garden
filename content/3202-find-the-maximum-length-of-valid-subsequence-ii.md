@@ -7,7 +7,7 @@ tags:
   - dynamic-programming
   - weekly-contest-404
   - contest-question
-date: 2024-07-01
+date: 2025-07-17
 ---
 
 [Problem Link](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/)
@@ -72,11 +72,10 @@ class Solution:
 
             for x in nums:
                 x %= k
-                dp[x] = max(dp[x % k], dp[(mod - x + k) % k] + 1)
+                dp[x] = max(dp[x], 1 + dp[(mod - x + k) % k])
             
             res = max(res, max(dp))
-        
-        return res
 
+        return res
 ```
 

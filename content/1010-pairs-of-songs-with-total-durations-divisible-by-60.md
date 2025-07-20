@@ -8,7 +8,7 @@ tags:
   - counting
   - weekly-contest-128
   - contest-question
-date: 2022-02-17
+date: 2025-07-19
 ---
 
 [Problem Link](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/)
@@ -56,15 +56,17 @@ date: 2022-02-17
 ``` py title='pairs-of-songs-with-total-durations-divisible-by-60'
 class Solution:
     def numPairsDivisibleBy60(self, time: List[int]) -> int:
-        s = res = 0
-        mp = Counter()
-        
+        mp = defaultdict(int)
+        res = 0
+
         for x in time:
-            target = (60 - x) % 60
-            
-            res += mp[target]
-            
-            mp[x % 60] += 1
+            x %= 60
+
+            if x == 0:
+                res += mp[x]
+            else:
+                res += mp[60 - x]
+            mp[x] += 1
         
         return res
 ```

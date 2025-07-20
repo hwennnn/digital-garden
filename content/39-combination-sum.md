@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - array
   - backtracking
-date: 2024-08-13
+date: 2025-07-08
 ---
 
 [Problem Link](https://leetcode.com/problems/combination-sum/)
@@ -65,21 +65,24 @@ class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         N = len(candidates)
         res = []
-
-        def go(index, curr, path):
-            if curr == target:
-                res.append(path[:])
-                return
-
-            if index == N: return
-
-            for j in range(index, N):
-                if candidates[j] + curr <= target:
-                    path.append(candidates[j])
-                    go(j, curr + candidates[j], path)
-                    path.pop()
         
-        go(0, 0, [])
+        def backtrack(index, curr, arr):
+            nonlocal res
+            if curr > target: return
+
+            if curr == target:
+                res.append(arr[:])
+                return
+                
+            if index == N: return
+            
+            # skip
+            backtrack(index + 1, curr, arr)
+
+            # take
+            backtrack(index, curr + candidates[index], arr + [candidates[index]])
+    
+        backtrack(0, 0, [])
         return res
 
 ```

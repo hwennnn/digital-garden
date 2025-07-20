@@ -9,7 +9,7 @@ tags:
   - dynamic-programming
   - trie
   - memoization
-date: 2025-01-23
+date: 2025-07-20
 ---
 
 [Problem Link](https://leetcode.com/problems/word-break/)
@@ -66,17 +66,14 @@ Note that you are allowed to reuse a dictionary word.
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
         N = len(s)
-        mp = set(wordDict)
+        seen = set(wordDict)
 
         @cache
-        def go(index):
-            if index == N:
-                return True
-            
-            curr = ""
-            for i in range(index, N):
-                curr += s[i]
-                if curr in wordDict and go(i + 1):
+        def go(i):
+            if i >= N: return True
+
+            for j in range(i, N):
+                if s[i : j + 1] in seen and go(j + 1):
                     return True
             
             return False

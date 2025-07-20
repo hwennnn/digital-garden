@@ -4,12 +4,30 @@ tags:
   - leetcode
   - algorithms
   - data-structures
-date: 2025-07-06
+date: 2025-07-20
 ---
 
 Welcome to my LeetCode solutions collection! This site contains my solutions to various LeetCode problems, organized and documented for easy reference.
 
 ## Recent Contests
+
+- [Weekly Contest 459](https://leetcode.com/contest/weekly-contest-459/)
+  - [Check Divisibility by Digit Sum and Product](3622-check-divisibility-by-digit-sum-and-product.md)
+  - [Count Number of Trapezoids I](3623-count-number-of-trapezoids-i.md)
+  - [Number of Integers With Popcount-Depth Equal to K II](3624-number-of-integers-with-popcount-depth-equal-to-k-ii.md)
+  - [Count Number of Trapezoids II](https://leetcode.com/problems/count-number-of-trapezoids-ii/)
+
+- [Biweekly Contest 161](https://leetcode.com/contest/biweekly-contest-161/)
+  - [Split Array by Prime Indices](3618-split-array-by-prime-indices.md)
+  - [Count Islands With Total Value Divisible by K](3619-count-islands-with-total-value-divisible-by-k.md)
+  - [Network Recovery Pathways](3620-network-recovery-pathways.md)
+  - [Number of Integers With Popcount-Depth Equal to K I](3621-number-of-integers-with-popcount-depth-equal-to-k-i.md)
+
+- [Weekly Contest 458](https://leetcode.com/contest/weekly-contest-458/)
+  - [Process String with Special Operations I](3612-process-string-with-special-operations-i.md)
+  - [Minimize Maximum Component Cost](3613-minimize-maximum-component-cost.md)
+  - [Process String with Special Operations II](3614-process-string-with-special-operations-ii.md)
+  - [Longest Palindromic Path in Graph](3615-longest-palindromic-path-in-graph.md)
 
 - [Weekly Contest 457](https://leetcode.com/contest/weekly-contest-457/)
   - [Coupon Code Validator](3606-coupon-code-validator.md)
@@ -22,24 +40,6 @@ Welcome to my LeetCode solutions collection! This site contains my solutions to 
   - [Minimum Cost Path with Alternating Directions II](3603-minimum-cost-path-with-alternating-directions-ii.md)
   - [Minimum Time to Reach Destination in Directed Graph](3604-minimum-time-to-reach-destination-in-directed-graph.md)
   - [Minimum Stability Factor of Array](https://leetcode.com/problems/minimum-stability-factor-of-array/)
-
-- [Weekly Contest 456](https://leetcode.com/contest/weekly-contest-456/)
-  - [Partition String](3597-partition-string.md)
-  - [Longest Common Prefix Between Adjacent Strings After Removals](3598-longest-common-prefix-between-adjacent-strings-after-removals.md)
-  - [Partition Array to Minimize XOR](3599-partition-array-to-minimize-xor.md)
-  - [Maximize Spanning Tree Stability with Upgrades](3600-maximize-spanning-tree-stability-with-upgrades.md)
-
-- [Weekly Contest 455](https://leetcode.com/contest/weekly-contest-455/)
-  - [Check if Any Element Has Prime Frequency](3591-check-if-any-element-has-prime-frequency.md)
-  - [Inverse Coin Change](3592-inverse-coin-change.md)
-  - [Minimum Increments to Equalize Leaf Paths](3593-minimum-increments-to-equalize-leaf-paths.md)
-  - [Minimum Time to Transport All Individuals](3594-minimum-time-to-transport-all-individuals.md)
-
-- [Biweekly Contest 159](https://leetcode.com/contest/biweekly-contest-159/)
-  - [Minimum Adjacent Swaps to Alternate Parity](3587-minimum-adjacent-swaps-to-alternate-parity.md)
-  - [Find Maximum Area of a Triangle](https://leetcode.com/problems/find-maximum-area-of-a-triangle/)
-  - [Count Prime-Gap Balanced Subarrays](3589-count-prime-gap-balanced-subarrays.md)
-  - [Kth Smallest Path XOR Sum](https://leetcode.com/problems/kth-smallest-path-xor-sum/)
 
 
 More contests can be found [in the content list page](contests_list.md)

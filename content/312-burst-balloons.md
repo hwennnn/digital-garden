@@ -54,17 +54,19 @@ coins =  3*1*5    +   3*5*8   +  1*3*8  + 1*8*1 = 167</pre>
 class Solution:
     def maxCoins(self, nums: List[int]) -> int:
         nums = [1] + nums + [1]
-        n = len(nums)
-        dp = [[0] * n for _ in range(n)]
+        N = len(nums)
+
+        @cache
+        def dp(left, right):
+            if left + 1 == right: return 0
+
+            res = 0
+            for i in range(left + 1, right):
+                res = max(res, nums[left] * nums[i] * nums[right] + dp(left, i) + dp(i, right))
+            
+            return res
         
-        for k in range(2, n):
-            for left in range(n - k):
-                right = left + k
-                
-                for i in range(left + 1, right):
-                    dp[left][right] = max(dp[left][right], nums[left] * nums[i] * nums[right] + dp[left][i] + dp[i][right])
-        
-        return dp[0][n - 1]
+        return dp(0, N - 1)
 ```
 ### Java
 ``` java title='burst-balloons'

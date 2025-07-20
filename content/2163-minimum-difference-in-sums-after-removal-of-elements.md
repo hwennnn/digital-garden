@@ -8,7 +8,7 @@ tags:
   - heap-priority-queue
   - biweekly-contest-71
   - contest-question
-date: 2022-02-06
+date: 2025-07-18
 ---
 
 [Problem Link](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/)
@@ -74,38 +74,41 @@ It can be shown that it is not possible to obtain a difference smaller than 1.
 ---
 ### Python3
 ``` py title='minimum-difference-in-sums-after-removal-of-elements'
-from sortedcontainers import SortedList
-
 class Solution:
     def minimumDifference(self, nums: List[int]) -> int:
-        m = len(nums)
-        n = m // 3
+        M = len(nums)
+        N = M // 3
+
+        prefixMin, currMin = [sum(nums[:N])], sum(nums[:N])
+        pq = [-x for x in nums[:N]] # maxHeap
+        heapify(pq)
+
+        for i in range(N, 2 * N):
+            x = -heappop(pq)
+            currMin -= x
+            nxt = min(x, nums[i])
+            currMin += nxt
+            heappush(pq, -nxt)
+            prefixMin.append(currMin)
         
-        left = SortedList(nums[:n])
-        right = SortedList(nums[n:])
-        sumLeft = sum(left)
-        sumRight = sum(right[-n:])
-        res = sumLeft - sumRight
+        suffixMax, currMax = [sum(nums[2 * N:])], sum(nums[2 * N:])
+        pq = [x for x in nums[2 * N:]] # minHeap
+        heapify(pq)
+
+        for i in range(2 * N - 1, N - 1, -1):
+            x = heappop(pq)
+            currMax -= x
+            nxt = max(x, nums[i])
+            currMax += nxt
+            heappush(pq, nxt)
+            suffixMax.append(currMax)
         
-        for i in range(n, 2 * n):
-            index = right.bisect_left(nums[i])
-            
-            if index >= len(right) - n:
-                sumRight -= nums[i]
-                sumRight += right[-n-1]
-            
-            index = left.bisect_left(nums[i])
-            
-            if index < n:
-                sumLeft += nums[i]
-                sumLeft -= left[n - 1]
-            
-            right.discard(nums[i])
-            left.add(nums[i])
-            
-            res = min(res, sumLeft - sumRight)
-        
+        suffixMax.reverse()
+
+        res = inf
+        for a, b in zip(prefixMin, suffixMax):
+            res = min(res, a - b)
+
         return res
-        
 ```
 

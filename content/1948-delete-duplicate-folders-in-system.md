@@ -10,7 +10,7 @@ tags:
   - hash-function
   - weekly-contest-251
   - contest-question
-date: 2023-08-02
+date: 2025-07-20
 ---
 
 [Problem Link](https://leetcode.com/problems/delete-duplicate-folders-in-system/)

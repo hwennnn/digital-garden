@@ -6,7 +6,7 @@ tags:
   - array
   - dynamic-programming
   - breadth-first-search
-date: 2025-01-23
+date: 2025-07-08
 ---
 
 [Problem Link](https://leetcode.com/problems/coin-change/)
@@ -60,18 +60,17 @@ date: 2025-01-23
 ``` py title='coin-change'
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
-        N = len(coins)
         dp = [inf] * (amount + 1)
         dp[0] = 0
 
-        for t in range(1, amount + 1):
-            for x in coins:
-                if t >= x:
-                    dp[t] = min(dp[t], dp[t - x] + 1)
+        for x in range(1, amount + 1):
+            for coin in coins:
+                if x >= coin:
+                    dp[x] = min(dp[x], 1 + dp[x - coin])
         
         if dp[amount] == inf:
             return -1
-
+        
         return dp[amount]
 ```
 

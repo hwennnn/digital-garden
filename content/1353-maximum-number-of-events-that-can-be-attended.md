@@ -62,23 +62,31 @@ class Solution:
     def maxEvents(self, events: List[List[int]]) -> int:
         N = len(events)
         events.sort()
+        
         res = index = 0
-        heap = []
-        maxDays = max(end for _, end in events)
+        curr = 1
+        pq = []
 
-        for day in range(1, maxDays + 1):
-            while index < N and events[index][0] == day:
-                heappush(heap, events[index][1])
+        while pq or index < N:
+            while index < N and curr == events[index][0]:
+                heappush(pq, events[index][1])
                 index += 1
+
+            while pq and curr > pq[0]:
+                heappop(pq)
             
-            while heap and day > heap[0]:
-                heappop(heap)
-            
-            if heap:
-                heappop(heap)
+            if pq:
+                heappop(pq)
                 res += 1
+                curr += 1
+            else:
+                if index < N:
+                    curr = events[index][0]
+                else:
+                    curr += 1
 
         return res
+
 ```
 ### C++
 ``` cpp title='maximum-number-of-events-that-can-be-attended'

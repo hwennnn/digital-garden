@@ -4,8 +4,26 @@ tags:
   - leetcode
   - algorithms
   - data-structures
-date: 2025-07-06
+date: 2025-07-20
 ---
+
+## Weekly Contest 459
+  - [Check Divisibility by Digit Sum and Product](3622-check-divisibility-by-digit-sum-and-product.md)
+  - [Count Number of Trapezoids I](3623-count-number-of-trapezoids-i.md)
+  - [Number of Integers With Popcount-Depth Equal to K II](3624-number-of-integers-with-popcount-depth-equal-to-k-ii.md)
+  - [Count Number of Trapezoids II](https://leetcode.com/problems/count-number-of-trapezoids-ii/)
+
+## Biweekly Contest 161
+  - [Split Array by Prime Indices](3618-split-array-by-prime-indices.md)
+  - [Count Islands With Total Value Divisible by K](3619-count-islands-with-total-value-divisible-by-k.md)
+  - [Network Recovery Pathways](3620-network-recovery-pathways.md)
+  - [Number of Integers With Popcount-Depth Equal to K I](3621-number-of-integers-with-popcount-depth-equal-to-k-i.md)
+
+## Weekly Contest 458
+  - [Process String with Special Operations I](3612-process-string-with-special-operations-i.md)
+  - [Minimize Maximum Component Cost](3613-minimize-maximum-component-cost.md)
+  - [Process String with Special Operations II](3614-process-string-with-special-operations-ii.md)
+  - [Longest Palindromic Path in Graph](3615-longest-palindromic-path-in-graph.md)
 
 ## Weekly Contest 457
   - [Coupon Code Validator](3606-coupon-code-validator.md)
@@ -122,10 +140,10 @@ date: 2025-07-06
   - [Count Numbers with Non-Decreasing Digits](3519-count-numbers-with-non-decreasing-digits.md)
 
 ## Biweekly Contest 154
-  - [Minimum Operations to Make Array Sum Divisible by K](https://leetcode.com/problems/minimum-operations-to-make-array-sum-divisible-by-k/)
-  - [Number of Unique XOR Triplets I](https://leetcode.com/problems/number-of-unique-xor-triplets-i/)
-  - [Number of Unique XOR Triplets II](https://leetcode.com/problems/number-of-unique-xor-triplets-ii/)
-  - [Shortest Path in a Weighted Tree](https://leetcode.com/problems/shortest-path-in-a-weighted-tree/)
+  - [Minimum Operations to Make Array Sum Divisible by K](3512-minimum-operations-to-make-array-sum-divisible-by-k.md)
+  - [Number of Unique XOR Triplets I](3513-number-of-unique-xor-triplets-i.md)
+  - [Number of Unique XOR Triplets II](3514-number-of-unique-xor-triplets-ii.md)
+  - [Shortest Path in a Weighted Tree](3515-shortest-path-in-a-weighted-tree.md)
 
 ## Weekly Contest 444
   - [Minimum Pair Removal to Sort Array I](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/)
@@ -213,8 +231,8 @@ date: 2025-07-06
 
 ## Biweekly Contest 149
   - [Find Valid Pair of Adjacent Digits in String](https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/)
-  - [Reschedule Meetings for Maximum Free Time I](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/)
-  - [Reschedule Meetings for Maximum Free Time II](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-ii/)
+  - [Reschedule Meetings for Maximum Free Time I](3439-reschedule-meetings-for-maximum-free-time-i.md)
+  - [Reschedule Meetings for Maximum Free Time II](3440-reschedule-meetings-for-maximum-free-time-ii.md)
   - [Minimum Cost Good Caption](https://leetcode.com/problems/minimum-cost-good-caption/)
 
 ## Weekly Contest 434
@@ -1919,7 +1937,7 @@ date: 2025-07-06
   - [Redistribute Characters to Make All Strings Equal](1897-redistribute-characters-to-make-all-strings-equal.md)
   - [Maximum Number of Removable Characters](1898-maximum-number-of-removable-characters.md)
   - [Merge Triplets to Form Target Triplet](1899-merge-triplets-to-form-target-triplet.md)
-  - [The Earliest and Latest Rounds Where Players Compete](https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/)
+  - [The Earliest and Latest Rounds Where Players Compete](1900-the-earliest-and-latest-rounds-where-players-compete.md)
 
 ## Biweekly Contest 54
   - [Check if All the Integers in a Range Are Covered](1893-check-if-all-the-integers-in-a-range-are-covered.md)

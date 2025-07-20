@@ -6,7 +6,7 @@ tags:
   - math
   - dynamic-programming
   - combinatorics
-date: 2024-08-14
+date: 2025-07-20
 ---
 
 [Problem Link](https://leetcode.com/problems/unique-paths/)
@@ -54,19 +54,18 @@ date: 2024-08-14
 ``` py title='unique-paths'
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
-        dp = [[0] * n for _ in range(m)]
-        dp[0][0] = 1
-        
+        grid = [[0] * n for _ in range(m)]
+
         for i in range(m):
-            dp[i][0] = 1
+            grid[i][0] = 1
         
         for j in range(n):
-            dp[0][j] = 1
+            grid[0][j] = 1
         
         for i in range(1, m):
             for j in range(1, n):
-                dp[i][j] += dp[i - 1][j] + dp[i][j - 1]
+                grid[i][j] += grid[i - 1][j] + grid[i][j - 1]
         
-        return dp[-1][-1]
+        return grid[m - 1][n - 1]
 ```
 

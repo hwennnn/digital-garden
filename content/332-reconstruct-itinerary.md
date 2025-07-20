@@ -6,7 +6,7 @@ tags:
   - depth-first-search
   - graph
   - eulerian-circuit
-date: 2023-09-14
+date: 2025-07-19
 ---
 
 [Problem Link](https://leetcode.com/problems/reconstruct-itinerary/)
@@ -61,24 +61,24 @@ date: 2023-09-14
 class Solution:
     def findItinerary(self, tickets: List[List[str]]) -> List[str]:
         graph = defaultdict(list)
-        
-        for x, y in tickets:
-            graph[x].append(y)
-        
-        for x in graph:
-            graph[x].sort(reverse = 1)
-        
 
+        for a, b in tickets:
+            graph[a].append(b)
+        
+        for k in graph.keys():
+            graph[k].sort(reverse = 1)
+        
         res = []
-        S = "JFK"
-        
-        def go(node):
-            while graph[node]:
-                go(graph[node].pop())
+        def dfs(node):
 
+            while graph[node]:
+                adj = graph[node].pop()
+                dfs(adj)
+            
             res.append(node)
         
-        go(S)
-        return res[::-1]
+        dfs("JFK")
+        res.reverse()
+        return res
 ```
 

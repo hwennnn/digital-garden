@@ -5,7 +5,7 @@ tags:
   - leetcode-medium
   - string
   - dynamic-programming
-date: 2024-08-13
+date: 2025-07-20
 ---
 
 [Problem Link](https://leetcode.com/problems/decode-ways/)
@@ -94,21 +94,19 @@ class Solution:
 
         @cache
         def go(index):
-            if index == N: return 1
+            if index >= N: return 1
 
-            res = 0
+            count = 0
 
             if s[index] != "0":
-                res += go(index + 1)
-
-            if index + 1 < N:
-                if s[index] == "1":
-                    res += go(index + 2)
-                elif s[index] == "2" and 0 <= int(s[index + 1]) <= 6:
-                    res += go(index + 2)
+                count += go(index + 1)
             
-            return res
+            if index + 1 < N:
+                if s[index] == "1" or (s[index] == "2" and 0 <= int(s[index + 1]) <= 6):
+                    count += go(index + 2)
 
+            return count
+        
         return go(0)
 ```
 

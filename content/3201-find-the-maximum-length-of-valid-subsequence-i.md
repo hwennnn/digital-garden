@@ -7,7 +7,7 @@ tags:
   - dynamic-programming
   - weekly-contest-404
   - contest-question
-date: 2024-07-01
+date: 2025-07-16
 ---
 
 [Problem Link](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/)
@@ -80,20 +80,15 @@ You are given an integer array <code>nums</code>.
 class Solution:
     def maximumLength(self, nums: List[int]) -> int:
         N = len(nums)
-        c = nums[0] % 2
-        even = odd = both = 0
+        count = [0] * 2
+        end = [0] * 2
 
-        ans = 0
-        for i in range(N):
-            if nums[i] % 2 == 0:
-                even += 1
-            else:
-                odd += 1
-            
-            if nums[i] % 2 == c:
-                both += 1
-                c = 1 - c
-        
-        return max(both, even, odd)
+        for x in nums:
+            x %= 2
+            count[x] += 1
+            end[x] = max(end[x], 1 + end[1 - x])
+
+        return max(max(count), max(end))
+
 ```
 

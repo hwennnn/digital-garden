@@ -9,7 +9,7 @@ tags:
   - sorting
   - biweekly-contest-87
   - contest-question
-date: 2022-09-18
+date: 2025-07-13
 ---
 
 [Problem Link](https://leetcode.com/problems/maximum-matching-of-players-with-trainers/)
@@ -65,21 +65,22 @@ Each player can only be matched with one trainer, so the maximum answer is 1.
 ``` py title='maximum-matching-of-players-with-trainers'
 class Solution:
     def matchPlayersAndTrainers(self, players: List[int], trainers: List[int]) -> int:
-        N, M = len(players), len(trainers)
-        res = 0
-        j = 0
+        N = len(players)
+        M = len(trainers)
         players.sort()
         trainers.sort()
-        
-        for player in players:
-            while j < M and player > trainers[j]:
-                j += 1
+        trainerIndex = 0
+
+        for i, x in enumerate(players):
+            while trainerIndex < M and trainers[trainerIndex] < x:
+                trainerIndex += 1
             
-            if j == M: break
+            if trainerIndex == M:
+                return i
             
-            j += 1
-            res += 1
+            trainerIndex += 1
         
-        return res
+        return N
+
 ```
 

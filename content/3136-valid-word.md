@@ -6,7 +6,7 @@ tags:
   - string
   - weekly-contest-396
   - contest-question
-date: 2024-05-05
+date: 2025-07-15
 ---
 
 [Problem Link](https://leetcode.com/problems/valid-word/)
@@ -87,21 +87,21 @@ date: 2024-05-05
 ``` py title='valid-word'
 class Solution:
     def isValid(self, word: str) -> bool:
-        N = len(word)
-        v = c = 0
-        
+        if len(word) < 3: return False
+
+        vowel = consonant = 0
+
         for x in word:
-            if x.isdigit():
-                continue
-            elif ord('a') <= ord(x) <= ord('z') or ord('A') <= ord(x) <= ord("Z"):
-                x = x.lower()
-                if x in "aeiou":
-                    v += 1
-                else:
-                    c += 1
-            else:
+            if not x.isdigit() and x not in ascii_lowercase and x not in ascii_uppercase:
                 return False
+            
+            if x.isdigit(): continue
+            
+            if x in "aeiouAEIOU":
+                vowel += 1
+            else:
+                consonant += 1
         
-        return N >= 3 and v >= 1 and c >= 1
+        return vowel > 0 and consonant > 0
 ```
 

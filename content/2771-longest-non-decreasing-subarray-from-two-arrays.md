@@ -7,7 +7,7 @@ tags:
   - dynamic-programming
   - weekly-contest-353
   - contest-question
-date: 2023-07-09
+date: 2025-07-19
 ---
 
 [Problem Link](https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/)

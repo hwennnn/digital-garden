@@ -51,7 +51,7 @@ date: 2020-10-16
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         counter = Counter(nums)
-        pq = []
+        pq = [] # minHeap
 
         for key, v in counter.items():
             if len(pq) == k:
@@ -60,6 +60,7 @@ class Solution:
                 heappush(pq, (v, key))
         
         return [key for _, key in pq]
+
 ```
 ### C++
 ``` cpp title='top-k-frequent-elements'
