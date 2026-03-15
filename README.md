@@ -14,7 +14,7 @@ I've created a separate `leetcode` branch to deploy LeetCode solutions independe
 
 The LeetCode solutions are now deployed to a dedicated subdomain:
 
-- 🔗 [leetcode.hwendev.com](https://www.leetcode.hwendev.com/)
+- 🔗 [leetcode.hwendev.com](https://leetcode.hwendev.com/)
 
 ## Content Updates
 

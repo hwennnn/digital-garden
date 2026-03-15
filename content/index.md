@@ -44,7 +44,7 @@ Welcome to my LeetCode solutions collection! This site contains my solutions to 
 
 More contests can be found [in the content list page](contests_list.md)
 
-[Back to Digital Garden](https://www.hwendev.com)
+[Back to Digital Garden](https://notes.hwendev.com)
 
 ## Resources
 

@@ -18,7 +18,7 @@ const config: QuartzConfig = {
       websiteId: "dfc017b1-ce5d-4776-8800-e86bcf19627f",
     },
     locale: "en-US",
-    baseUrl: "https://github.com/hwennnn/digital-garden",
+    baseUrl: "leetcode.hwendev.com",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     generateSocialImages: false,
