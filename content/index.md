@@ -8,7 +8,7 @@ Welcome to my digital garden! 🌱
 This space is a growing collection of my Computer Science notes and LeetCode solutions. Here, you'll find:
 
 - Various CS concepts and learnings
-- A comprehensive collection of [LeetCode problem solutions](https://www.leetcode.hwendev.com/)
+- A comprehensive collection of [LeetCode problem solutions](https://leetcode.hwendev.com/)
 - Regular updates with new content (I aim to update frequently, if work permitting!)
 
 Feel free to explore and learn alongside me. Happy coding! 💻
@@ -39,4 +39,4 @@ Feel free to explore and learn alongside me. Happy coding! 💻
 
 ## 👨‍💻 LeetCode Solutions
 
-> ⚠️ **Note**: Please visit [leetcode.hwendev.com](https://www.leetcode.hwendev.com/) for my complete collection of LeetCode solutions.
+> ⚠️ **Note**: Please visit [leetcode.hwendev.com](https://leetcode.hwendev.com/) for my complete collection of LeetCode solutions.

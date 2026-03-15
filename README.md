@@ -4,8 +4,8 @@ Welcome to my digital garden! This is where I document my journey through Comput
 
 ## 🌱 What's Inside
 
-- [CS Concepts](https://www.hwendev.com/): Notes and learnings about different Computer Science topics
-- [LeetCode Solutions](https://www.leetcode.hwendev.com/): A growing collection of solutions to various LeetCode problems
+- [CS Concepts](https://notes.hwendev.com/): Notes and learnings about different Computer Science topics
+- [LeetCode Solutions](https://leetcode.hwendev.com/): A growing collection of solutions to various LeetCode problems
 - Regular Updates: New content is added regularly (aiming for daily updates)
 
 ## License
